@@ -1,0 +1,23 @@
+{
+  "index.qmd": {
+    "index.html": "836ff709"
+  },
+  "chapters/intro.qmd": {
+    "intro.html": "9b57b555"
+  },
+  "chapters/coordinate_systems.qmd": {
+    "coordinate_systems.html": "f3026c7e"
+  },
+  "chapters/datum_mapprojections.qmd": {
+    "datum_mapprojections.html": "47314e8f"
+  },
+  "chapters/georeferencing.qmd": {
+    "georeferencing.html": "77e3f921"
+  },
+  "references.qmd": {
+    "references.html": "9ef9548c"
+  },
+  "contributions.qmd": {
+    "contributions.html": "ca15bcce"
+  }
+}

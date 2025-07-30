@@ -1,0 +1,45 @@
+project:
+  type: book
+
+book:
+  title: "GIS Lecture Notes"
+  author: "Dr. Lakshmi Kantakumar Neelamsetti"
+  date: today
+  description: "Faculty of Topo & GIS, National Institute for Geo-informatics Science and Technology (NIGST), Survey of India, Hyderabad"
+
+  chapters:
+    - part: "Module 1: Fundamentals of GIS"
+      chapters:
+        - index.qmd
+        - chapters/intro.qmd
+        - chapters/coordinate_systems.qmd
+        - chapters/datum_mapprojections.qmd
+        - chapters/georeferencing.qmd
+   
+#    - part: "Module 2: Practical Workflows"
+#      chapters:
+#        - chapters/georeferencing.qmd
+#        - chapters/digitization.ipynb
+
+#    - part: "Module 3: Raster Analysis"
+#      chapters:
+#        - chapters/raster_analysis.qmd
+   
+    - part: "References"
+      chapters:
+        - references.qmd
+
+    - part: "Contributions"
+      chapters:
+        - contributions.qmd
+
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    code-fold: true
+
+execute:
+  kernel: geo_env
