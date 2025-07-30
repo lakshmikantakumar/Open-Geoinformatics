@@ -6,7 +6,6 @@ _build/
 .cache/
 
 # Ignore temporary HTML (unless tracked intentionally)
-*.html
 *.log
 *.aux
 *.out
