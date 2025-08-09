@@ -4,8 +4,3 @@ author: "Dr. Lakshmi Kantakumar Neelamsetti"
 date: today
 format: html
 ---
-
-**Faculty of Topo & GIS**  
-**National Institute for Geo-informatics Science and Technology (NIGST), Survey of India, Hyderabad**
-
----
