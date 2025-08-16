@@ -19,5 +19,17 @@
   },
   "contributions.qmd": {
     "contributions.html": "ca15bcce"
+  },
+  "chapters/Introduction.qmd": {
+    "Introduction.html": "752db04c"
+  },
+  "chapters/introduction.qmd": {
+    "introduction.html": "f8b1056a"
+  },
+  "chapters/foss_licenses.qmd": {
+    "foss_licenses.html": "cfa67bfc"
+  },
+  "chapters/foss_gis.qmd": {
+    "foss_gis.html": "2384a99f"
   }
 }

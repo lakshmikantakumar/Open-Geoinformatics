@@ -1,6 +1,25 @@
----
-title: "GIS Lecture Notes"
-author: "Dr. Lakshmi Kantakumar Neelamsetti"
-date: today
-format: html
----
+# Preface {.unnumbered}
+
+The discipline of Geoinformatics stands at the intersection of geography, information technology, and earth sciences, providing powerful tools for spatial data acquisition, 
+analysis, and decision-making. Its applications span diverse fields such as environmental management, urban and regional planning, disaster risk reduction, natural resource 
+monitoring, and governance, reflecting its growing significance in both academia and industry [@goodchild2007; @li2020].
+
+This lecture note, titled Open Geoinformatics: Lecture Notes Using Free and Open-Source Software, has been prepared as a comprehensive introductory resource for students, 
+researchers, and practitioners seeking to build a foundation in geospatial science and technology. A special emphasis is placed on Free and Open-Source Software (FOSS) tools 
+and datasets, ensuring that the knowledge imparted is not only theoretically rigorous but also practically accessible without licensing restrictions.
+
+The content presents essential concepts of Geographic Information Systems (GIS), Remote Sensing (RS), Global Navigation Satellite Systems (GNSS), Spatial Databases, 
+and WebGIS, with a balanced focus on theory and practice. The structure is designed to support stepwise learning—beginning with fundamentals and gradually progressing 
+toward advanced applications and integration of geospatial technologies.
+
+In particular, this work acknowledges the invaluable role of FOSS geospatial platforms and libraries—including QGIS [@qgis2024], SAGA GIS [@saga2008], PostGIS [@postgis2023], 
+GeoServer [@geoserver2024], and GDAL/OGR [@gdal2023]. These tools, along with contributions from numerous other open-source projects, not only provide world-class functionality 
+but also embody the spirit of collaborative knowledge-building and open science.
+
+The compilation draws upon established literature and best practices in the field, while also incorporating open-source software environments, community-driven innovations, 
+and contemporary applications to make the learning process relevant in today’s context. It is hoped that this work will not only serve as a guide for academic study but also 
+inspire further exploration, research, and innovation in the open geospatial domain.
+
+I gratefully acknowledge the contributions of scholars, researchers, and the global FOSS community whose works form the intellectual and technical foundation of this discipline. 
+Any inadvertent omission of citation is unintentional, and suggestions for improvement and inclusion of additional references are warmly welcomed.
+

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Faculty of Topo &amp; GIS, National Institute for Geo-informatics Science and Technology (NIGST), Survey of India, Hyderabad">
+<meta name="description" content="Lecture Notes Using Free and Open-Source Software">
 
-<title>References – GIS Lecture Notes</title>
+<title>3&nbsp; Introduction to GIS and FOSS GIS – Open Geoinformatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,47 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./contributions.html" rel="next">
-<link href="./chapters/georeferencing.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/foss_licenses.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -91,6 +71,7 @@ div.csl-indent {
 }</script>
 
 
+<link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -102,7 +83,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../chapters/foss_gis.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -117,7 +98,10 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">GIS Lecture Notes</a> 
+      <a href="../">Open Geoinformatics</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/lakshmikantakumar/Open-Geoinformatics" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -127,10 +111,16 @@ div.csl-indent {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Module 1: Fundamentals of GIS</span></a>
+ <span class="menu-text">Module 1: Free and Open-Source Software (FOSS) GIS</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -138,66 +128,20 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">GIS Lecture Notes</span></span></a>
+  <a href="../chapters/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">intro.html</span></span></a>
+  <a href="../chapters/foss_licenses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/coordinate_systems.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">coordinate_systems.html</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapters/datum_mapprojections.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">datum_mapprojections.html</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapters/georeferencing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">georeferencing.html</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">References</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Contributions</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./contributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Contributions</span></a>
+  <a href="../chapters/foss_gis.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></span></a>
   </div>
 </li>
       </ul>
@@ -207,15 +151,30 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-gis" id="toc-what-is-gis" class="nav-link active" data-scroll-target="#what-is-gis"><span class="header-section-number">3.1</span> What is GIS?</a>
+  <ul class="collapse">
+  <li><a href="#key-capabilities-of-gis" id="toc-key-capabilities-of-gis" class="nav-link" data-scroll-target="#key-capabilities-of-gis"><span class="header-section-number">3.1.1</span> Key capabilities of GIS</a></li>
+  <li><a href="#applications-of-gis" id="toc-applications-of-gis" class="nav-link" data-scroll-target="#applications-of-gis"><span class="header-section-number">3.1.2</span> Applications of GIS</a></li>
+  </ul></li>
+  <li><a href="#what-is-foss-gis" id="toc-what-is-foss-gis" class="nav-link" data-scroll-target="#what-is-foss-gis"><span class="header-section-number">3.2</span> What is FOSS GIS?</a></li>
+  <li><a href="#why-foss-gis-matters" id="toc-why-foss-gis-matters" class="nav-link" data-scroll-target="#why-foss-gis-matters"><span class="header-section-number">3.3</span> Why FOSS GIS Matters</a></li>
+  <li><a href="#examples-of-popular-foss-gis-tools" id="toc-examples-of-popular-foss-gis-tools" class="nav-link" data-scroll-target="#examples-of-popular-foss-gis-tools"><span class="header-section-number">3.4</span> Examples of Popular FOSS GIS Tools</a></li>
+  <li><a href="#importance-of-open-source-data-software-in-ngp-2022" id="toc-importance-of-open-source-data-software-in-ngp-2022" class="nav-link" data-scroll-target="#importance-of-open-source-data-software-in-ngp-2022"><span class="header-section-number">3.5</span> Importance of Open-Source Data &amp; Software in NGP 2022</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3.6</span> Conclusion</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../chapters/foss_gis.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></h1>
 </div>
 
 
@@ -232,11 +191,194 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" role="list" style="display: none">
-
+<section id="what-is-gis" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="what-is-gis"><span class="header-section-number">3.1</span> What is GIS?</h2>
+<p>A Geographic Information System (GIS) is a computer-based framework that allows us to work with information that has a spatial or geographic component. In simple terms, GIS links <strong>“what” data is about</strong> with <strong>“where” it is located on Earth</strong>. This combination makes it possible to explore patterns, detect relationships, and make informed decisions.</p>
+<section id="key-capabilities-of-gis" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="key-capabilities-of-gis"><span class="header-section-number">3.1.1</span> Key capabilities of GIS</h3>
+<ul>
+<li><strong>Data collection and input</strong> – incorporating maps, survey data, GPS readings, satellite images, and sensor outputs.<br>
+</li>
+<li><strong>Data management</strong> – organizing spatial layers and related attribute information in structured databases.<br>
+</li>
+<li><strong>Spatial analysis</strong> – applying tools such as buffering, overlay, network modeling, and terrain analysis to answer location-based questions.<br>
+</li>
+<li><strong>Visualization and communication</strong> – producing digital or printed maps, interactive dashboards, and 3D models that convey results effectively.</li>
+</ul>
+</section>
+<section id="applications-of-gis" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="applications-of-gis"><span class="header-section-number">3.1.2</span> Applications of GIS</h3>
+<ul>
+<li><p><strong>Urban growth and land-use planning</strong><br>
+GIS helps city planners design sustainable urban spaces by analyzing existing land use, population growth, and infrastructure availability. It supports zoning decisions, urban renewal projects, and smart city initiatives.</p></li>
+<li><p><strong>Monitoring of natural resources and environment</strong><br>
+GIS is widely used in forestry, water management, soil conservation, and biodiversity protection. It allows continuous monitoring of ecosystems and helps authorities detect environmental degradation early.</p></li>
+<li><p><strong>Emergency response and disaster risk reduction</strong><br>
+Hazard-prone areas can be mapped with GIS to prepare for disasters like floods, cyclones, or earthquakes. During emergencies, it supports real-time coordination of evacuation routes, shelters, and relief supplies.</p></li>
+<li><p><strong>Transportation planning and navigation services</strong><br>
+From traffic analysis to public transport route optimization, GIS enables efficient mobility planning. It also powers everyday navigation apps that millions rely on for real-time directions.</p></li>
+<li><p><strong>Health studies such as disease mapping</strong><br>
+By mapping the spread of diseases, GIS reveals spatial patterns of outbreaks and helps allocate medical resources. It also supports vaccination campaigns and long-term healthcare infrastructure planning.</p></li>
+<li><p><strong>Market research and business logistics</strong><br>
+Businesses use GIS for site selection, customer profiling, competitor analysis, and logistics optimization. Delivery companies rely on GIS to design cost-efficient and timely distribution routes.</p></li>
+<li><p><strong>Agriculture and precision farming</strong><br>
+Farmers and agricultural agencies apply GIS to monitor soil quality, rainfall, crop health, and pest outbreaks. Precision farming uses spatial data to apply fertilizers and water efficiently, improving productivity while reducing costs.</p></li>
+<li><p><strong>Climate change studies</strong><br>
+Researchers use GIS to model rising sea levels, shifting vegetation zones, glacial retreat, and temperature variations. This helps governments plan mitigation and adaptation strategies at both local and global scales.</p></li>
+<li><p><strong>Archaeology and cultural heritage management</strong><br>
+GIS assists archaeologists in locating excavation sites, mapping ancient landscapes, and preserving cultural heritage. Museums and heritage authorities also use GIS to manage monuments and visitor facilities.</p></li>
+<li><p><strong>Public utilities and infrastructure management</strong><br>
+Utility companies rely on GIS to manage water pipelines, electricity networks, and telecommunication lines. It helps detect faults, plan maintenance, and ensure efficient service delivery.</p></li>
+<li><p><strong>Crime analysis and law enforcement</strong><br>
+Police and security agencies use GIS to analyze crime hotspots, study spatial patterns of offenses, and optimize patrolling routes. This improves public safety and law enforcement efficiency.</p></li>
+<li><p><strong>Tourism and recreation planning</strong><br>
+Tourism boards and park authorities employ GIS to map attractions, hiking trails, and facilities. It also supports eco-tourism by balancing visitor access with conservation.</p></li>
+</ul>
+<p>Through these functions, GIS has become an essential tool for governments, researchers, and industries to support evidence-based planning and problem solving.</p>
+<hr>
+</section>
+</section>
+<section id="what-is-foss-gis" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="what-is-foss-gis"><span class="header-section-number">3.2</span> What is FOSS GIS?</h2>
+<p><em>Free and Open Source Software for Geographic Information Systems (FOSS GIS)</em> refers to GIS applications distributed under open-source licenses. Their source code is publicly available, which means that anyone can study how the software works, adapt it to their own requirements, and share modified versions without restrictions from license fees. This openness fosters flexibility, collaboration, and wider access to spatial technologies.</p>
+<hr>
+</section>
+<section id="why-foss-gis-matters" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="why-foss-gis-matters"><span class="header-section-number">3.3</span> Why FOSS GIS Matters</h2>
+<ul>
+<li><strong>Affordable access</strong> – removes the barrier of expensive licenses, enabling schools, community groups, and small organizations to use GIS.<br>
+</li>
+<li><strong>Community-driven innovation</strong> – improvements, bug fixes, and new features are contributed by a global network of users and developers.<br>
+</li>
+<li><strong>Adaptability</strong> – tools can be tailored to fit unique projects, workflows, or local needs.<br>
+</li>
+<li><strong>Trust and transparency</strong> – open code allows independent verification of security and reliability.<br>
+</li>
+<li><strong>Learning and capacity building</strong> – free availability encourages experimentation and skill development among students and professionals.<br>
+</li>
+<li><strong>Interoperability</strong> – support for open data standards promotes smooth exchange of information across different software platforms.<br>
+</li>
+<li><strong>Freedom of choice</strong> – users are not locked into one vendor’s ecosystem and can migrate between tools more easily.<br>
+</li>
+<li><strong>Platform flexibility</strong> – many programs run on multiple operating systems, including Windows, Linux, macOS, and sometimes even mobile devices.</li>
+</ul>
+<hr>
+</section>
+<section id="examples-of-popular-foss-gis-tools" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="examples-of-popular-foss-gis-tools"><span class="header-section-number">3.4</span> Examples of Popular FOSS GIS Tools</h2>
+<p>The FOSS GIS ecosystem offers a wide range of tools catering to different geospatial needs—from desktop applications for mapping and analysis to web mapping libraries and spatial databases. These tools are developed and maintained by vibrant global communities, ensuring continuous improvements, bug fixes, and new features. They also operate under various open-source licenses, which define how the software can be used, modified, and redistributed. The table below provides a curated list of notable FOSS GIS software, highlighting their main functions and license types.</p>
+<div id="tbl-exfoss" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-exfoss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.1: Examples of Popular FOSS GIS Tools
+</figcaption>
+<div aria-describedby="tbl-exfoss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 30%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Software</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>License Type</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>QGIS (Quantum GIS)</strong></td>
+<td>Widely used desktop GIS with an intuitive interface and extensive plugin support for both basic and advanced tasks.</td>
+<td>GNU GPL v2</td>
+</tr>
+<tr class="even">
+<td><strong>GRASS GIS</strong></td>
+<td>Comprehensive suite for spatial data analysis, modeling, and management, known for advanced raster/vector processing.</td>
+<td>GNU GPL v2</td>
+</tr>
+<tr class="odd">
+<td><strong>SAGA GIS</strong></td>
+<td>Powerful toolset for raster-based spatial analysis, terrain modeling, and environmental applications.</td>
+<td>GNU GPL v2</td>
+</tr>
+<tr class="even">
+<td><strong>ESA SNAP</strong></td>
+<td>Specialized in processing and analyzing Earth observation data from Sentinel and other satellites.</td>
+<td>GNU GPL v3</td>
+</tr>
+<tr class="odd">
+<td><strong>OpenStreetMap</strong></td>
+<td>Global, community-driven mapping project offering free and editable map data.</td>
+<td>Open Database License (ODbL)</td>
+</tr>
+<tr class="even">
+<td><strong>GeoServer</strong></td>
+<td>Web-based platform for publishing and editing geospatial data using open standards.</td>
+<td>GNU GPL v2</td>
+</tr>
+<tr class="odd">
+<td><strong>MapServer</strong></td>
+<td>High-performance web mapping server supporting a variety of data formats and OGC standards.</td>
+<td>MIT License</td>
+</tr>
+<tr class="even">
+<td><strong>PostGIS</strong></td>
+<td>PostgreSQL extension enabling advanced spatial database functionality.</td>
+<td>GNU GPL v2</td>
+</tr>
+<tr class="odd">
+<td><strong>gvSIG</strong></td>
+<td>Desktop GIS for robust spatial analysis and cartographic visualization.</td>
+<td>GNU GPL v2</td>
+</tr>
+<tr class="even">
+<td><strong>Whitebox GAT</strong></td>
+<td>Specializes in terrain analysis, hydrological modeling, and LiDAR processing.</td>
+<td>GNU GPL v3</td>
+</tr>
+<tr class="odd">
+<td><strong>OpenJump</strong></td>
+<td>Handles large datasets efficiently and supports multiple plugins.</td>
+<td>GNU GPL v2</td>
+</tr>
+<tr class="even">
+<td><strong>GeoDa</strong></td>
+<td>Designed for statistical and spatial data analysis.</td>
+<td>GNU GPL v3</td>
+</tr>
+<tr class="odd">
+<td><strong>OpenLayers</strong></td>
+<td>JavaScript library for building dynamic, interactive web maps using open data and standards.</td>
+<td>BSD 2-Clause</td>
+</tr>
+</tbody>
+</table>
 </div>
+</figure>
+</div>
+<hr>
+</section>
+<section id="importance-of-open-source-data-software-in-ngp-2022" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="importance-of-open-source-data-software-in-ngp-2022"><span class="header-section-number">3.5</span> Importance of Open-Source Data &amp; Software in NGP 2022</h2>
+<p>The <strong>National Geospatial Policy (NGP) 2022</strong> places strong emphasis on adopting open standards, open data, and open-source software platforms as outlined in Section 3.6: Strategy and Approach. This policy direction aims to make geospatial resources more accessible, interoperable, and reusable across different sectors and user groups. By ensuring that datasets are available in open formats and that software platforms are based on open-source technologies, the NGP removes dependency on proprietary systems, reducing costs and avoiding vendor lock-in. Such openness encourages collaboration between government agencies, academia, industry, and the community, leading to faster innovation, more reliable solutions, and inclusive participation.</p>
+<p>Open-source GIS tools and freely available datasets empower:</p>
+<ul>
+<li><strong>Local communities</strong> to access and use spatial data for decision-making.<br>
+</li>
+<li><strong>Educational institutions</strong> to train students without licensing barriers.<br>
+</li>
+<li><strong>Startups and NGOs</strong> to develop cost-effective geospatial applications.</li>
+</ul>
+<p>Ultimately, this open approach aligns with the vision of building a self-reliant, transparent, and future-ready geospatial ecosystem for India.</p>
+<hr>
+</section>
+<section id="conclusion" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">3.6</span> Conclusion</h2>
+<p>FOSS GIS is now a cornerstone of the modern geospatial landscape, providing cost-effective, transparent, and highly adaptable solutions. By eliminating financial and licensing barriers, it enables governments, academia, private enterprises, and communities to actively participate in mapping, spatial analysis, and informed decision-making. Its open, collaborative nature fosters continuous innovation, ensures interoperability through open standards, and strengthens global cooperation within the GIS community—supporting a more inclusive and sustainable geospatial future.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -311,7 +453,7 @@ div.csl-indent {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/lakshmikantakumar\.github\.io\/Open-Geoinformatics\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -640,14 +782,11 @@ div.csl-indent {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapters/georeferencing.html" class="pagination-link" aria-label="georeferencing.html">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">georeferencing.html</span></span>
+      <a href="../chapters/foss_licenses.html" class="pagination-link" aria-label="Free and Open-Source Software (FOSS) licenses">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./contributions.html" class="pagination-link" aria-label="Contributions">
-        <span class="nav-page-text">Contributions</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

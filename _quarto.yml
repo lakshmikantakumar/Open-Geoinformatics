@@ -3,19 +3,29 @@ project:
   output-dir: docs
 
 book:
-  title: "GIS Lecture Notes"
-  author: "Dr. Lakshmi Kantakumar"
+  title: "Open Geoinformatics" 
+  author: 
+    - name: Lakshmi Kantakumar
+      orcid: 0000-0002-8912-3853
+      email: lakshmikanthkumar@gmail.com
+      url: https://github.com/lakshmikantakumar
+      affiliations:
+      - name: Faculty of Topo & GIS, National Institute for Geo-informatics Science and Technology (NIGST), Survey of India
+        city: Hyderabad
+        country: India
   date: today
-  description: "Faculty of Topo & GIS, National Institute for Geo-informatics Science and Technology (NIGST), Survey of India, Hyderabad"
+  description: "Lecture Notes Using Free and Open-Source Software"
+  site-url: https://lakshmikantakumar.github.io/Open-Geoinformatics/
+  repo-url: https://github.com/lakshmikantakumar/Open-Geoinformatics
 
   chapters:
-    - part: "Module 1: Fundamentals of GIS"
+    - index.qmd
+    - part: "Module 1: Free and Open-Source Software (FOSS) GIS"
       chapters:
-        - index.qmd
-        - chapters/intro.qmd
-        - chapters/coordinate_systems.qmd
-        - chapters/datum_mapprojections.qmd
-        - chapters/georeferencing.qmd
+        - chapters/introduction.qmd
+        - chapters/foss_licenses.qmd
+        - chapters/foss_gis.qmd
+#       - chapters/georeferencing.qmd
    
 #    - part: "Module 2: Practical Workflows"
 #      chapters:
@@ -25,22 +35,38 @@ book:
 #    - part: "Module 3: Raster Analysis"
 #      chapters:
 #        - chapters/raster_analysis.qmd
+      
+    #- part: "Contributions"
+    #  chapters:
+    #    - contributions.qmd
    
-    - part: "References"
-      chapters:
-        - references.qmd
-
-    - part: "Contributions"
-      chapters:
-        - contributions.qmd
+bibliography: references.bib
+csl: styles/apa-6th-edition.csl
 
 
+  
 format:
   html:
     theme: cosmo
     toc: true
-    number-sections: true
+    number-sections: true   # Enable numbering for HTML
     code-fold: true
+    fig-cap-location: bottom
+    fig-num: true
+    css: styles/styles.css  # custom CSS file
+    citeproc: true
+
+ 
+  pdf:
+    documentclass: book
+    number-sections: true
+    toc: true
+    toc-depth: 2
+    fontsize: 11pt
+    geometry: a4paper
+    fig-cap-location: bottom
+    fig-num: true 
+
 
 execute:
   kernel: geo_env

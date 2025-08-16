@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Lakshmi Kantakumar Neelamsetti">
-<meta name="dcterms.date" content="2025-08-09">
-<meta name="description" content="Faculty of Topo &amp; GIS, National Institute for Geo-informatics Science and Technology (NIGST), Survey of India, Hyderabad">
+<meta name="author" content="Lakshmi Kantakumar">
+<meta name="dcterms.date" content="2025-08-17">
+<meta name="description" content="Lecture Notes Using Free and Open-Source Software">
 
-<title>GIS Lecture Notes</title>
+<title>Open Geoinformatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,7 +53,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./chapters/intro.html" rel="next">
+<link href="./chapters/introduction.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -73,6 +93,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -84,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Module 1: Fundamentals of GIS</a></li><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">GIS Lecture Notes</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -99,7 +120,10 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">GIS Lecture Notes</a> 
+      <a href="./">Open Geoinformatics</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/lakshmikantakumar/Open-Geoinformatics" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -109,10 +133,16 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Module 1: Fundamentals of GIS</span></a>
+ <span class="menu-text">Module 1: Free and Open-Source Software (FOSS) GIS</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -120,66 +150,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">GIS Lecture Notes</span></span></a>
+  <a href="./chapters/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">intro.html</span></span></a>
+  <a href="./chapters/foss_licenses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/coordinate_systems.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">coordinate_systems.html</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapters/datum_mapprojections.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">datum_mapprojections.html</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapters/georeferencing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">georeferencing.html</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">References</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Contributions</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./contributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Contributions</span></a>
+  <a href="./chapters/foss_gis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></span></a>
   </div>
 </li>
       </ul>
@@ -189,37 +173,50 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Module 1: Fundamentals of GIS</a></li><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">GIS Lecture Notes</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">GIS Lecture Notes</h1>
+<h1 class="title">Open Geoinformatics</h1>
 </div>
 
 <div>
   <div class="description">
-    Faculty of Topo &amp; GIS, National Institute for Geo-informatics Science and Technology (NIGST), Survey of India, Hyderabad
+    Lecture Notes Using Free and Open-Source Software
   </div>
 </div>
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://github.com/lakshmikantakumar">Lakshmi Kantakumar</a> <a href="mailto:lakshmikanthkumar@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-8912-3853" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Faculty of Topo &amp; GIS, National Institute for Geo-informatics Science and Technology (NIGST), Survey of India
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;Lakshmi Kantakumar Neelamsetti </p>
-          </div>
-  </div>
-    
+      
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 9, 2025</p>
+      <p class="date">August 17, 2025</p>
     </div>
   </div>
   
@@ -231,8 +228,40 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="preface" class="level1 unnumbered">
+<h1 class="unnumbered">Preface</h1>
+<p>The discipline of Geoinformatics stands at the intersection of geography, information technology, and earth sciences, providing powerful tools for spatial data acquisition, analysis, and decision-making. Its applications span diverse fields such as environmental management, urban and regional planning, disaster risk reduction, natural resource monitoring, and governance, reflecting its growing significance in both academia and industry <span class="citation" data-cites="goodchild2007 li2020">(<a href="#ref-goodchild2007" role="doc-biblioref">Goodchild, 2007</a>; <a href="#ref-li2020" role="doc-biblioref">Li, Dragicevic, &amp; Veenendaal, 2020</a>)</span>.</p>
+<p>This lecture note, titled Open Geoinformatics: Lecture Notes Using Free and Open-Source Software, has been prepared as a comprehensive introductory resource for students, researchers, and practitioners seeking to build a foundation in geospatial science and technology. A special emphasis is placed on Free and Open-Source Software (FOSS) tools and datasets, ensuring that the knowledge imparted is not only theoretically rigorous but also practically accessible without licensing restrictions.</p>
+<p>The content presents essential concepts of Geographic Information Systems (GIS), Remote Sensing (RS), Global Navigation Satellite Systems (GNSS), Spatial Databases, and WebGIS, with a balanced focus on theory and practice. The structure is designed to support stepwise learning—beginning with fundamentals and gradually progressing toward advanced applications and integration of geospatial technologies.</p>
+<p>In particular, this work acknowledges the invaluable role of FOSS geospatial platforms and libraries—including QGIS <span class="citation" data-cites="qgis2024">(<a href="#ref-qgis2024" role="doc-biblioref">QGIS Development Team, 2024</a>)</span>, SAGA GIS <span class="citation" data-cites="saga2008">(<a href="#ref-saga2008" role="doc-biblioref">Conrad et al., 2008</a>)</span>, PostGIS <span class="citation" data-cites="postgis2023">(<a href="#ref-postgis2023" role="doc-biblioref">PostGIS Project Steering Committee, 2023</a>)</span>, GeoServer <span class="citation" data-cites="geoserver2024">(<a href="#ref-geoserver2024" role="doc-biblioref">GeoServer Development Team, 2024</a>)</span>, and GDAL/OGR <span class="citation" data-cites="gdal2023">(<a href="#ref-gdal2023" role="doc-biblioref">GDAL/OGR contributors, 2023</a>)</span>. These tools, along with contributions from numerous other open-source projects, not only provide world-class functionality but also embody the spirit of collaborative knowledge-building and open science.</p>
+<p>The compilation draws upon established literature and best practices in the field, while also incorporating open-source software environments, community-driven innovations, and contemporary applications to make the learning process relevant in today’s context. It is hoped that this work will not only serve as a guide for academic study but also inspire further exploration, research, and innovation in the open geospatial domain.</p>
+<p>I gratefully acknowledge the contributions of scholars, researchers, and the global FOSS community whose works form the intellectual and technical foundation of this discipline. Any inadvertent omission of citation is unintentional, and suggestions for improvement and inclusion of additional references are warmly welcomed.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-saga2008" class="csl-entry" role="listitem">
+Conrad, O., Bechtel, B., Bock, M., Dietrich, H., Fischer, E., Gerlitz, L., … Böhner, J. (2008). System for automated geoscientific analyses (SAGA) v. 2.0. <em>Hamburger Beiträge Zur Physischen Geographie Und Landschaftsökologie</em>, <em>19</em>, 7–12.
+</div>
+<div id="ref-gdal2023" class="csl-entry" role="listitem">
+GDAL/OGR contributors. (2023). <em>GDAL/OGR geospatial data abstraction library</em>. Retrieved from <a href="https://gdal.org">https://gdal.org</a>
+</div>
+<div id="ref-geoserver2024" class="csl-entry" role="listitem">
+GeoServer Development Team. (2024). <em>GeoServer: An open source server for sharing geospatial data</em>. Retrieved from <a href="https://geoserver.org">https://geoserver.org</a>
+</div>
+<div id="ref-goodchild2007" class="csl-entry" role="listitem">
+Goodchild, M. F. (2007). <em>Citizens as sensors: The world of volunteered geography</em> (Vol. 69, pp. 211–221). <a href="https://doi.org/10.1007/s10708-007-9111-y">https://doi.org/10.1007/s10708-007-9111-y</a>
+</div>
+<div id="ref-li2020" class="csl-entry" role="listitem">
+Li, S., Dragicevic, S., &amp; Veenendaal, B. (2020). Advances in geospatial information science: Mapping the big data challenge. <em>International Journal of Digital Earth</em>, <em>13</em>(2), 123–135. <a href="https://doi.org/10.1080/17538947.2019.1651042">https://doi.org/10.1080/17538947.2019.1651042</a>
+</div>
+<div id="ref-postgis2023" class="csl-entry" role="listitem">
+PostGIS Project Steering Committee. (2023). <em>PostGIS: Spatial and geographic objects for PostgreSQL</em>. Retrieved from <a href="https://postgis.net">https://postgis.net</a>
+</div>
+<div id="ref-qgis2024" class="csl-entry" role="listitem">
+QGIS Development Team. (2024). <em>QGIS geographic information system</em>. Retrieved from <a href="https://qgis.org">https://qgis.org</a>
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -307,7 +336,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/lakshmikantakumar\.github\.io\/Open-Geoinformatics\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -638,8 +667,8 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapters/intro.html" class="pagination-link" aria-label="intro.html">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">intro.html</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapters/introduction.html" class="pagination-link" aria-label="Introduction">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

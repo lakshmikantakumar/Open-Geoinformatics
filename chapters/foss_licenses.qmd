@@ -1,0 +1,70 @@
+# Free and Open-Source Software (FOSS) licenses {#sec-licenses}
+
+## Introduction
+
+**Free and Open-Source Software (FOSS) licenses** are rules that explain how you can use, change, and share a piece of software. 
+They make sure the promises of FOSS—like seeing the code, improving it, and sharing it—are protected by law.
+
+Think of them as:
+
+- **A shield** – protecting your rights as a user.
+- **A guide** — showing how people can work together and reuse code.
+
+Not all FOSS licenses are the same. Some, called copyleft licenses, require any changed versions to stay open. 
+Others, called permissive licenses, give you more freedom to reuse the code, even in closed-source projects.
+
+---
+
+## Copyleft Licenses (Restrictive / Strong Share-Alike)
+
+These licenses require that derivative works and redistributions also remain under the same license.
+
+| License Name                   | Key Features                                                                 |
+| ------------------------------ | ----------------------------------------------------------------------------- |
+| GNU General Public License (GPL) | Must release modified code under same license; widely used in FSF projects   |
+| GNU Lesser GPL (LGPL)          | Allows linking with proprietary code (for libraries); milder than GPL         |
+| AGPL (Affero GPL)              | Extends GPL to network services — must release source even when software is only accessed over a network |
+| EUPL                           | European Union Public License — similar to GPL, legally compliant in EU jurisdictions |
+
+Table: Common Copyleft Licenses {#tbl-cllic}
+
+**The Goal of Copyleft Licenses** is to protect user freedoms by enforcing openness downstream (*strong reciprocity*).
+
+---
+
+## Permissive Licenses (Non-Restrictive / Minimal Requirements)
+
+These licenses allow reuse in both open and proprietary projects, with minimal conditions.
+
+| License Name                  | Key Features                                                            |
+| ----------------------------- | ------------------------------------------------------------------------ |
+| MIT License                   | Simple, Very permissive; Just requires attribution                      |
+| Apache License 2.0             | Allows patent use; More corporate-friendly than MIT                     |
+| BSD Licenses (2-clause, 3-clause) | Minimal restrictions; Used in BSD OS family                           |
+| ISC License                   | Even simpler than MIT; No warranties, Attribution required              |
+
+Table: Common Permissive Licenses {#tbl-perlic}
+
+**The Goal of Permissive Licenses** is to maximize freedom to use and integrate, including in closed-source projects.
+
+---
+
+## Copyleft vs Permissive licenses - Key Differences
+
+In general, **Copyleft licenses** protect the *freedom of the code*. **Permissive licenses** prioritize *freedom for developers and businesses*.
+
+| Feature                              | Copyleft (GPL)                   | Permissive (MIT/Apache)            |
+| ------------------------------------ | -------------------------------- | ---------------------------------- |
+| Requires same license for derivatives| Yes                              | No                                 |
+| Allows proprietary use               | No                               | Yes                                |
+| Popular with                         | Free Software movement           | Businesses, startups               |
+
+Table: Copyleft vs Permissive licenses key Differences comparison {#tbl-liccomp}
+
+
+## Conclusion
+FOSS licenses form the legal backbone of the open-source ecosystem, ensuring that the freedoms to use, study, modify, and share software are upheld. While **copyleft licenses** 
+safeguard these freedoms by requiring derivatives to remain open, **permissive licenses** focus on flexibility, enabling integration 
+into both open and proprietary projects. Understanding these license types is essential for developers, organizations, and policymakers to choose the right balance 
+between protecting openness and encouraging broader adoption. In essence, the right license not only defines how software is shared but also shapes the culture of collaboration 
+and innovation in the FOSS community.
