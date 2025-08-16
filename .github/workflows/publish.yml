@@ -3,23 +3,22 @@ name: Publish Quarto Book
 on:
   push:
     branches: [ main ]
-  pull_request:
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install LaTeX (for PDF build)
-        run: sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+      - name: Setup LaTeX
+        uses: r-lib/actions/setup-tinytex@v2
 
-      - name: Render HTML site
+      - name: Render HTML
         run: quarto render . --to html
 
       - name: Render PDF
@@ -32,7 +31,8 @@ jobs:
           path: _book/*.pdf
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _book
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
