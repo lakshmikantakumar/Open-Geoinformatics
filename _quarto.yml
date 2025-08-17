@@ -22,10 +22,10 @@ book:
     - index.qmd
     - part: "Module 1: Free and Open-Source Software (FOSS) GIS"
       chapters:
-        - chapters/introduction.qmd
-        - chapters/foss_licenses.qmd
-        - chapters/foss_gis.qmd
-#       - chapters/georeferencing.qmd
+        - chapters/module_1/introduction.qmd
+        - chapters/module_1/foss_licenses.qmd
+        - chapters/module_1/foss_gis.qmd
+        - chapters/module_1/ogc_standards.qmd
    
 #    - part: "Module 2: Practical Workflows"
 #      chapters:

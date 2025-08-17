@@ -13,9 +13,10 @@ which stresses transparency and community-driven development.
 
 ## Free Software ≠ Open Source
 
-Richard Stallman, founder of the Free Software Movement, points out that while “free software” and “open source” often describe the same kind of programs, they are based on different ideas.  
+Richard Stallman, founder of the Free Software Movement, points out that while “free software” and “open source” often describe the same kind of programs, they are 
+based on different ideas.  
 
-- **Free software** is about *freedom* — making sure people control the software they use.  
+- **Free software** is about *freedom* making sure people control the software they use.  
 - **Open source** is more about *practical benefits* like better quality and faster development, without focusing much on the moral side  
 ([gnu.org](https://www.gnu.org)).
 
@@ -27,10 +28,10 @@ Richard Stallman, founder of the Free Software Movement, points out that while �
 
 ![*The Four Freedoms of Free Software*](figures/Pillars_of_FS.png){#fig-FS fig-align="center" width=70%}
 
-- **Freedom 0** – Use the program however you want.  
-- **Freedom 1** – Look at the code and change it to fit your needs.  
-- **Freedom 2** – Give copies to anyone.  
-- **Freedom 3** – Share your improved versions with others.  
+- **Freedom 0** : Use the program however you want.  
+- **Freedom 1** : Look at the code and change it to fit your needs.  
+- **Freedom 2** : Give copies to anyone.  
+- **Freedom 3** : Share your improved versions with others.  
 
 (Source: [Wikipedia](https://en.wikipedia.org/wiki/The_Free_Software_Definition))
 
@@ -38,19 +39,22 @@ Richard Stallman, founder of the Free Software Movement, points out that while �
 
 ## A Short History
 
-- **1983** – The Free Software Movement began with the GNU Project and a license (GPL) that made sure these freedoms were protected ([Wikipedia](https://en.wikipedia.org/wiki/GNU_Project)).  
-- **1998** – Some in the community started calling it “open source” to make the idea sound more appealing to businesses. This approach often skipped talking about the moral side of software freedom ([gnu.org](https://www.gnu.org)).
+- **1983** : The Free Software Movement began with the GNU Project and a license (GPL) that made sure these 
+freedoms were protected ([Wikipedia](https://en.wikipedia.org/wiki/GNU_Project)).  
+- **1998** : Some in the community started calling it “open source” to make the idea sound more appealing to businesses. 
+This approach often skipped talking about the moral side of software freedom ([gnu.org](https://www.gnu.org)).
 
 ---
 
 ## The Open Source Definition (OSD)
 
-The **Open Source Definition (OSD)**, managed by the [Open Source Initiative (OSI)](https://opensource.org), explains what counts as open-source software. Created in **2006** and last updated in **February 2024**, it lists **ten rules** that go beyond just sharing the code. Open Source software means you can:
+The **Open Source Definition (OSD)**, managed by the [Open Source Initiative (OSI)](https://opensource.org), explains what counts as open-source software. 
+Created in **2006** and last updated in **February 2024**, it lists **ten rules** that go beyond just sharing the code. Open Source software means you can:
 
-- **Free sharing** — no fees or restrictions.  
-- **Source code included** — in a form you can read and edit.  
-- **Changes allowed** — you can make and share new versions.  
-- **Works on any tech** — no limits based on platform or hardware.  
+- **Free sharing** : no fees or restrictions.  
+- **Source code included** : in a form you can read and edit.  
+- **Changes allowed** : you can make and share new versions.  
+- **Works on any tech** : no limits based on platform or hardware.  
 
 These rules make sure open-source software stays free to **use**, **change**, and **share**, giving a clear and trusted meaning for developers, communities, and businesses.
 
@@ -62,8 +66,8 @@ These rules make sure open-source software stays free to **use**, **change**, an
 
 While both groups create similar kinds of software, they make choices differently:
 
-- **Open source thinking:** “Is this the best tool for the job?” — may use closed, paid software if it’s more convenient.  
-- **Free software thinking:** “Does this respect my freedom?” — avoids closed software even if it’s technically better.
+- **Open source thinking:** “Is this the best tool for the job?”  may use closed, paid software if it’s more convenient.  
+- **Free software thinking:** “Does this respect my freedom?”  avoids closed software even if it’s technically better.
 
 ---
 

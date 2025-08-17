@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Lecture Notes Using Free and Open-Source Software">
+
+<title>4&nbsp; Introduction to Open Standards – Open Geoinformatics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../chapters/module_1/foss_gis.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles/styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/ogc_standards.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Open Geoinformatics</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/lakshmikantakumar/Open-Geoinformatics" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Module 1: Free and Open-Source Software (FOSS) GIS</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/module_1/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/module_1/foss_licenses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/module_1/foss_gis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/module_1/ogc_standards.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">4.1</span> Introduction</a></li>
+  <li><a href="#what-are-open-standards" id="toc-what-are-open-standards" class="nav-link" data-scroll-target="#what-are-open-standards"><span class="header-section-number">4.2</span> What are Open Standards?</a></li>
+  <li><a href="#key-characteristics-of-open-standards" id="toc-key-characteristics-of-open-standards" class="nav-link" data-scroll-target="#key-characteristics-of-open-standards"><span class="header-section-number">4.3</span> Key Characteristics of Open Standards</a></li>
+  <li><a href="#ogc-standards-landscape" id="toc-ogc-standards-landscape" class="nav-link" data-scroll-target="#ogc-standards-landscape"><span class="header-section-number">4.4</span> OGC Standards Landscape</a>
+  <ul class="collapse">
+  <li><a href="#modern-ogc-apis-restjson" id="toc-modern-ogc-apis-restjson" class="nav-link" data-scroll-target="#modern-ogc-apis-restjson"><span class="header-section-number">4.4.1</span> Modern OGC APIs (REST/JSON)</a></li>
+  <li><a href="#legacy-web-services-xml-based" id="toc-legacy-web-services-xml-based" class="nav-link" data-scroll-target="#legacy-web-services-xml-based"><span class="header-section-number">4.4.2</span> Legacy Web Services (XML-based)</a></li>
+  <li><a href="#data-models-and-encodings" id="toc-data-models-and-encodings" class="nav-link" data-scroll-target="#data-models-and-encodings"><span class="header-section-number">4.4.3</span> Data Models and Encodings</a></li>
+  </ul></li>
+  <li><a href="#tldr-summary-table" id="toc-tldr-summary-table" class="nav-link" data-scroll-target="#tldr-summary-table"><span class="header-section-number">4.5</span> TL;DR Summary Table</a></li>
+  <li><a href="#deep-dive-into-key-standards" id="toc-deep-dive-into-key-standards" class="nav-link" data-scroll-target="#deep-dive-into-key-standards"><span class="header-section-number">4.6</span> Deep Dive into Key Standards</a></li>
+  <li><a href="#standards-lifecycle" id="toc-standards-lifecycle" class="nav-link" data-scroll-target="#standards-lifecycle"><span class="header-section-number">4.7</span> Standards Lifecycle</a></li>
+  <li><a href="#real-world-impact" id="toc-real-world-impact" class="nav-link" data-scroll-target="#real-world-impact"><span class="header-section-number">4.8</span> Real-World Impact</a>
+  <ul class="collapse">
+  <li><a href="#disaster-management-and-emergency-response" id="toc-disaster-management-and-emergency-response" class="nav-link" data-scroll-target="#disaster-management-and-emergency-response"><span class="header-section-number">4.8.1</span> Disaster Management and Emergency Response</a></li>
+  <li><a href="#urban-planning-and-smart-cities" id="toc-urban-planning-and-smart-cities" class="nav-link" data-scroll-target="#urban-planning-and-smart-cities"><span class="header-section-number">4.8.2</span> Urban Planning and Smart Cities</a></li>
+  <li><a href="#environmental-monitoring-and-climate-change" id="toc-environmental-monitoring-and-climate-change" class="nav-link" data-scroll-target="#environmental-monitoring-and-climate-change"><span class="header-section-number">4.8.3</span> Environmental Monitoring and Climate Change</a></li>
+  <li><a href="#agriculture-and-food-security" id="toc-agriculture-and-food-security" class="nav-link" data-scroll-target="#agriculture-and-food-security"><span class="header-section-number">4.8.4</span> Agriculture and Food Security</a></li>
+  <li><a href="#everyday-applications-navigation-and-location-services" id="toc-everyday-applications-navigation-and-location-services" class="nav-link" data-scroll-target="#everyday-applications-navigation-and-location-services"><span class="header-section-number">4.8.5</span> Everyday Applications – Navigation and Location Services</a></li>
+  </ul></li>
+  <li><a href="#future-directions" id="toc-future-directions" class="nav-link" data-scroll-target="#future-directions"><span class="header-section-number">4.9</span> Future Directions</a>
+  <ul class="collapse">
+  <li><a href="#transition-from-xml-to-jsonrestful-apis" id="toc-transition-from-xml-to-jsonrestful-apis" class="nav-link" data-scroll-target="#transition-from-xml-to-jsonrestful-apis"><span class="header-section-number">4.9.1</span> Transition from XML to JSON/RESTful APIs</a></li>
+  <li><a href="#cloud-native-and-big-data-integration" id="toc-cloud-native-and-big-data-integration" class="nav-link" data-scroll-target="#cloud-native-and-big-data-integration"><span class="header-section-number">4.9.2</span> Cloud-Native and Big Data Integration</a></li>
+  <li><a href="#real-time-and-iot-enabled-geospatial-data" id="toc-real-time-and-iot-enabled-geospatial-data" class="nav-link" data-scroll-target="#real-time-and-iot-enabled-geospatial-data"><span class="header-section-number">4.9.3</span> Real-Time and IoT-Enabled Geospatial Data</a></li>
+  <li><a href="#aiml-and-analytics-integration" id="toc-aiml-and-analytics-integration" class="nav-link" data-scroll-target="#aiml-and-analytics-integration"><span class="header-section-number">4.9.4</span> AI/ML and Analytics Integration</a></li>
+  <li><a href="#cross-domain-interoperability" id="toc-cross-domain-interoperability" class="nav-link" data-scroll-target="#cross-domain-interoperability"><span class="header-section-number">4.9.5</span> Cross-Domain Interoperability</a></li>
+  <li><a href="#the-role-of-the-ogc-reference-model-orm" id="toc-the-role-of-the-ogc-reference-model-orm" class="nav-link" data-scroll-target="#the-role-of-the-ogc-reference-model-orm"><span class="header-section-number">4.9.6</span> The Role of the OGC Reference Model (ORM)</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">4.10</span> Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/ogc_standards.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">4.1</span> Introduction</h2>
+<p>Geospatial data today powers everything from navigation apps to climate research. For this information to be useful, it must be <strong>interoperable</strong>; that is, capable of moving between different platforms, software, and organizations without compatibility issues. The <strong>Open Geospatial Consortium (OGC)</strong> develops <em>open standards</em> that make this possible, ensuring a common “language” for geospatial data exchange and processing <span class="citation" data-cites="ogc2025">(<a href="#ref-ogc2025" role="doc-biblioref">OGC, 2025</a>)</span>.</p>
+<hr>
+</section>
+<section id="what-are-open-standards" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="what-are-open-standards"><span class="header-section-number">4.2</span> What are Open Standards?</h2>
+<p><strong>Open Standards</strong> are publicly available specifications that define how software systems should exchange data and communicate.<br>
+They allow interoperability, prevent vendor lock-in, and encourage innovation by ensuring that multiple tools can share and process the same data.</p>
+<p><em>Example</em>: A flood map generated in ArcGIS can be visualized in QGIS or Google Earth if shared using an OGC standard such as <strong>WMS</strong> or <strong>KML</strong>.</p>
+<hr>
+</section>
+<section id="key-characteristics-of-open-standards" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="key-characteristics-of-open-standards"><span class="header-section-number">4.3</span> Key Characteristics of Open Standards</h2>
+<ul>
+<li><strong>Publicly available</strong>: Anyone can access and implement them.<br>
+</li>
+<li><strong>Interoperable</strong>: Allow different systems to work together seamlessly.<br>
+</li>
+<li><strong>Non-proprietary</strong>: Not controlled by a single vendor.<br>
+</li>
+<li><strong>Consensus-driven</strong>: Developed collaboratively by communities of experts.<br>
+</li>
+<li><strong>Widely adopted</strong>: Used across industries, governments, and academia.<br>
+</li>
+<li><strong>Future-oriented</strong>: Designed to evolve with new technological trends.</li>
+</ul>
+<hr>
+</section>
+<section id="ogc-standards-landscape" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="ogc-standards-landscape"><span class="header-section-number">4.4</span> OGC Standards Landscape</h2>
+<p>OGC standards can be broadly grouped into three categories <span class="citation" data-cites="ogc2025">(<a href="#ref-ogc2025" role="doc-biblioref">OGC, 2025</a>)</span>:</p>
+<section id="modern-ogc-apis-restjson" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="modern-ogc-apis-restjson"><span class="header-section-number">4.4.1</span> Modern OGC APIs (REST/JSON)</h3>
+<p>Developed for the modern web, these standards use REST principles and lightweight formats like <strong>JSON</strong> (JavaScript Object Notation). They are developer-friendly and cloud-ready.</p>
+<ul>
+<li><strong>OGC API – Features</strong>: Access vector features.<br>
+</li>
+<li><strong>OGC API – Maps</strong>: Retrieve maps dynamically.<br>
+</li>
+<li><strong>OGC API – Tiles</strong>: Fetch tiled map layers.<br>
+</li>
+<li><strong>OGC SensorThings API</strong>: Manage Internet of Things (IoT) sensor data.</li>
+</ul>
+</section>
+<section id="legacy-web-services-xml-based" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="legacy-web-services-xml-based"><span class="header-section-number">4.4.2</span> Legacy Web Services (XML-based)</h3>
+<p>Earlier standards relied on XML (eXtensible Markup Language) and remote procedure calls. They remain widely used in geospatial applications.</p>
+<ul>
+<li><strong>WMS (Web Map Service)</strong>: Provides map images.<br>
+</li>
+<li><strong>WFS (Web Feature Service)</strong>: Provides vector features with attributes.<br>
+</li>
+<li><strong>WCS (Web Coverage Service)</strong>: Provides raster or coverage data.<br>
+</li>
+<li><strong>WPS (Web Processing Service)</strong>: Runs geospatial processing tasks online.</li>
+</ul>
+</section>
+<section id="data-models-and-encodings" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="data-models-and-encodings"><span class="header-section-number">4.4.3</span> Data Models and Encodings</h3>
+<p>These specify how geospatial data is structured and exchanged.</p>
+<ul>
+<li><strong>GML (Geography Markup Language)</strong>: XML-based representation of features.<br>
+</li>
+<li><strong>KML (Keyhole Markup Language)</strong>: XML-based, widely used for map visualization.<br>
+</li>
+<li><strong>GeoJSON</strong>: Lightweight JSON format, popular in web mapping.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="tldr-summary-table" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="tldr-summary-table"><span class="header-section-number">4.5</span> TL;DR Summary Table</h2>
+<p>The OGC standards ecosystem is broad and sometimes overwhelming. To make things easier, the following table provides a <em>“Too Long; Didn’t Read (TL;DR) overview”</em>, summarizing the major categories of standards, their examples, and their key use cases at a glance.</p>
+<div id="tbl-standards" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-standards-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.1: Summary Table of Major Categories of Standards
+</figcaption>
+<div aria-describedby="tbl-standards-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 42%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Category</strong></th>
+<th><strong>Examples</strong></th>
+<th><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Modern APIs</strong></td>
+<td>OGC API – Features, Maps, Tiles, SensorThings</td>
+<td>REST/JSON, lightweight, cloud-friendly</td>
+</tr>
+<tr class="even">
+<td><strong>Legacy Web Services</strong></td>
+<td>WMS, WFS, WCS, WPS</td>
+<td>XML-based, still widely used in many systems</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Encodings</strong></td>
+<td>GML, KML, GeoJSON</td>
+<td>Define how data is structured and exchanged</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<hr>
+</section>
+<section id="deep-dive-into-key-standards" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="deep-dive-into-key-standards"><span class="header-section-number">4.6</span> Deep Dive into Key Standards</h2>
+<p>Understanding the standards at a deeper level is useful for practitioners and students who want to see how they are applied in practice.<br>
+While the landscape provides categories, each standard has a specific purpose and set of strengths. Below are some of the most widely recognized OGC standards.</p>
+<ul>
+<li><strong>API – Features</strong>: A modern RESTful replacement for WFS.<br>
+</li>
+<li><strong>WMS</strong>: Suited for sharing static map images.<br>
+</li>
+<li><strong>WFS</strong>: Useful when raw vector data is needed for analysis.<br>
+</li>
+<li><strong>WCS</strong>: Designed for raster data like satellite imagery and DEMs.<br>
+</li>
+<li><strong>KML</strong>: Popular for sharing points, routes, and polygons in Google Earth.<br>
+</li>
+<li><strong>GML</strong>: A more complex but powerful format for rich geospatial datasets.</li>
+</ul>
+<hr>
+</section>
+<section id="standards-lifecycle" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="standards-lifecycle"><span class="header-section-number">4.7</span> Standards Lifecycle</h2>
+<p>OGC follows a community-driven process for developing new standards <span class="citation" data-cites="ogc2025">(<a href="#ref-ogc2025" role="doc-biblioref">OGC, 2025</a>)</span>:</p>
+<ol type="1">
+<li><strong>Problem Identification</strong> → Recognize a gap or need.<br>
+</li>
+<li><strong>Draft Specification</strong> → Experts write a proposed solution.<br>
+</li>
+<li><strong>Testing &amp; Pilots</strong> → Validate the draft in real-world projects.<br>
+</li>
+<li><strong>Consensus &amp; Voting</strong> → Members review and approve.<br>
+</li>
+<li><strong>Publication</strong> → The standard becomes publicly available.<br>
+</li>
+<li><strong>Maintenance</strong> → Continuous updates for new requirements.</li>
+</ol>
+<hr>
+</section>
+<section id="real-world-impact" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="real-world-impact"><span class="header-section-number">4.8</span> Real-World Impact</h2>
+<p>Geospatial data only becomes truly powerful when it can be shared and understood across organizations, sectors, and borders. This is where OGC standards show their real value.<br>
+They <strong>transform abstract specifications into practical tools</strong> that enable disaster response, scientific research, urban planning, and even daily navigation apps.<br>
+The following mini case studies illustrate how OGC standards make a tangible difference in solving real-world problems and improving decision-making at both national and global levels.</p>
+<section id="disaster-management-and-emergency-response" class="level3" data-number="4.8.1">
+<h3 data-number="4.8.1" class="anchored" data-anchor-id="disaster-management-and-emergency-response"><span class="header-section-number">4.8.1</span> Disaster Management and Emergency Response</h3>
+<ul>
+<li><strong>Challenge:</strong> During floods, wildfires, or earthquakes, response agencies need fast, accurate geospatial data from multiple sources.<br>
+</li>
+<li><strong>OGC Solution:</strong> Standards like <strong>Web Map Service (WMS)</strong> and <strong>Web Feature Service (WFS)</strong> allow data from satellites, drones, and ground sensors to be instantly shared across platforms.<br>
+</li>
+<li><strong>Impact:</strong> Agencies in different countries can visualize the same map layers, monitor real-time conditions, and coordinate rescue operations more effectively.</li>
+</ul>
+</section>
+<section id="urban-planning-and-smart-cities" class="level3" data-number="4.8.2">
+<h3 data-number="4.8.2" class="anchored" data-anchor-id="urban-planning-and-smart-cities"><span class="header-section-number">4.8.2</span> Urban Planning and Smart Cities</h3>
+<ul>
+<li><strong>Challenge:</strong> Modern cities deal with issues like traffic congestion, zoning, and infrastructure development. Multiple agencies often use different software systems, making collaboration difficult.<br>
+</li>
+<li><strong>OGC Solution:</strong> <strong>CityGML</strong> and <strong>IndoorGML</strong> enable the creation of interoperable 3D city models and building layouts.<br>
+</li>
+<li><strong>Impact:</strong> Urban planners can integrate building, transport, and environmental data into a common model, leading to better planning decisions, optimized public transport, and improved disaster preparedness.</li>
+</ul>
+</section>
+<section id="environmental-monitoring-and-climate-change" class="level3" data-number="4.8.3">
+<h3 data-number="4.8.3" class="anchored" data-anchor-id="environmental-monitoring-and-climate-change"><span class="header-section-number">4.8.3</span> Environmental Monitoring and Climate Change</h3>
+<ul>
+<li><strong>Challenge:</strong> Monitoring deforestation, air pollution, or climate change requires combining datasets from satellites, sensors, and models.<br>
+</li>
+<li><strong>OGC Solution:</strong> <strong>Web Coverage Service (WCS)</strong> and <strong>Sensor Observation Service (SOS)</strong> enable sharing of raster datasets and real-time sensor feeds.<br>
+</li>
+<li><strong>Impact:</strong> Scientists and policymakers gain access to consistent, comparable data across nations, improving environmental research and enabling international agreements on climate action.</li>
+</ul>
+</section>
+<section id="agriculture-and-food-security" class="level3" data-number="4.8.4">
+<h3 data-number="4.8.4" class="anchored" data-anchor-id="agriculture-and-food-security"><span class="header-section-number">4.8.4</span> Agriculture and Food Security</h3>
+<ul>
+<li><strong>Challenge:</strong> Farmers and governments require timely geospatial data on soil, rainfall, and crop health to improve yields and food security.<br>
+</li>
+<li><strong>OGC Solution:</strong> <strong>OGC APIs</strong> and <strong>Geography Markup Language (GML)</strong> allow integration of satellite imagery, IoT sensors, and predictive models.<br>
+</li>
+<li><strong>Impact:</strong> Farmers can receive precision agriculture advisories, and governments can manage food supply chains more efficiently, reducing hunger risks.</li>
+</ul>
+</section>
+<section id="everyday-applications-navigation-and-location-services" class="level3" data-number="4.8.5">
+<h3 data-number="4.8.5" class="anchored" data-anchor-id="everyday-applications-navigation-and-location-services"><span class="header-section-number">4.8.5</span> Everyday Applications – Navigation and Location Services</h3>
+<ul>
+<li><strong>Challenge:</strong> Billions of users rely on maps for navigation, ride-sharing, and logistics, often without realizing the complexity of data integration behind the scenes.<br>
+</li>
+<li><strong>OGC Solution:</strong> Standards like <strong>KML (Keyhole Markup Language)</strong> power Google Earth and other map-based applications.<br>
+</li>
+<li><strong>Impact:</strong> Users benefit from accurate, up-to-date geospatial information, while companies can build interoperable services that work seamlessly worldwide.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="future-directions" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="future-directions"><span class="header-section-number">4.9</span> Future Directions</h2>
+<p>The geospatial standards landscape continues to evolve as new technologies, data formats, and user needs emerge. OGC is actively shaping this evolution to ensure that standards remain relevant, lightweight, and capable of supporting modern geospatial applications.</p>
+<p>The future of OGC standards can be described through several <strong>key trends and priority areas</strong>, a few of which are listed below.</p>
+<section id="transition-from-xml-to-jsonrestful-apis" class="level3" data-number="4.9.1">
+<h3 data-number="4.9.1" class="anchored" data-anchor-id="transition-from-xml-to-jsonrestful-apis"><span class="header-section-number">4.9.1</span> Transition from XML to JSON/RESTful APIs</h3>
+<ul>
+<li><strong>Past Approach:</strong> Early OGC standards such as WMS, WFS, and WCS were primarily built on <strong>XML-based protocols</strong> (e.g., GML). While powerful, they can be verbose and complex, making them less developer-friendly.<br>
+</li>
+<li><strong>Emerging Approach:</strong> Modern <strong>OGC APIs</strong> (like API – Features, API – Tiles, API – Processes) are based on <strong>REST principles and JSON encoding</strong>.<br>
+</li>
+<li><strong>Benefits:</strong>
+<ul>
+<li>Easier integration with modern web and mobile applications<br>
+</li>
+<li>Lightweight data exchange<br>
+</li>
+<li>Better compatibility with cloud-native architectures<br>
+</li>
+<li>Lower barriers for developers outside traditional GIS domains</li>
+</ul></li>
+</ul>
+</section>
+<section id="cloud-native-and-big-data-integration" class="level3" data-number="4.9.2">
+<h3 data-number="4.9.2" class="anchored" data-anchor-id="cloud-native-and-big-data-integration"><span class="header-section-number">4.9.2</span> Cloud-Native and Big Data Integration</h3>
+<ul>
+<li>As datasets grow in size (e.g., petabytes of satellite imagery), OGC is working on standards that support <strong>cloud-native data storage</strong> (e.g., Cloud Optimized GeoTIFFs, SpatioTemporal Asset Catalog – STAC).<br>
+</li>
+<li>These enable <strong>on-demand access</strong> to only the portion of data needed, improving performance and reducing costs for analytics at scale.</li>
+</ul>
+</section>
+<section id="real-time-and-iot-enabled-geospatial-data" class="level3" data-number="4.9.3">
+<h3 data-number="4.9.3" class="anchored" data-anchor-id="real-time-and-iot-enabled-geospatial-data"><span class="header-section-number">4.9.3</span> Real-Time and IoT-Enabled Geospatial Data</h3>
+<ul>
+<li>The growth of <strong>Internet of Things (IoT)</strong> devices (e.g., sensors, smart vehicles, drones) requires standards that can handle <strong>continuous, real-time data streams</strong>.<br>
+</li>
+<li>OGC standards like the <strong>SensorThings API</strong> are designed for this, supporting smart cities, environmental monitoring, and disaster response.</li>
+</ul>
+</section>
+<section id="aiml-and-analytics-integration" class="level3" data-number="4.9.4">
+<h3 data-number="4.9.4" class="anchored" data-anchor-id="aiml-and-analytics-integration"><span class="header-section-number">4.9.4</span> AI/ML and Analytics Integration</h3>
+<ul>
+<li>Future standards will increasingly need to accommodate <strong>machine learning and AI pipelines</strong>.<br>
+</li>
+<li>Interoperability is being extended beyond raw data sharing to include <strong>standardized access to geospatial analytics services</strong>, helping to integrate AI models directly into workflows.</li>
+</ul>
+</section>
+<section id="cross-domain-interoperability" class="level3" data-number="4.9.5">
+<h3 data-number="4.9.5" class="anchored" data-anchor-id="cross-domain-interoperability"><span class="header-section-number">4.9.5</span> Cross-Domain Interoperability</h3>
+<ul>
+<li>Geospatial data is no longer isolated. It connects with domains like <strong>healthcare, climate science, agriculture, defense, and transportation</strong>.<br>
+</li>
+<li>OGC’s <strong>Domain Working Groups (DWGs)</strong> are focusing on ensuring geospatial standards integrate seamlessly with other international standards (ISO, W3C, IEEE).</li>
+</ul>
+</section>
+<section id="the-role-of-the-ogc-reference-model-orm" class="level3" data-number="4.9.6">
+<h3 data-number="4.9.6" class="anchored" data-anchor-id="the-role-of-the-ogc-reference-model-orm"><span class="header-section-number">4.9.6</span> The Role of the OGC Reference Model (ORM)</h3>
+<ul>
+<li>The <strong>OGC Reference Model (ORM)</strong> continues to provide a <strong>conceptual framework</strong> for understanding how all standards fit together.<br>
+</li>
+<li>It helps guide the transition from <strong>legacy services</strong> to <strong>modern APIs</strong>, ensuring that innovation does not break existing systems while providing a roadmap for future adoption.</li>
+</ul>
+<p>In summary, the future of OGC standards is moving toward <strong>lighter, faster, cloud-friendly, and developer-oriented solutions</strong> while maintaining the core principle of <strong>global interoperability</strong>. Together, these emerging directions ensure that OGC standards remain a cornerstone for achieving interoperability, enabling seamless data sharing, and supporting innovative applications across diverse domains. This evolution guarantees that geospatial information will continue to be a critical enabler of innovation in the digital era.</p>
+<hr>
+</section>
+</section>
+<section id="conclusion" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">4.10</span> Conclusion</h2>
+<p>OGC standards serve as the <strong>universal language of geospatial information</strong>, enabling seamless data sharing across platforms and fostering collaboration between governments, industry, and academia. They have evolved from early XML-based services such as WMS and WFS to modern, lightweight RESTful APIs that better align with today’s web and cloud ecosystems. Through this evolution, OGC standards have consistently made geospatial data more accessible, interoperable, and impactful—helping societies address global challenges such as disaster management, climate monitoring, sustainable development, and smart city planning.</p>
+<hr>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-ogc2025" class="csl-entry" role="listitem">
+OGC. (2025). <em>OGC standards and resources</em>. Retrieved from <a href="https://www.ogc.org/standards/">https://www.ogc.org/standards/</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lakshmikantakumar\.github\.io\/Open-Geoinformatics\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../chapters/module_1/foss_gis.html" class="pagination-link" aria-label="Introduction to GIS and FOSS GIS">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

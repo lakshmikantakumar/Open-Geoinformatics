@@ -3,12 +3,12 @@
 ## Introduction
 
 **Free and Open-Source Software (FOSS) licenses** are rules that explain how you can use, change, and share a piece of software. 
-They make sure the promises of FOSS—like seeing the code, improving it, and sharing it—are protected by law.
+They make sure the promises of FOSS, like seeing the code, improving it, and sharing it; are protected by law.
 
 Think of them as:
 
-- **A shield** – protecting your rights as a user.
-- **A guide** — showing how people can work together and reuse code.
+- **A shield** protecting your rights as a user.
+- **A guide** showing how people can work together and reuse code.
 
 Not all FOSS licenses are the same. Some, called copyleft licenses, require any changed versions to stay open. 
 Others, called permissive licenses, give you more freedom to reuse the code, even in closed-source projects.
@@ -23,8 +23,8 @@ These licenses require that derivative works and redistributions also remain und
 | ------------------------------ | ----------------------------------------------------------------------------- |
 | GNU General Public License (GPL) | Must release modified code under same license; widely used in FSF projects   |
 | GNU Lesser GPL (LGPL)          | Allows linking with proprietary code (for libraries); milder than GPL         |
-| AGPL (Affero GPL)              | Extends GPL to network services — must release source even when software is only accessed over a network |
-| EUPL                           | European Union Public License — similar to GPL, legally compliant in EU jurisdictions |
+| AGPL (Affero GPL)              | Extends GPL to network services must release source even when software is only accessed over a network |
+| EUPL                           | European Union Public License similar to GPL, legally compliant in EU jurisdictions |
 
 Table: Common Copyleft Licenses {#tbl-cllic}
 

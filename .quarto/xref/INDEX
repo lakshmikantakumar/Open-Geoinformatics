@@ -31,5 +31,20 @@
   },
   "chapters/foss_gis.qmd": {
     "foss_gis.html": "2384a99f"
+  },
+  "chapters/ogc_standards.qmd": {
+    "ogc_standards.html": "54fa9f13"
+  },
+  "chapters/module_1/introduction.qmd": {
+    "introduction.html": "3bad5421"
+  },
+  "chapters/module_1/foss_licenses.qmd": {
+    "foss_licenses.html": "93492f75"
+  },
+  "chapters/module_1/foss_gis.qmd": {
+    "foss_gis.html": "8b1c932c"
+  },
+  "chapters/module_1/ogc_standards.qmd": {
+    "ogc_standards.html": "0300ef33"
   }
 }

@@ -8,7 +8,7 @@
 
 <meta name="description" content="Lecture Notes Using Free and Open-Source Software">
 
-<title>2&nbsp; Free and Open-Source Software (FOSS) licenses – Open Geoinformatics</title>
+<title>1&nbsp; Introduction – Open Geoinformatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,25 +24,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../chapters/foss_gis.html" rel="next">
-<link href="../chapters/introduction.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../chapters/module_1/foss_licenses.html" rel="next">
+<link href="../../index.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles/styles.css">
+<link rel="stylesheet" href="../../styles/styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../chapters/foss_licenses.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Open Geoinformatics</a> 
+      <a href="../../">Open Geoinformatics</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/lakshmikantakumar/Open-Geoinformatics" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -129,20 +129,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/introduction.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/module_1/introduction.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/foss_licenses.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/module_1/foss_licenses.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/foss_gis.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/module_1/foss_gis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/module_1/ogc_standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></span></a>
   </div>
 </li>
       </ul>
@@ -157,20 +163,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">2.1</span> Introduction</a></li>
-  <li><a href="#copyleft-licenses-restrictive-strong-share-alike" id="toc-copyleft-licenses-restrictive-strong-share-alike" class="nav-link" data-scroll-target="#copyleft-licenses-restrictive-strong-share-alike"><span class="header-section-number">2.2</span> Copyleft Licenses (Restrictive / Strong Share-Alike)</a></li>
-  <li><a href="#permissive-licenses-non-restrictive-minimal-requirements" id="toc-permissive-licenses-non-restrictive-minimal-requirements" class="nav-link" data-scroll-target="#permissive-licenses-non-restrictive-minimal-requirements"><span class="header-section-number">2.3</span> Permissive Licenses (Non-Restrictive / Minimal Requirements)</a></li>
-  <li><a href="#copyleft-vs-permissive-licenses---key-differences" id="toc-copyleft-vs-permissive-licenses---key-differences" class="nav-link" data-scroll-target="#copyleft-vs-permissive-licenses---key-differences"><span class="header-section-number">2.4</span> Copyleft vs Permissive licenses - Key Differences</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">2.5</span> Conclusion</a></li>
+  <li><a href="#foss" id="toc-foss" class="nav-link active" data-scroll-target="#foss"><span class="header-section-number">1.1</span> FOSS</a></li>
+  <li><a href="#free-software-open-source" id="toc-free-software-open-source" class="nav-link" data-scroll-target="#free-software-open-source"><span class="header-section-number">1.2</span> Free Software ≠ Open Source</a></li>
+  <li><a href="#the-four-freedoms-of-free-software" id="toc-the-four-freedoms-of-free-software" class="nav-link" data-scroll-target="#the-four-freedoms-of-free-software"><span class="header-section-number">1.3</span> The Four Freedoms of Free Software</a></li>
+  <li><a href="#a-short-history" id="toc-a-short-history" class="nav-link" data-scroll-target="#a-short-history"><span class="header-section-number">1.4</span> A Short History</a></li>
+  <li><a href="#the-open-source-definition-osd" id="toc-the-open-source-definition-osd" class="nav-link" data-scroll-target="#the-open-source-definition-osd"><span class="header-section-number">1.5</span> The Open Source Definition (OSD)</a></li>
+  <li><a href="#different-ways-of-thinking" id="toc-different-ways-of-thinking" class="nav-link" data-scroll-target="#different-ways-of-thinking"><span class="header-section-number">1.6</span> Different Ways of Thinking</a></li>
+  <li><a href="#comparison-free-software-vs-open-source" id="toc-comparison-free-software-vs-open-source" class="nav-link" data-scroll-target="#comparison-free-software-vs-open-source"><span class="header-section-number">1.7</span> Comparison: Free Software vs Open Source</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.8</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../chapters/foss_licenses.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-licenses" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span></h1>
+<h1 class="title"><span id="sec-intro" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></h1>
 </div>
 
 
@@ -187,154 +196,172 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2.1</span> Introduction</h2>
-<p><strong>Free and Open-Source Software (FOSS) licenses</strong> are rules that explain how you can use, change, and share a piece of software. They make sure the promises of FOSS—like seeing the code, improving it, and sharing it—are protected by law.</p>
-<p>Think of them as:</p>
+<section id="foss" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="foss"><span class="header-section-number">1.1</span> FOSS</h2>
+<p>Free and Open-Source Software (FOSS) refers to software released under a license that grants users essential freedoms to run it for any purpose, examine how it works, adapt it to their needs, and share it, whether in its original form or with modifications, without limitations or fees. The term “FOSS” blends two closely related ideas: free software, which focuses on user rights and collaborative ownership, and open-source software, which stresses transparency and community-driven development.</p>
+<div id="fig-foss" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-foss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/foss.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-foss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: <em>Free and Open-Source Software</em>
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="free-software-open-source" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="free-software-open-source"><span class="header-section-number">1.2</span> Free Software ≠ Open Source</h2>
+<p>Richard Stallman, founder of the Free Software Movement, points out that while “free software” and “open source” often describe the same kind of programs, they are based on different ideas.</p>
 <ul>
-<li><strong>A shield</strong> – protecting your rights as a user.</li>
-<li><strong>A guide</strong> — showing how people can work together and reuse code.</li>
+<li><strong>Free software</strong> is about <em>freedom</em> making sure people control the software they use.<br>
+</li>
+<li><strong>Open source</strong> is more about <em>practical benefits</em> like better quality and faster development, without focusing much on the moral side<br>
+(<a href="https://www.gnu.org">gnu.org</a>).</li>
 </ul>
-<p>Not all FOSS licenses are the same. Some, called copyleft licenses, require any changed versions to stay open. Others, called permissive licenses, give you more freedom to reuse the code, even in closed-source projects.</p>
 <hr>
 </section>
-<section id="copyleft-licenses-restrictive-strong-share-alike" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="copyleft-licenses-restrictive-strong-share-alike"><span class="header-section-number">2.2</span> Copyleft Licenses (Restrictive / Strong Share-Alike)</h2>
-<p>These licenses require that derivative works and redistributions also remain under the same license.</p>
-<div id="tbl-cllic" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cllic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2.1: Common Copyleft Licenses
+<section id="the-four-freedoms-of-free-software" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="the-four-freedoms-of-free-software"><span class="header-section-number">1.3</span> The Four Freedoms of Free Software</h2>
+<p>“Free” here means <em>freedom</em>, not zero cost. Free software means you can:</p>
+<div id="fig-FS" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/Pillars_of_FS.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: <em>The Four Freedoms of Free Software</em>
 </figcaption>
-<div aria-describedby="tbl-cllic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figure>
+</div>
+<ul>
+<li><strong>Freedom 0</strong> : Use the program however you want.<br>
+</li>
+<li><strong>Freedom 1</strong> : Look at the code and change it to fit your needs.<br>
+</li>
+<li><strong>Freedom 2</strong> : Give copies to anyone.<br>
+</li>
+<li><strong>Freedom 3</strong> : Share your improved versions with others.</li>
+</ul>
+<p>(Source: <a href="https://en.wikipedia.org/wiki/The_Free_Software_Definition">Wikipedia</a>)</p>
+<hr>
+</section>
+<section id="a-short-history" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="a-short-history"><span class="header-section-number">1.4</span> A Short History</h2>
+<ul>
+<li><strong>1983</strong> : The Free Software Movement began with the GNU Project and a license (GPL) that made sure these freedoms were protected (<a href="https://en.wikipedia.org/wiki/GNU_Project">Wikipedia</a>).<br>
+</li>
+<li><strong>1998</strong> : Some in the community started calling it “open source” to make the idea sound more appealing to businesses. This approach often skipped talking about the moral side of software freedom (<a href="https://www.gnu.org">gnu.org</a>).</li>
+</ul>
+<hr>
+</section>
+<section id="the-open-source-definition-osd" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="the-open-source-definition-osd"><span class="header-section-number">1.5</span> The Open Source Definition (OSD)</h2>
+<p>The <strong>Open Source Definition (OSD)</strong>, managed by the <a href="https://opensource.org">Open Source Initiative (OSI)</a>, explains what counts as open-source software. Created in <strong>2006</strong> and last updated in <strong>February 2024</strong>, it lists <strong>ten rules</strong> that go beyond just sharing the code. Open Source software means you can:</p>
+<ul>
+<li><strong>Free sharing</strong> : no fees or restrictions.<br>
+</li>
+<li><strong>Source code included</strong> : in a form you can read and edit.<br>
+</li>
+<li><strong>Changes allowed</strong> : you can make and share new versions.<br>
+</li>
+<li><strong>Works on any tech</strong> : no limits based on platform or hardware.</li>
+</ul>
+<p>These rules make sure open-source software stays free to <strong>use</strong>, <strong>change</strong>, and <strong>share</strong>, giving a clear and trusted meaning for developers, communities, and businesses.</p>
+<div id="fig-FS" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/Pillars_of_OSS.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.3: <em>The ten rules of Open Source Software</em>
+</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="different-ways-of-thinking" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="different-ways-of-thinking"><span class="header-section-number">1.6</span> Different Ways of Thinking</h2>
+<p>While both groups create similar kinds of software, they make choices differently:</p>
+<ul>
+<li><strong>Open source thinking:</strong> “Is this the best tool for the job?” may use closed, paid software if it’s more convenient.<br>
+</li>
+<li><strong>Free software thinking:</strong> “Does this respect my freedom?” avoids closed software even if it’s technically better.</li>
+</ul>
+<hr>
+</section>
+<section id="comparison-free-software-vs-open-source" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="comparison-free-software-vs-open-source"><span class="header-section-number">1.7</span> Comparison: Free Software vs Open Source</h2>
+<div id="tbl-comparison" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.1: Free Software vs Open Source comparison
+</figcaption>
+<div aria-describedby="tbl-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 28%">
-<col style="width: 71%">
+<col style="width: 15%">
+<col style="width: 43%">
+<col style="width: 41%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>License Name</th>
-<th>Key Features</th>
+<th>Aspect</th>
+<th>Free Software</th>
+<th>Open Source Software</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>GNU General Public License (GPL)</td>
-<td>Must release modified code under same license; widely used in FSF projects</td>
+<td><strong>Emphasis</strong></td>
+<td>Focuses on <strong>freedom</strong> (user rights)</td>
+<td>Focuses on <strong>development model</strong> and practical benefits</td>
 </tr>
 <tr class="even">
-<td>GNU Lesser GPL (LGPL)</td>
-<td>Allows linking with proprietary code (for libraries); milder than GPL</td>
+<td><strong>Founded by</strong></td>
+<td>Richard Stallman (Free Software Foundation - FSF)</td>
+<td>Eric Raymond &amp; Bruce Perens (Open Source Initiative - OSI)</td>
 </tr>
 <tr class="odd">
-<td>AGPL (Affero GPL)</td>
-<td>Extends GPL to network services — must release source even when software is only accessed over a network</td>
+<td><strong>Core Idea</strong></td>
+<td>Users should control the software they use</td>
+<td>Open code leads to better, more reliable software</td>
 </tr>
 <tr class="even">
-<td>EUPL</td>
-<td>European Union Public License — similar to GPL, legally compliant in EU jurisdictions</td>
+<td><strong>Terminology</strong></td>
+<td>“Free” means freedom, not price (“free as in freedom”)</td>
+<td>“Open Source” avoids the ambiguity of the word “free”</td>
+</tr>
+<tr class="odd">
+<td><strong>Ethical Standpoint</strong></td>
+<td>A <strong>moral and social movement</strong></td>
+<td>A <strong>development methodology</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Licensing</strong></td>
+<td>Requires <strong>copyleft licenses</strong> (e.g., GPL) to protect freedom</td>
+<td>Accepts <strong>permissive licenses</strong> (e.g., MIT, BSD, Apache)</td>
+</tr>
+<tr class="odd">
+<td><strong>Goal</strong></td>
+<td>Empower users with freedoms to use, study, modify, share</td>
+<td>Promote wider adoption of open development practices</td>
+</tr>
+<tr class="even">
+<td><strong>Tone &amp; Messaging</strong></td>
+<td>Often ideological</td>
+<td>Often pragmatic and business-friendly</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p><strong>The Goal of Copyleft Licenses</strong> is to protect user freedoms by enforcing openness downstream (<em>strong reciprocity</em>).</p>
 <hr>
 </section>
-<section id="permissive-licenses-non-restrictive-minimal-requirements" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="permissive-licenses-non-restrictive-minimal-requirements"><span class="header-section-number">2.3</span> Permissive Licenses (Non-Restrictive / Minimal Requirements)</h2>
-<p>These licenses allow reuse in both open and proprietary projects, with minimal conditions.</p>
-<div id="tbl-perlic" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-perlic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2.2: Common Permissive Licenses
-</figcaption>
-<div aria-describedby="tbl-perlic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 28%">
-<col style="width: 71%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>License Name</th>
-<th>Key Features</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>MIT License</td>
-<td>Simple, Very permissive; Just requires attribution</td>
-</tr>
-<tr class="even">
-<td>Apache License 2.0</td>
-<td>Allows patent use; More corporate-friendly than MIT</td>
-</tr>
-<tr class="odd">
-<td>BSD Licenses (2-clause, 3-clause)</td>
-<td>Minimal restrictions; Used in BSD OS family</td>
-</tr>
-<tr class="even">
-<td>ISC License</td>
-<td>Even simpler than MIT; No warranties, Attribution required</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-<p><strong>The Goal of Permissive Licenses</strong> is to maximize freedom to use and integrate, including in closed-source projects.</p>
-<hr>
-</section>
-<section id="copyleft-vs-permissive-licenses---key-differences" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="copyleft-vs-permissive-licenses---key-differences"><span class="header-section-number">2.4</span> Copyleft vs Permissive licenses - Key Differences</h2>
-<p>In general, <strong>Copyleft licenses</strong> protect the <em>freedom of the code</em>. <strong>Permissive licenses</strong> prioritize <em>freedom for developers and businesses</em>.</p>
-<div id="tbl-liccomp" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-liccomp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2.3: Copyleft vs Permissive licenses key Differences comparison
-</figcaption>
-<div aria-describedby="tbl-liccomp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 35%">
-<col style="width: 31%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Feature</th>
-<th>Copyleft (GPL)</th>
-<th>Permissive (MIT/Apache)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Requires same license for derivatives</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>Allows proprietary use</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr class="odd">
-<td>Popular with</td>
-<td>Free Software movement</td>
-<td>Businesses, startups</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-</section>
-<section id="conclusion" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">2.5</span> Conclusion</h2>
-<p>FOSS licenses form the legal backbone of the open-source ecosystem, ensuring that the freedoms to use, study, modify, and share software are upheld. While <strong>copyleft licenses</strong> safeguard these freedoms by requiring derivatives to remain open, <strong>permissive licenses</strong> focus on flexibility, enabling integration into both open and proprietary projects. Understanding these license types is essential for developers, organizations, and policymakers to choose the right balance between protecting openness and encouraging broader adoption. In essence, the right license not only defines how software is shared but also shapes the culture of collaboration and innovation in the FOSS community.</p>
+<section id="conclusion" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.8</span> Conclusion</h2>
+<p>Free and Open-Source Software represents more than just a different way to build and share code, it reflects two complementary philosophies that have shaped modern software culture. While the Free Software movement champions user freedoms as a moral imperative, the Open Source approach emphasizes collaboration, transparency, and practical benefits. Together, they have fostered a global ecosystem where knowledge is openly shared, innovation thrives, and communities,from hobbyists to governments can create, adapt, and distribute technology without restrictive barriers.</p>
 
 
 </section>
@@ -741,13 +768,13 @@ Table&nbsp;2.3: Copyleft vs Permissive licenses key Differences comparison
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/introduction.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="../../index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/foss_gis.html" class="pagination-link" aria-label="Introduction to GIS and FOSS GIS">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/module_1/foss_licenses.html" class="pagination-link" aria-label="Free and Open-Source Software (FOSS) licenses">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
