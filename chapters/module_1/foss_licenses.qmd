@@ -68,3 +68,6 @@ safeguard these freedoms by requiring derivatives to remain open, **permissive l
 into both open and proprietary projects. Understanding these license types is essential for developers, organizations, and policymakers to choose the right balance 
 between protecting openness and encouraging broader adoption. In essence, the right license not only defines how software is shared but also shapes the culture of collaboration 
 and innovation in the FOSS community.
+
+Building on this foundation, the next chapter introduces **FOSS GIS**, where these licensing principles meet the world of geospatial technologies, enabling powerful, accessible, 
+and collaborative tools for spatial analysis and decision-making.  

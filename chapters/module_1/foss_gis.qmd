@@ -1,4 +1,4 @@
-# Introduction to GIS and FOSS GIS
+# Introduction to FOSS GIS
 
 ## What is GIS?
 A Geographic Information System (GIS) is a computer-based framework that allows us to work with information that has a spatial or geographic component. 

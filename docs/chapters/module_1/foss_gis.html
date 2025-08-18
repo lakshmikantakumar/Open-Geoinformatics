@@ -8,7 +8,7 @@
 
 <meta name="description" content="Lecture Notes Using Free and Open-Source Software">
 
-<title>3&nbsp; Introduction to GIS and FOSS GIS – Open Geoinformatics</title>
+<title>4&nbsp; Introduction to FOSS GIS – Open Geoinformatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/foss_gis.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/foss_gis.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to FOSS GIS</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -118,6 +118,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../acknowledgement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgements</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -130,25 +136,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_1/introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/module_1/foss.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_1/foss_licenses.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_1/foss_gis.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to FOSS GIS</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_1/ogc_standards.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></span></a>
   </div>
 </li>
       </ul>
@@ -163,25 +175,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-gis" id="toc-what-is-gis" class="nav-link active" data-scroll-target="#what-is-gis"><span class="header-section-number">3.1</span> What is GIS?</a>
+  <li><a href="#what-is-gis" id="toc-what-is-gis" class="nav-link active" data-scroll-target="#what-is-gis"><span class="header-section-number">4.1</span> What is GIS?</a>
   <ul class="collapse">
-  <li><a href="#key-capabilities-of-gis" id="toc-key-capabilities-of-gis" class="nav-link" data-scroll-target="#key-capabilities-of-gis"><span class="header-section-number">3.1.1</span> Key capabilities of GIS</a></li>
-  <li><a href="#applications-of-gis" id="toc-applications-of-gis" class="nav-link" data-scroll-target="#applications-of-gis"><span class="header-section-number">3.1.2</span> Applications of GIS</a></li>
+  <li><a href="#key-capabilities-of-gis" id="toc-key-capabilities-of-gis" class="nav-link" data-scroll-target="#key-capabilities-of-gis"><span class="header-section-number">4.1.1</span> Key capabilities of GIS</a></li>
+  <li><a href="#applications-of-gis" id="toc-applications-of-gis" class="nav-link" data-scroll-target="#applications-of-gis"><span class="header-section-number">4.1.2</span> Applications of GIS</a></li>
   </ul></li>
-  <li><a href="#what-is-foss-gis" id="toc-what-is-foss-gis" class="nav-link" data-scroll-target="#what-is-foss-gis"><span class="header-section-number">3.2</span> What is FOSS GIS?</a></li>
-  <li><a href="#why-foss-gis-matters" id="toc-why-foss-gis-matters" class="nav-link" data-scroll-target="#why-foss-gis-matters"><span class="header-section-number">3.3</span> Why FOSS GIS Matters</a></li>
-  <li><a href="#examples-of-popular-foss-gis-tools" id="toc-examples-of-popular-foss-gis-tools" class="nav-link" data-scroll-target="#examples-of-popular-foss-gis-tools"><span class="header-section-number">3.4</span> Examples of Popular FOSS GIS Tools</a></li>
-  <li><a href="#importance-of-open-source-data-software-in-ngp-2022" id="toc-importance-of-open-source-data-software-in-ngp-2022" class="nav-link" data-scroll-target="#importance-of-open-source-data-software-in-ngp-2022"><span class="header-section-number">3.5</span> Importance of Open-Source Data &amp; Software in NGP 2022</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3.6</span> Conclusion</a></li>
+  <li><a href="#what-is-foss-gis" id="toc-what-is-foss-gis" class="nav-link" data-scroll-target="#what-is-foss-gis"><span class="header-section-number">4.2</span> What is FOSS GIS?</a></li>
+  <li><a href="#why-foss-gis-matters" id="toc-why-foss-gis-matters" class="nav-link" data-scroll-target="#why-foss-gis-matters"><span class="header-section-number">4.3</span> Why FOSS GIS Matters</a></li>
+  <li><a href="#examples-of-popular-foss-gis-tools" id="toc-examples-of-popular-foss-gis-tools" class="nav-link" data-scroll-target="#examples-of-popular-foss-gis-tools"><span class="header-section-number">4.4</span> Examples of Popular FOSS GIS Tools</a></li>
+  <li><a href="#importance-of-open-source-data-software-in-ngp-2022" id="toc-importance-of-open-source-data-software-in-ngp-2022" class="nav-link" data-scroll-target="#importance-of-open-source-data-software-in-ngp-2022"><span class="header-section-number">4.5</span> Importance of Open-Source Data &amp; Software in NGP 2022</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">4.6</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/foss_gis.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/foss_gis.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to FOSS GIS</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to FOSS GIS</span></h1>
 </div>
 
 
@@ -198,11 +210,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-is-gis" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="what-is-gis"><span class="header-section-number">3.1</span> What is GIS?</h2>
+<section id="what-is-gis" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="what-is-gis"><span class="header-section-number">4.1</span> What is GIS?</h2>
 <p>A Geographic Information System (GIS) is a computer-based framework that allows us to work with information that has a spatial or geographic component. In simple terms, GIS links <strong>“what” data is about</strong> with <strong>“where” it is located on Earth</strong>. This combination makes it possible to explore patterns, detect relationships, and make informed decisions.</p>
-<section id="key-capabilities-of-gis" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="key-capabilities-of-gis"><span class="header-section-number">3.1.1</span> Key capabilities of GIS</h3>
+<section id="key-capabilities-of-gis" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="key-capabilities-of-gis"><span class="header-section-number">4.1.1</span> Key capabilities of GIS</h3>
 <ul>
 <li><strong>Data collection and input</strong> : incorporating maps, survey data, GPS readings, satellite images, and sensor outputs.<br>
 </li>
@@ -213,8 +225,8 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Visualization and communication</strong> : producing digital or printed maps, interactive dashboards, and 3D models that convey results effectively.</li>
 </ul>
 </section>
-<section id="applications-of-gis" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="applications-of-gis"><span class="header-section-number">3.1.2</span> Applications of GIS</h3>
+<section id="applications-of-gis" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="applications-of-gis"><span class="header-section-number">4.1.2</span> Applications of GIS</h3>
 <ul>
 <li><p><strong>Urban growth and land-use planning</strong><br>
 GIS helps city planners design sustainable urban spaces by analyzing existing land use, population growth, and infrastructure availability. It supports zoning decisions, urban renewal projects, and smart city initiatives.</p></li>
@@ -245,13 +257,13 @@ Tourism boards and park authorities employ GIS to map attractions, hiking trails
 <hr>
 </section>
 </section>
-<section id="what-is-foss-gis" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="what-is-foss-gis"><span class="header-section-number">3.2</span> What is FOSS GIS?</h2>
+<section id="what-is-foss-gis" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="what-is-foss-gis"><span class="header-section-number">4.2</span> What is FOSS GIS?</h2>
 <p><em>Free and Open Source Software for Geographic Information Systems (FOSS GIS)</em> refers to GIS applications distributed under open-source licenses. Their source code is publicly available, which means that anyone can study how the software works, adapt it to their own requirements, and share modified versions without restrictions from license fees. This openness fosters flexibility, collaboration, and wider access to spatial technologies.</p>
 <hr>
 </section>
-<section id="why-foss-gis-matters" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="why-foss-gis-matters"><span class="header-section-number">3.3</span> Why FOSS GIS Matters</h2>
+<section id="why-foss-gis-matters" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="why-foss-gis-matters"><span class="header-section-number">4.3</span> Why FOSS GIS Matters</h2>
 <ul>
 <li><strong>Affordable access</strong> : removes the barrier of expensive licenses, enabling schools, community groups, and small organizations to use GIS.<br>
 </li>
@@ -271,13 +283,13 @@ Tourism boards and park authorities employ GIS to map attractions, hiking trails
 </ul>
 <hr>
 </section>
-<section id="examples-of-popular-foss-gis-tools" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="examples-of-popular-foss-gis-tools"><span class="header-section-number">3.4</span> Examples of Popular FOSS GIS Tools</h2>
+<section id="examples-of-popular-foss-gis-tools" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="examples-of-popular-foss-gis-tools"><span class="header-section-number">4.4</span> Examples of Popular FOSS GIS Tools</h2>
 <p>The FOSS GIS ecosystem offers a wide range of tools catering to different geospatial needs from desktop applications for mapping and analysis to web mapping libraries and spatial databases. These tools are developed and maintained by vibrant global communities, ensuring continuous improvements, bug fixes, and new features. They also operate under various open-source licenses, which define how the software can be used, modified, and redistributed. The table below provides a curated list of notable FOSS GIS software, highlighting their main functions and license types.</p>
 <div id="tbl-exfoss" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-exfoss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.1: Examples of Popular FOSS GIS Tools
+Table&nbsp;4.1: Examples of Popular FOSS GIS Tools
 </figcaption>
 <div aria-describedby="tbl-exfoss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -366,8 +378,8 @@ Table&nbsp;3.1: Examples of Popular FOSS GIS Tools
 </div>
 <hr>
 </section>
-<section id="importance-of-open-source-data-software-in-ngp-2022" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="importance-of-open-source-data-software-in-ngp-2022"><span class="header-section-number">3.5</span> Importance of Open-Source Data &amp; Software in NGP 2022</h2>
+<section id="importance-of-open-source-data-software-in-ngp-2022" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="importance-of-open-source-data-software-in-ngp-2022"><span class="header-section-number">4.5</span> Importance of Open-Source Data &amp; Software in NGP 2022</h2>
 <p>The <strong>National Geospatial Policy (NGP) 2022</strong> places strong emphasis on adopting open standards, open data, and open-source software platforms as outlined in Section 3.6: Strategy and Approach. This policy direction aims to make geospatial resources more accessible, interoperable, and reusable across different sectors and user groups. By ensuring that datasets are available in open formats and that software platforms are based on open-source technologies, the NGP removes dependency on proprietary systems, reducing costs and avoiding vendor lock-in. Such openness encourages collaboration between government agencies, academia, industry, and the community, leading to faster innovation, more reliable solutions, and inclusive participation.</p>
 <p>Open-source GIS tools and freely available datasets empower:</p>
 <ul>
@@ -380,8 +392,8 @@ Table&nbsp;3.1: Examples of Popular FOSS GIS Tools
 <p>Ultimately, this open approach aligns with the vision of building a self-reliant, transparent, and future-ready geospatial ecosystem for India.</p>
 <hr>
 </section>
-<section id="conclusion" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">3.6</span> Conclusion</h2>
+<section id="conclusion" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">4.6</span> Conclusion</h2>
 <p>FOSS GIS is now a cornerstone of the modern geospatial landscape, providing cost-effective, transparent, and highly adaptable solutions. By eliminating financial and licensing barriers, it enables governments, academia, private enterprises, and communities to actively participate in mapping, spatial analysis, and informed decision-making. Its open, collaborative nature fosters continuous innovation, ensures interoperability through open standards, and strengthens global cooperation within the GIS community supporting a more inclusive and sustainable geospatial future.</p>
 
 
@@ -790,12 +802,12 @@ Table&nbsp;3.1: Examples of Popular FOSS GIS Tools
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../chapters/module_1/foss_licenses.html" class="pagination-link" aria-label="Free and Open-Source Software (FOSS) licenses">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../chapters/module_1/ogc_standards.html" class="pagination-link" aria-label="Introduction to Open Standards">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

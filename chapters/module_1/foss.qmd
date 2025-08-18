@@ -1,0 +1,99 @@
+
+# Free and Open-Source Software {#sec-intro}
+
+## FOSS
+
+Free and Open-Source Software (FOSS) refers to software released under a license that grants users essential freedoms to run it for any purpose, 
+examine how it works, adapt it to their needs, and share it, whether in its original form or with modifications, without limitations or fees. 
+The term **FOSS** blends two closely related ideas: **free software**, which focuses on user rights and collaborative ownership, and **open-source software**, 
+which stresses transparency and community-driven development.
+
+![*Free and Open-Source Software*](figures/foss.png){#fig-foss fig-align="center" width=70%}
+
+
+## Free Software ≠ Open Source
+
+Richard Stallman, founder of the Free Software Movement, points out that while **free software** and **open source** often describe the same kind of programs, they are 
+based on different ideas.  
+
+- **Free software** is about *freedom* making sure people control the software they use.  
+- **Open source** is more about *practical benefits* like better quality and faster development, without focusing much on the moral side  
+([gnu.org](https://www.gnu.org)).
+
+---
+
+## The Four Freedoms of Free Software
+
+“Free” here means *freedom*, not zero cost. Free software means you can:
+
+![*The Four Freedoms of Free Software*](figures/Pillars_of_FS.png){#fig-FS fig-align="center" width=70%}
+
+- **Freedom 0** : Use the program however you want.  
+- **Freedom 1** : Look at the code and change it to fit your needs.  
+- **Freedom 2** : Give copies to anyone.  
+- **Freedom 3** : Share your improved versions with others.  
+
+(Source: [Wikipedia](https://en.wikipedia.org/wiki/The_Free_Software_Definition))
+
+---
+
+## A Short History
+
+- **1983** : The Free Software Movement began with the GNU Project and a license (GPL) that made sure these 
+freedoms were protected ([Wikipedia](https://en.wikipedia.org/wiki/GNU_Project)).  
+- **1998** : Some in the community started calling it “open source” to make the idea sound more appealing to businesses. 
+This approach often skipped talking about the moral side of software freedom ([gnu.org](https://www.gnu.org)).
+
+---
+
+## The Open Source Definition (OSD)
+
+The **Open Source Definition (OSD)**, managed by the [Open Source Initiative (OSI)](https://opensource.org), explains what counts as open-source software. 
+Created in **2006** and last updated in **February 2024**, it lists **ten rules** that go beyond just sharing the code. Open Source software means you can:
+
+- **Free sharing** : no fees or restrictions.  
+- **Source code included** : in a form you can read and edit.  
+- **Changes allowed** : you can make and share new versions.  
+- **Works on any tech** : no limits based on platform or hardware.  
+
+These rules make sure open-source software stays free to **use**, **change**, and **share**, giving a clear and trusted meaning for developers, communities, and businesses.
+
+![*The ten rules of Open Source Software*](figures/Pillars_of_OSS.png){#fig-FS fig-align="center" width=70%}
+
+---
+
+## Different Ways of Thinking
+
+While both groups create similar kinds of software, they make choices differently:
+
+- **Open source thinking:** “Is this the best tool for the job?”  may use closed, paid software if it’s more convenient.  
+- **Free software thinking:** “Does this respect my freedom?”  avoids closed software even if it’s technically better.
+
+---
+
+## Comparison: Free Software vs Open Source  
+
+
+| Aspect                 | Free Software                                                | Open Source Software                                      |
+| ---------------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
+| **Emphasis**           | Focuses on **freedom** (user rights)                         | Focuses on **development model** and practical benefits   |
+| **Founded by**         | Richard Stallman (Free Software Foundation - FSF)            | Eric Raymond & Bruce Perens (Open Source Initiative - OSI)|
+| **Core Idea**          | Users should control the software they use                   | Open code leads to better, more reliable software         |
+| **Terminology**        | "Free" means freedom, not price ("free as in freedom")       | "Open Source" avoids the ambiguity of the word "free"     |
+| **Ethical Standpoint** | A **moral and social movement**                              | A **development methodology**                             |
+| **Licensing**          | Requires **copyleft licenses** (e.g., GPL) to protect freedom| Accepts **permissive licenses** (e.g., MIT, BSD, Apache)  |
+| **Goal**               | Empower users with freedoms to use, study, modify, share     | Promote wider adoption of open development practices      |
+| **Tone & Messaging**   | Often ideological                                            | Often pragmatic and business-friendly                     |
+
+Table: Free Software vs Open Source comparison {#tbl-comparison}
+
+---
+
+## Conclusion
+Free and Open-Source Software represents more than just a different way to build and share code, it reflects two complementary philosophies that have shaped modern software culture. 
+While the Free Software movement champions user freedoms as a moral imperative, the Open Source approach emphasizes collaboration, transparency, and practical benefits. 
+Together, they have fostered a global ecosystem where knowledge is openly shared, innovation thrives, and communities,from hobbyists to governments can create, adapt, and distribute 
+technology without restrictive barriers.
+
+The next chapter explores the framework that makes this openness possible by introducing **FOSS licenses**, which define the rights and responsibilities that guide 
+how software can be used, modified, and shared.  

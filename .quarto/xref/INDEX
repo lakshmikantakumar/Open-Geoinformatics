@@ -46,5 +46,11 @@
   },
   "chapters/module_1/ogc_standards.qmd": {
     "ogc_standards.html": "0300ef33"
+  },
+  "acknowledgement.qmd": {
+    "acknowledgement.html": "ec4bfe3b"
+  },
+  "chapters/module_1/foss.qmd": {
+    "foss.html": "ae4a8630"
   }
 }

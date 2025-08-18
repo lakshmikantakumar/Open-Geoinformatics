@@ -8,7 +8,7 @@
 
 <meta name="description" content="Lecture Notes Using Free and Open-Source Software">
 
-<title>1&nbsp; Introduction – Open Geoinformatics</title>
+<title>1&nbsp; Introduction to Geoinformatics – Open Geoinformatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/module_1/foss_licenses.html" rel="next">
-<link href="../../index.html" rel="prev">
+<link href="../../chapters/module_1/foss.html" rel="next">
+<link href="../../acknowledgement.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -118,6 +118,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../acknowledgement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgements</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -130,25 +136,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_1/introduction.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/module_1/foss.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_1/foss_licenses.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_1/foss_gis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to GIS and FOSS GIS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to FOSS GIS</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_1/ogc_standards.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></span></a>
   </div>
 </li>
       </ul>
@@ -163,13 +175,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#foss" id="toc-foss" class="nav-link active" data-scroll-target="#foss"><span class="header-section-number">1.1</span> FOSS</a></li>
-  <li><a href="#free-software-open-source" id="toc-free-software-open-source" class="nav-link" data-scroll-target="#free-software-open-source"><span class="header-section-number">1.2</span> Free Software ≠ Open Source</a></li>
-  <li><a href="#the-four-freedoms-of-free-software" id="toc-the-four-freedoms-of-free-software" class="nav-link" data-scroll-target="#the-four-freedoms-of-free-software"><span class="header-section-number">1.3</span> The Four Freedoms of Free Software</a></li>
-  <li><a href="#a-short-history" id="toc-a-short-history" class="nav-link" data-scroll-target="#a-short-history"><span class="header-section-number">1.4</span> A Short History</a></li>
-  <li><a href="#the-open-source-definition-osd" id="toc-the-open-source-definition-osd" class="nav-link" data-scroll-target="#the-open-source-definition-osd"><span class="header-section-number">1.5</span> The Open Source Definition (OSD)</a></li>
-  <li><a href="#different-ways-of-thinking" id="toc-different-ways-of-thinking" class="nav-link" data-scroll-target="#different-ways-of-thinking"><span class="header-section-number">1.6</span> Different Ways of Thinking</a></li>
-  <li><a href="#comparison-free-software-vs-open-source" id="toc-comparison-free-software-vs-open-source" class="nav-link" data-scroll-target="#comparison-free-software-vs-open-source"><span class="header-section-number">1.7</span> Comparison: Free Software vs Open Source</a></li>
+  <li><a href="#what-is-geoinformatics" id="toc-what-is-geoinformatics" class="nav-link active" data-scroll-target="#what-is-geoinformatics"><span class="header-section-number">1.1</span> What is Geoinformatics?</a></li>
+  <li><a href="#importance-of-geoinformatics" id="toc-importance-of-geoinformatics" class="nav-link" data-scroll-target="#importance-of-geoinformatics"><span class="header-section-number">1.2</span> Importance of Geoinformatics</a></li>
+  <li><a href="#components-of-geoinformatics" id="toc-components-of-geoinformatics" class="nav-link" data-scroll-target="#components-of-geoinformatics"><span class="header-section-number">1.3</span> Components of Geoinformatics</a></li>
+  <li><a href="#evolution-of-geoinformatics" id="toc-evolution-of-geoinformatics" class="nav-link" data-scroll-target="#evolution-of-geoinformatics"><span class="header-section-number">1.4</span> Evolution of Geoinformatics</a></li>
+  <li><a href="#applications-of-geoinformatics" id="toc-applications-of-geoinformatics" class="nav-link" data-scroll-target="#applications-of-geoinformatics"><span class="header-section-number">1.5</span> Applications of Geoinformatics</a></li>
+  <li><a href="#the-open-dimension" id="toc-the-open-dimension" class="nav-link" data-scroll-target="#the-open-dimension"><span class="header-section-number">1.6</span> The Open Dimension</a></li>
+  <li><a href="#future-of-geoinformatics" id="toc-future-of-geoinformatics" class="nav-link" data-scroll-target="#future-of-geoinformatics"><span class="header-section-number">1.7</span> Future of Geoinformatics</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.8</span> Conclusion</a></li>
   </ul>
 </nav>
@@ -177,9 +189,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-intro" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></h1>
 </div>
 
 
@@ -196,172 +208,97 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="foss" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="foss"><span class="header-section-number">1.1</span> FOSS</h2>
-<p>Free and Open-Source Software (FOSS) refers to software released under a license that grants users essential freedoms to run it for any purpose, examine how it works, adapt it to their needs, and share it, whether in its original form or with modifications, without limitations or fees. The term “FOSS” blends two closely related ideas: free software, which focuses on user rights and collaborative ownership, and open-source software, which stresses transparency and community-driven development.</p>
-<div id="fig-foss" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-foss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/foss.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-foss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.1: <em>Free and Open-Source Software</em>
-</figcaption>
-</figure>
-</div>
-</section>
-<section id="free-software-open-source" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="free-software-open-source"><span class="header-section-number">1.2</span> Free Software ≠ Open Source</h2>
-<p>Richard Stallman, founder of the Free Software Movement, points out that while “free software” and “open source” often describe the same kind of programs, they are based on different ideas.</p>
+<section id="what-is-geoinformatics" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="what-is-geoinformatics"><span class="header-section-number">1.1</span> What is Geoinformatics?</h2>
+<p>Have you ever used Google Maps to find the quickest route, checked the weather forecast, or tracked a delivery package? These everyday conveniences are possible because of a field known as <strong>Geoinformatics</strong>.</p>
+<p>In simple terms, Geoinformatics is the science and technology concerned with the collection, storage, processing, analysis, and visualization of spatial (location-based) data. It seeks to answer fundamental questions such as</p>
 <ul>
-<li><strong>Free software</strong> is about <em>freedom</em> making sure people control the software they use.<br>
-</li>
-<li><strong>Open source</strong> is more about <em>practical benefits</em> like better quality and faster development, without focusing much on the moral side<br>
-(<a href="https://www.gnu.org">gnu.org</a>).</li>
+<li><em>Where is something located?</em></li>
+<li><em>What is happening there?</em> and</li>
+<li><em>How does it relate to its surroundings?</em></li>
 </ul>
-<hr>
+<p>Geoinformatics is an interdisciplinary field that brings together geography, cartography, computer science, engineering, and information technology. Its key tools include <strong>Geographic Information Systems (GIS)</strong>, <strong>Remote Sensing (RS)</strong>, and <strong>Global Navigation Satellite Systems (GNSS)</strong>, all of which are used to study the Earth and solve spatial problems.</p>
 </section>
-<section id="the-four-freedoms-of-free-software" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="the-four-freedoms-of-free-software"><span class="header-section-number">1.3</span> The Four Freedoms of Free Software</h2>
-<p>“Free” here means <em>freedom</em>, not zero cost. Free software means you can:</p>
-<div id="fig-FS" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-FS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/Pillars_of_FS.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.2: <em>The Four Freedoms of Free Software</em>
-</figcaption>
-</figure>
-</div>
+<section id="importance-of-geoinformatics" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="importance-of-geoinformatics"><span class="header-section-number">1.2</span> Importance of Geoinformatics</h2>
+<p>The world today is highly dynamic. Cities are expanding, natural resources are being depleted, and environmental challenges such as climate change and natural disasters are becoming more frequent. To manage these issues effectively, accurate spatial data and strong analytical capabilities are essential.</p>
+<p>Geoinformatics provides this ability and supports a wide range of activities such as:</p>
 <ul>
-<li><strong>Freedom 0</strong> : Use the program however you want.<br>
+<li>Planning and decision-making for urban growth, infrastructure, and governance<br>
 </li>
-<li><strong>Freedom 1</strong> : Look at the code and change it to fit your needs.<br>
+<li>Environmental monitoring of forests, water bodies, and pollution<br>
 </li>
-<li><strong>Freedom 2</strong> : Give copies to anyone.<br>
+<li>Disaster management through early warning systems and risk assessments<br>
 </li>
-<li><strong>Freedom 3</strong> : Share your improved versions with others.</li>
+<li>Efficient transport and navigation systems<br>
+</li>
+<li>Sustainable agriculture and food security through precision farming</li>
 </ul>
-<p>(Source: <a href="https://en.wikipedia.org/wiki/The_Free_Software_Definition">Wikipedia</a>)</p>
-<hr>
+<p>In essence, Geoinformatics transforms spatial data into actionable knowledge for informed decision-making.</p>
 </section>
-<section id="a-short-history" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="a-short-history"><span class="header-section-number">1.4</span> A Short History</h2>
+<section id="components-of-geoinformatics" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="components-of-geoinformatics"><span class="header-section-number">1.3</span> Components of Geoinformatics</h2>
+<p>Geoinformatics is based on several interconnected technologies, including:</p>
 <ul>
-<li><strong>1983</strong> : The Free Software Movement began with the GNU Project and a license (GPL) that made sure these freedoms were protected (<a href="https://en.wikipedia.org/wiki/GNU_Project">Wikipedia</a>).<br>
+<li><strong>Remote Sensing (RS):</strong> The collection of Earth data using satellites, drones, and aircraft<br>
 </li>
-<li><strong>1998</strong> : Some in the community started calling it “open source” to make the idea sound more appealing to businesses. This approach often skipped talking about the moral side of software freedom (<a href="https://www.gnu.org">gnu.org</a>).</li>
+<li><strong>Geographic Information Systems (GIS):</strong> Computer-based systems for storing, analyzing, and displaying spatial data<br>
+</li>
+<li><strong>Global Navigation Satellite Systems (GNSS):</strong> Technologies such as GPS that provide accurate positioning and navigation services<br>
+</li>
+<li><strong>Cartography and Visualization:</strong> Methods for representing data through maps, 3D models, and interactive systems<br>
+</li>
+<li><strong>Spatial Data Infrastructure (SDI):</strong> Frameworks and institutions that support data sharing and accessibility</li>
 </ul>
-<hr>
 </section>
-<section id="the-open-source-definition-osd" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="the-open-source-definition-osd"><span class="header-section-number">1.5</span> The Open Source Definition (OSD)</h2>
-<p>The <strong>Open Source Definition (OSD)</strong>, managed by the <a href="https://opensource.org">Open Source Initiative (OSI)</a>, explains what counts as open-source software. Created in <strong>2006</strong> and last updated in <strong>February 2024</strong>, it lists <strong>ten rules</strong> that go beyond just sharing the code. Open Source software means you can:</p>
+<section id="evolution-of-geoinformatics" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="evolution-of-geoinformatics"><span class="header-section-number">1.4</span> Evolution of Geoinformatics</h2>
+<p>The development of Geoinformatics reflects humanity’s evolving relationship with spatial data. In the past, geographic information was measured and represented manually through surveys and cartographic techniques. With the introduction of aerial photography and later satellite imaging, data collection became faster and more accurate.</p>
+<p>The digital revolution of the 20th century enabled computer-based mapping and Geographic Information Systems (GIS), which greatly expanded analytical possibilities. Today, cloud computing, artificial intelligence, and big data are transforming Geoinformatics into a real-time and dynamic discipline.</p>
+</section>
+<section id="applications-of-geoinformatics" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="applications-of-geoinformatics"><span class="header-section-number">1.5</span> Applications of Geoinformatics</h2>
+<p>Geoinformatics has diverse applications across sectors. Some key examples include:</p>
 <ul>
-<li><strong>Free sharing</strong> : no fees or restrictions.<br>
+<li><strong>Disaster Management:</strong> Flood mapping, earthquake impact assessment, and forest fire monitoring<br>
 </li>
-<li><strong>Source code included</strong> : in a form you can read and edit.<br>
+<li><strong>Environmental Studies:</strong> Climate change monitoring, pollution tracking, and conservation planning<br>
 </li>
-<li><strong>Changes allowed</strong> : you can make and share new versions.<br>
+<li><strong>Urban and Regional Planning:</strong> Smart city development, infrastructure planning, and land-use analysis<br>
 </li>
-<li><strong>Works on any tech</strong> : no limits based on platform or hardware.</li>
+<li><strong>Agriculture:</strong> Precision farming, soil health assessment, and crop yield prediction<br>
+</li>
+<li><strong>Transportation and Logistics:</strong> Route optimization, vehicle tracking, and supply chain management<br>
+</li>
+<li><strong>Defense and Security:</strong> Terrain analysis, border surveillance, and communication systems</li>
 </ul>
-<p>These rules make sure open-source software stays free to <strong>use</strong>, <strong>change</strong>, and <strong>share</strong>, giving a clear and trusted meaning for developers, communities, and businesses.</p>
-<div id="fig-FS" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-FS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/Pillars_of_OSS.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.3: <em>The ten rules of Open Source Software</em>
-</figcaption>
-</figure>
-</div>
-<hr>
 </section>
-<section id="different-ways-of-thinking" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="different-ways-of-thinking"><span class="header-section-number">1.6</span> Different Ways of Thinking</h2>
-<p>While both groups create similar kinds of software, they make choices differently:</p>
+<section id="the-open-dimension" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="the-open-dimension"><span class="header-section-number">1.6</span> The Open Dimension</h2>
+<p>An essential characteristic of modern Geoinformatics is the increasing role of <strong>open-source software and open data</strong>. Unlike proprietary systems, which often involve high licensing costs and limited flexibility, open platforms are freely available, shaped by global communities, and can be tailored to diverse applications.</p>
+<p>Well-known tools such as <strong>QGIS</strong>, <strong>GRASS GIS</strong>, <strong>PostGIS</strong>, <strong>GeoServer</strong>, and <strong>SAGA GIS</strong>, along with community-driven projects like <strong>OpenStreetMap (OSM)</strong>, offer robust and accessible options for spatial analysis, data handling, and online data sharing. Through these resources, Geoinformatics has become more <strong>democratic, inclusive, and participatory</strong>. More than just technological solutions, they embody a broader philosophy of openness, cooperation, and shared responsibility in using spatial knowledge to address global challenges.</p>
+</section>
+<section id="future-of-geoinformatics" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="future-of-geoinformatics"><span class="header-section-number">1.7</span> Future of Geoinformatics</h2>
+<p>Geoinformatics is continuously evolving with emerging technologies. Future directions include:</p>
 <ul>
-<li><strong>Open source thinking:</strong> “Is this the best tool for the job?” may use closed, paid software if it’s more convenient.<br>
+<li>Artificial Intelligence and Machine Learning for automated analysis of satellite imagery<br>
 </li>
-<li><strong>Free software thinking:</strong> “Does this respect my freedom?” avoids closed software even if it’s technically better.</li>
+<li>Internet of Things (IoT) for integrating ground-based sensors with geospatial systems<br>
+</li>
+<li>Digital Twins for creating dynamic, real-time models of cities and natural systems<br>
+</li>
+<li>Drone-based mapping for high-resolution, flexible data collection<br>
+</li>
+<li>Citizen science and open data initiatives that encourage public participation in data generation</li>
 </ul>
-<hr>
-</section>
-<section id="comparison-free-software-vs-open-source" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="comparison-free-software-vs-open-source"><span class="header-section-number">1.7</span> Comparison: Free Software vs Open Source</h2>
-<div id="tbl-comparison" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1.1: Free Software vs Open Source comparison
-</figcaption>
-<div aria-describedby="tbl-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 43%">
-<col style="width: 41%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Aspect</th>
-<th>Free Software</th>
-<th>Open Source Software</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Emphasis</strong></td>
-<td>Focuses on <strong>freedom</strong> (user rights)</td>
-<td>Focuses on <strong>development model</strong> and practical benefits</td>
-</tr>
-<tr class="even">
-<td><strong>Founded by</strong></td>
-<td>Richard Stallman (Free Software Foundation - FSF)</td>
-<td>Eric Raymond &amp; Bruce Perens (Open Source Initiative - OSI)</td>
-</tr>
-<tr class="odd">
-<td><strong>Core Idea</strong></td>
-<td>Users should control the software they use</td>
-<td>Open code leads to better, more reliable software</td>
-</tr>
-<tr class="even">
-<td><strong>Terminology</strong></td>
-<td>“Free” means freedom, not price (“free as in freedom”)</td>
-<td>“Open Source” avoids the ambiguity of the word “free”</td>
-</tr>
-<tr class="odd">
-<td><strong>Ethical Standpoint</strong></td>
-<td>A <strong>moral and social movement</strong></td>
-<td>A <strong>development methodology</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Licensing</strong></td>
-<td>Requires <strong>copyleft licenses</strong> (e.g., GPL) to protect freedom</td>
-<td>Accepts <strong>permissive licenses</strong> (e.g., MIT, BSD, Apache)</td>
-</tr>
-<tr class="odd">
-<td><strong>Goal</strong></td>
-<td>Empower users with freedoms to use, study, modify, share</td>
-<td>Promote wider adoption of open development practices</td>
-</tr>
-<tr class="even">
-<td><strong>Tone &amp; Messaging</strong></td>
-<td>Often ideological</td>
-<td>Often pragmatic and business-friendly</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-<hr>
+<p>In the future, Geoinformatics will not only describe what is happening but also predict future scenarios and guide decisions for sustainable development.</p>
 </section>
 <section id="conclusion" class="level2" data-number="1.8">
 <h2 data-number="1.8" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.8</span> Conclusion</h2>
-<p>Free and Open-Source Software represents more than just a different way to build and share code, it reflects two complementary philosophies that have shaped modern software culture. While the Free Software movement champions user freedoms as a moral imperative, the Open Source approach emphasizes collaboration, transparency, and practical benefits. Together, they have fostered a global ecosystem where knowledge is openly shared, innovation thrives, and communities,from hobbyists to governments can create, adapt, and distribute technology without restrictive barriers.</p>
+<p>Geoinformatics is more than the study of maps. It is a modern discipline that integrates technology with geography to provide solutions for real-world challenges. From disaster management to urban planning and environmental protection, its applications are vast and significant.</p>
+<p>With the rise of open-source software and open data initiatives, Geoinformatics has become more accessible and collaborative than ever before. This inclusive approach is shaping the way we understand and manage our planet.</p>
+<p>Thus, <strong>Open Geoinformatics</strong> represents not only the science of spatial data but also the philosophy of openness, collaboration, and shared knowledge for a sustainable future. The next chapter explores this openness further by introducing <strong>Free and Open-Source Software (FOSS)</strong>, which forms the foundation of modern geospatial practice.</p>
 
 
 </section>
@@ -768,13 +705,13 @@ Table&nbsp;1.1: Free Software vs Open Source comparison
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../index.html" class="pagination-link" aria-label="Preface">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="../../acknowledgement.html" class="pagination-link" aria-label="Acknowledgements">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Acknowledgements</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/module_1/foss_licenses.html" class="pagination-link" aria-label="Free and Open-Source Software (FOSS) licenses">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software (FOSS) licenses</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/module_1/foss.html" class="pagination-link" aria-label="Free and Open-Source Software">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
