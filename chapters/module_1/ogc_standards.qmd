@@ -185,7 +185,7 @@ guarantees that geospatial information will continue to be a critical enabler of
 
 OGC standards serve as the **universal language of geospatial information**, enabling seamless data sharing across platforms and fostering collaboration between governments, industry, and academia. They 
 have evolved from early XML-based services such as WMS and WFS to modern, lightweight RESTful APIs that better align with today’s web and cloud ecosystems. Through this evolution, 
-OGC standards have consistently made geospatial data more accessible, interoperable, and impactful—helping societies address global challenges such as disaster management, climate monitoring,
+OGC standards have consistently made geospatial data more accessible, interoperable, and impactful; helping societies address global challenges such as disaster management, climate monitoring,
  sustainable development, and smart city planning.
 
 ---

@@ -70,6 +70,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles/styles.css">
@@ -84,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) Geoinformatics</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -127,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Module 1: Free and Open-Source Software (FOSS) GIS</span></a>
+ <span class="menu-text">Module 1: Free and Open-Source Software (FOSS) Geoinformatics</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -153,14 +156,31 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/module_1/foss_gis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to FOSS GIS</span></span></a>
+  <a href="../../chapters/module_1/foss_geoinformatics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction to FOSS Geoinformatics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_1/ogc_standards.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction to Open Standards</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Module 2: GIS</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/module_2/gis-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introduction to GIS</span></span></a>
   </div>
 </li>
       </ul>
@@ -176,7 +196,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#what-is-geoinformatics" id="toc-what-is-geoinformatics" class="nav-link active" data-scroll-target="#what-is-geoinformatics"><span class="header-section-number">1.1</span> What is Geoinformatics?</a></li>
-  <li><a href="#importance-of-geoinformatics" id="toc-importance-of-geoinformatics" class="nav-link" data-scroll-target="#importance-of-geoinformatics"><span class="header-section-number">1.2</span> Importance of Geoinformatics</a></li>
+  <li><a href="#importance-of-geoinformatics" id="toc-importance-of-geoinformatics" class="nav-link" data-scroll-target="#importance-of-geoinformatics"><span class="header-section-number">1.2</span> Importance of Geoinformatics</a>
+  <ul class="collapse">
+  <li><a href="#key-capabilities-of-geoinformatics" id="toc-key-capabilities-of-geoinformatics" class="nav-link" data-scroll-target="#key-capabilities-of-geoinformatics"><span class="header-section-number">1.2.1</span> Key capabilities of Geoinformatics</a></li>
+  <li><a href="#workflow-overview" id="toc-workflow-overview" class="nav-link" data-scroll-target="#workflow-overview"><span class="header-section-number">1.2.2</span> Workflow overview</a></li>
+  </ul></li>
   <li><a href="#components-of-geoinformatics" id="toc-components-of-geoinformatics" class="nav-link" data-scroll-target="#components-of-geoinformatics"><span class="header-section-number">1.3</span> Components of Geoinformatics</a></li>
   <li><a href="#evolution-of-geoinformatics" id="toc-evolution-of-geoinformatics" class="nav-link" data-scroll-target="#evolution-of-geoinformatics"><span class="header-section-number">1.4</span> Evolution of Geoinformatics</a></li>
   <li><a href="#applications-of-geoinformatics" id="toc-applications-of-geoinformatics" class="nav-link" data-scroll-target="#applications-of-geoinformatics"><span class="header-section-number">1.5</span> Applications of Geoinformatics</a></li>
@@ -189,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) Geoinformatics</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></h1>
 </div>
@@ -217,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
 <li><em>What is happening there?</em> and</li>
 <li><em>How does it relate to its surroundings?</em></li>
 </ul>
-<p>Geoinformatics is an interdisciplinary field that brings together geography, cartography, computer science, engineering, and information technology. Its key tools include <strong>Geographic Information Systems (GIS)</strong>, <strong>Remote Sensing (RS)</strong>, and <strong>Global Navigation Satellite Systems (GNSS)</strong>, all of which are used to study the Earth and solve spatial problems.</p>
+<p>Geoinformatics is an interdisciplinary field that integrates <strong>Geographic Information Systems (GIS), Remote Sensing (RS), Global Navigation Satellite Systems (GNSS), cartography, digital image processing, spatial databases, GeoAI and web mapping</strong> into a unified workflow. It supports the <strong>acquisition, management, analysis, visualization, and sharing</strong> of spatial information for decision-making.</p>
 </section>
 <section id="importance-of-geoinformatics" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="importance-of-geoinformatics"><span class="header-section-number">1.2</span> Importance of Geoinformatics</h2>
@@ -235,6 +259,37 @@ ul.task-list li input[type="checkbox"] {
 <li>Sustainable agriculture and food security through precision farming</li>
 </ul>
 <p>In essence, Geoinformatics transforms spatial data into actionable knowledge for informed decision-making.</p>
+<section id="key-capabilities-of-geoinformatics" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="key-capabilities-of-geoinformatics"><span class="header-section-number">1.2.1</span> Key capabilities of Geoinformatics</h3>
+<ul>
+<li><strong>Data acquisition</strong>: satellite/aerial remote sensing, GNSS positioning, ground surveys, and IoT sensors.<br>
+</li>
+<li><strong>Data management</strong>: spatial databases, metadata, and spatial data infrastructures (SDIs).<br>
+</li>
+<li><strong>Spatial analysis and modeling</strong>: image processing, terrain analysis, network analysis, and environmental modeling.<br>
+</li>
+<li><strong>Visualization and communication</strong>: maps, dashboards, 3D/4D views, and web platforms.</li>
+</ul>
+</section>
+<section id="workflow-overview" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="workflow-overview"><span class="header-section-number">1.2.2</span> Workflow overview</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A["Data Acquisition (Remote Sensing, GNSS, IoT, Surveys)"]
+    --&gt; B["Data Management (Spatial DBs, SDI, Metadata, Catalogues)"]
+    --&gt; C["Analysis &amp; Modeling (GIS, DIP, Geostatistics, Simulation)"]
+    --&gt; D["Visualization &amp; Sharing (Maps, 3D/4D, Web GIS, Dashboards)"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
 </section>
 <section id="components-of-geoinformatics" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="components-of-geoinformatics"><span class="header-section-number">1.3</span> Components of Geoinformatics</h2>
@@ -248,8 +303,22 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li><strong>Cartography and Visualization:</strong> Methods for representing data through maps, 3D models, and interactive systems<br>
 </li>
-<li><strong>Spatial Data Infrastructure (SDI):</strong> Frameworks and institutions that support data sharing and accessibility</li>
+<li><strong>Spatial Data Infrastructure (SDI):</strong> Frameworks and institutions that support data sharing and accessibility<br>
+</li>
+<li><strong>Digital Image Processing (DIP):</strong> Techniques for enhancing, classifying, and analyzing remotely sensed imagery and other raster data to extract meaningful information.</li>
+<li><strong>Web Mapping and Web GIS:</strong> Internet-based tools and services that deliver, analyze, and integrate spatial information through interactive web platforms and APIs.</li>
+<li><strong>GeoAI (Geospatial Artificial Intelligence):</strong> Application of artificial intelligence, machine learning, and deep learning techniques to spatial data for tasks such as image classification, predictive modeling, feature extraction, and automated decision-making.</li>
 </ul>
+<div id="fig-geoinformatics" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-geoinformatics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/geoinformatics.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-geoinformatics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: <em>Geoinformatics</em>
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="evolution-of-geoinformatics" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="evolution-of-geoinformatics"><span class="header-section-number">1.4</span> Evolution of Geoinformatics</h2>

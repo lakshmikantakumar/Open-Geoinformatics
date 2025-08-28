@@ -1,0 +1,188 @@
+# Introduction to GIS
+
+## What is GIS?
+A Geographic Information System (GIS) is a computer-based framework that allows us to work with information that has a spatial or geographic component. 
+In simple terms, GIS links **“what” data is about** with **“where” it is located on Earth**. This combination makes it possible to explore patterns, 
+detect relationships, and make informed decisions.  
+
+### Definition of GIS
+
+A Geographic Information System (GIS) is a framework that supports the collection, management, analysis, and visualization of spatial and non-spatial data. It integrates hardware, 
+software, data, people, and methods to efficiently handle geographically referenced information \[@albrecht2007; @wilson2008]. By linking data to locations on Earth, GIS allows users to capture, store, manipulate, and display information that supports decision-making in fields such as urban planning, environmental management, agriculture, transportation, and disaster response \[@yang2011].
+
+## Components of GIS
+
+A GIS is composed of several interconnected components that work together:
+
+* **Hardware**: Computing systems with adequate processing power, memory, storage, and input/output devices.
+* **Software**: GIS applications and operating systems that provide tools for data analysis, management, and visualization.
+* **Data**: Spatial data (geographic features), attribute data (descriptive information), and metadata (documentation about quality and origin).
+* **People**: Users and professionals who design, implement, and apply GIS solutions.
+* **Methods**: Procedures and workflows that ensure data acquisition, analysis, validation, and presentation follow consistent standards \[@brimicombe2010].
+
+These components interact continuously. Without reliable data, advanced software, or skilled users, the system would not function effectively.
+
+## Why GIS is Important?
+
+GIS has become essential because it improves efficiency and accuracy in working with geographic information. Its benefits include:
+
+* Handling large datasets more effectively than manual methods.
+* Supporting complex spatial queries and analyses.
+* Allowing integration of diverse datasets from multiple sources.
+* Reducing redundancy by linking spatial and attribute information.
+* Providing powerful visualization and communication tools \[@yang2011].
+
+## Functions of GIS
+
+The main functions of GIS are closely connected, with each step supporting the next:
+
+* **Data capture**: Collecting information through digitization, scanning, remote sensing, and GNSS.
+* **Data storage and management**: Organizing vector and raster models, with indexing and metadata to support retrieval and integration.
+
+  * **Vector**: Represents discrete objects such as roads and parcels.
+  * **Raster**: Represents continuous surfaces such as elevation and temperature.
+* **Querying**: Retrieving data by spatial location or attribute values.
+* **Analysis**: Using tools such as buffering, overlay, interpolation, and terrain modeling.
+* **Visualization**: Producing maps, graphs, dashboards, and 3D visualizations.
+* **Output and communication**: Delivering results in reports, web maps, or decision-support systems \[@campbell2011].
+
+## GIS Workflow
+
+A typical GIS workflow progresses through several connected stages:
+
+### Data Acquisition
+
+This stage involves collecting raw spatial and attribute data. Sources include ground surveys, GPS, aerial photography, satellite imagery, and existing databases. Reliable 
+data acquisition ensures that subsequent steps are based on accurate representations of real-world phenomena.
+
+### Data Validation
+
+Validation checks the accuracy and consistency of the acquired data. Errors such as missing values, spatial mismatches, and attribute inconsistencies are identified and corrected. 
+This step improves the quality of data and builds confidence for further analysis.
+
+### Data Management
+
+Validated data is organized into databases or spatial infrastructures. Processes such as georeferencing, projection transformations, and indexing make the data usable. 
+Effective management ensures the data can be retrieved and updated when needed.
+
+### Data Analysis and Modeling
+
+At this stage, GIS tools are applied to derive insights. Analyses may include overlays, spatial statistics, change detection, and predictive modeling. This step transforms 
+raw data into meaningful information that supports planning and decision-making.
+
+### Visualization and Output
+
+Finally, results are communicated through clear visual formats. These include thematic maps, 3D views, dashboards, or printed reports. Effective visualization ensures that 
+technical results are accessible to both specialists and non-specialists.
+
+**Workflow Diagram:**
+
+```{mermaid}
+%%| label: fig-workflow
+%%| fig-cap: "Typical GIS workflow"
+flowchart LR
+  A[Data Acquisition] --> B[Data Validation]
+  B --> C[Data Management]
+  C --> D[Analysis & Modeling]
+  D --> E[Visualization & Output]
+
+  I1[Field Survey / GNSS] --> A
+  I2[Remote Sensing] --> A
+  I3[Existing Databases] --> A
+
+  E --> O1[Maps & Reports]
+  E --> O2[Interactive Web Maps]
+  E --> O3[Dashboards]
+```
+
+## Some Standard GIS Softwares
+
+| Software                 | License Type                           | Author/Company                                         |
+| ------------------------ | -------------------------------------- | ------------------------------------------------------ |
+| **ArcGIS**               | Proprietary                            | Esri (Environmental Systems Research Institute)        |
+| **QGIS**                 | Open-source (GPL)                      | QGIS Development Team (community-driven)               |
+| **GRASS GIS**            | Open-source (GPL)                      | GRASS Development Team (originally US Army CERL)       |
+| **MapInfo Professional** | Proprietary                            | Pitney Bowes Software (originally MapInfo Corporation) |
+| **Google Earth Pro**     | Freeware (Proprietary)                 | Google LLC                                             |
+| **ERDAS IMAGINE**        | Proprietary                            | Hexagon Geospatial (Intergraph/Leica Geosystems)       |
+| **ENVI**                 | Proprietary                            | Harris Geospatial Solutions (L3Harris Technologies)    |
+| **IDRISI/TerrSet**       | Proprietary (Academic License options) | Clark Labs, Clark University                           |
+| **PostGIS**              | Open-source (GPL)                      | Refractions Research, now community-maintained         |
+
+### Open-source vs Proprietary GIS
+
+Open-source platforms such as QGIS, GRASS, and PostGIS are cost-effective, adaptable, and community-supported. They provide transparency of source code and strong plugin ecosystems,
+ although they may lack formal support and advanced commercial features. 
+ 
+ Proprietary platforms such as ArcGIS, ENVI, and ERDAS IMAGINE are robust, well-documented, and supported by dedicated companies. However, they are expensive and less flexible for customization.
+
+## Future Trends in GIS
+
+The future of GIS is shaped by new technologies:
+
+* **Web GIS** and **cloud computing** are making GIS more scalable and accessible.
+* **Artificial Intelligence and Machine Learning** support predictive analytics and pattern recognition.
+* **Mobile GIS** allows real-time data collection in the field.
+* **Big data integration** strengthens spatial analysis of complex and large-scale phenomena \[@wilson2008; @yang2011].
+
+
+## Applications of GIS
+
+- **Urban growth and land-use planning**  
+  GIS helps city planners design sustainable urban spaces by analyzing existing land use, population growth, and infrastructure availability. 
+  It supports zoning decisions, urban renewal projects, and smart city initiatives.
+
+- **Monitoring of natural resources and environment**  
+  GIS is widely used in forestry, water management, soil conservation, and biodiversity protection. It allows continuous monitoring of ecosystems and helps 
+  authorities detect environmental degradation early.
+
+- **Emergency response and disaster risk reduction**  
+  Hazard-prone areas can be mapped with GIS to prepare for disasters like floods, cyclones, or earthquakes. During emergencies, 
+  it supports real-time coordination of evacuation routes, shelters, and relief supplies.
+
+- **Transportation planning and navigation services**  
+  From traffic analysis to public transport route optimization, GIS enables efficient mobility planning. 
+  It also powers everyday navigation apps that millions rely on for real-time directions.
+
+- **Health studies such as disease mapping**  
+  By mapping the spread of diseases, GIS reveals spatial patterns of outbreaks and helps allocate medical resources. 
+  It also supports vaccination campaigns and long-term healthcare infrastructure planning.
+
+- **Market research and business logistics**  
+  Businesses use GIS for site selection, customer profiling, competitor analysis, and logistics optimization. 
+  Delivery companies rely on GIS to design cost-efficient and timely distribution routes.
+
+- **Agriculture and precision farming**  
+  Farmers and agricultural agencies apply GIS to monitor soil quality, rainfall, crop health, and pest outbreaks. 
+  Precision farming uses spatial data to apply fertilizers and water efficiently, improving productivity while reducing costs.
+
+- **Climate change studies**  
+  Researchers use GIS to model rising sea levels, shifting vegetation zones, glacial retreat, and temperature variations. 
+  This helps governments plan mitigation and adaptation strategies at both local and global scales.
+
+- **Archaeology and cultural heritage management**  
+  GIS assists archaeologists in locating excavation sites, mapping ancient landscapes, and preserving cultural heritage. 
+  Museums and heritage authorities also use GIS to manage monuments and visitor facilities.
+
+- **Public utilities and infrastructure management**  
+  Utility companies rely on GIS to manage water pipelines, electricity networks, and telecommunication lines. 
+  It helps detect faults, plan maintenance, and ensure efficient service delivery.
+
+- **Crime analysis and law enforcement**  
+  Police and security agencies use GIS to analyze crime hotspots, study spatial patterns of offenses, and optimize patrolling routes. 
+  This improves public safety and law enforcement efficiency.
+
+- **Tourism and recreation planning**  
+  Tourism boards and park authorities employ GIS to map attractions, hiking trails, and facilities. 
+  It also supports eco-tourism by balancing visitor access with conservation.
+
+
+## Conclusion
+
+GIS integrates spatial and non-spatial data to support informed decision-making in diverse fields such as urban planning, environmental monitoring, agriculture, 
+and disaster management. Its workflow from acquisition to visualization ensures that data becomes useful information. As technology advances, GIS is becoming more 
+accessible, intelligent, and integrated with other systems.
+
+The next chapter will focus on **GIS Data**, introducing the different types of data used in GIS, including vector, raster, and attribute data, along with their 
+characteristics and applications.
+

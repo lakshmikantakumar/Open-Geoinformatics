@@ -4,7 +4,7 @@ The discipline of Geoinformatics stands at the intersection of geography, inform
 analysis, and decision-making. Its applications span diverse fields such as environmental management, urban and regional planning, disaster risk reduction, natural resource 
 monitoring, and governance, reflecting its growing significance in both academia and industry [@goodchild2007; @li2020].
 
-This lecture note, titled Open Geoinformatics: Lecture Notes Using Free and Open-Source Software, is being prepared as a comprehensive introductory resource for students, 
+This lecture note, titled Open Geoinformatics is being prepared as a comprehensive introductory resource for students, 
 researchers, and practitioners seeking to build a foundation in geospatial science and technology. A special emphasis is placed on Free and Open-Source Software (FOSS) tools 
 and datasets, ensuring that the knowledge imparted is not only theoretically rigorous but also practically accessible without licensing restrictions.
 

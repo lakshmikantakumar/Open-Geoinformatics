@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Open Geoinformatics",
     "section": "",
-    "text": "Preface\nThe discipline of Geoinformatics stands at the intersection of geography, information technology, and earth sciences, providing powerful tools for spatial data acquisition, analysis, and decision-making. Its applications span diverse fields such as environmental management, urban and regional planning, disaster risk reduction, natural resource monitoring, and governance, reflecting its growing significance in both academia and industry (Goodchild, 2007; Li, Dragicevic, & Veenendaal, 2020).\nThis lecture note, titled Open Geoinformatics: Lecture Notes Using Free and Open-Source Software, is being prepared as a comprehensive introductory resource for students, researchers, and practitioners seeking to build a foundation in geospatial science and technology. A special emphasis is placed on Free and Open-Source Software (FOSS) tools and datasets, ensuring that the knowledge imparted is not only theoretically rigorous but also practically accessible without licensing restrictions.\nThe content presents essential concepts of Geographic Information Systems (GIS), Remote Sensing (RS), Global Navigation Satellite Systems (GNSS), Spatial Databases, and WebGIS, with a balanced focus on theory and practice. The structure is designed to support stepwise learning—beginning with fundamentals and gradually progressing toward advanced applications and integration of geospatial technologies.\nIn particular, this work acknowledges the invaluable role of FOSS geospatial platforms and libraries—including QGIS (QGIS Development Team, 2024), SAGA GIS (Conrad et al., 2008), PostGIS (PostGIS Project Steering Committee, 2023), GeoServer (GeoServer Development Team, 2024), and GDAL/OGR (GDAL/OGR contributors, 2023). These tools, along with contributions from numerous other open-source projects, not only provide world-class functionality but also embody the spirit of collaborative knowledge-building and open science.\nThe compilation draws upon established literature and best practices in the field, while also incorporating open-source software environments, community-driven innovations, and contemporary applications to make the learning process relevant in today’s context. It is hoped that this work will not only serve as a guide for academic study but also inspire further exploration, research, and innovation in the open geospatial domain.\nI gratefully acknowledge the contributions of scholars, researchers, and the global FOSS community whose works form the intellectual and technical foundation of this discipline. Any inadvertent omission of citation is unintentional, and suggestions for improvement and inclusion of additional references are warmly welcomed.\n\n\n\n\nConrad, O., Bechtel, B., Bock, M., Dietrich, H., Fischer, E., Gerlitz, L., … Böhner, J. (2008). System for automated geoscientific analyses (SAGA) v. 2.0. Hamburger Beiträge Zur Physischen Geographie Und Landschaftsökologie, 19, 7–12.\n\n\nGDAL/OGR contributors. (2023). GDAL/OGR geospatial data abstraction library. Retrieved from https://gdal.org\n\n\nGeoServer Development Team. (2024). GeoServer: An open source server for sharing geospatial data. Retrieved from https://geoserver.org\n\n\nGoodchild, M. F. (2007). Citizens as sensors: The world of volunteered geography (Vol. 69, pp. 211–221). https://doi.org/10.1007/s10708-007-9111-y\n\n\nLi, S., Dragicevic, S., & Veenendaal, B. (2020). Advances in geospatial information science: Mapping the big data challenge. International Journal of Digital Earth, 13(2), 123–135. https://doi.org/10.1080/17538947.2019.1651042\n\n\nPostGIS Project Steering Committee. (2023). PostGIS: Spatial and geographic objects for PostgreSQL. Retrieved from https://postgis.net\n\n\nQGIS Development Team. (2024). QGIS geographic information system. Retrieved from https://qgis.org",
+    "text": "Preface\nThe discipline of Geoinformatics stands at the intersection of geography, information technology, and earth sciences, providing powerful tools for spatial data acquisition, analysis, and decision-making. Its applications span diverse fields such as environmental management, urban and regional planning, disaster risk reduction, natural resource monitoring, and governance, reflecting its growing significance in both academia and industry (Goodchild, 2007; Li, Dragicevic, & Veenendaal, 2020).\nThis lecture note, titled Open Geoinformatics is being prepared as a comprehensive introductory resource for students, researchers, and practitioners seeking to build a foundation in geospatial science and technology. A special emphasis is placed on Free and Open-Source Software (FOSS) tools and datasets, ensuring that the knowledge imparted is not only theoretically rigorous but also practically accessible without licensing restrictions.\nThe content presents essential concepts of Geographic Information Systems (GIS), Remote Sensing (RS), Global Navigation Satellite Systems (GNSS), Spatial Databases, and WebGIS, with a balanced focus on theory and practice. The structure is designed to support stepwise learning—beginning with fundamentals and gradually progressing toward advanced applications and integration of geospatial technologies.\nIn particular, this work acknowledges the invaluable role of FOSS geospatial platforms and libraries—including QGIS (QGIS Development Team, 2024), SAGA GIS (Conrad et al., 2008), PostGIS (PostGIS Project Steering Committee, 2023), GeoServer (GeoServer Development Team, 2024), and GDAL/OGR (GDAL/OGR contributors, 2023). These tools, along with contributions from numerous other open-source projects, not only provide world-class functionality but also embody the spirit of collaborative knowledge-building and open science.\nThe compilation draws upon established literature and best practices in the field, while also incorporating open-source software environments, community-driven innovations, and contemporary applications to make the learning process relevant in today’s context. It is hoped that this work will not only serve as a guide for academic study but also inspire further exploration, research, and innovation in the open geospatial domain.\nI gratefully acknowledge the contributions of scholars, researchers, and the global FOSS community whose works form the intellectual and technical foundation of this discipline. Any inadvertent omission of citation is unintentional, and suggestions for improvement and inclusion of additional references are warmly welcomed.\n\n\n\n\nConrad, O., Bechtel, B., Bock, M., Dietrich, H., Fischer, E., Gerlitz, L., … Böhner, J. (2008). System for automated geoscientific analyses (SAGA) v. 2.0. Hamburger Beiträge Zur Physischen Geographie Und Landschaftsökologie, 19, 7–12.\n\n\nGDAL/OGR contributors. (2023). GDAL/OGR geospatial data abstraction library. Retrieved from https://gdal.org\n\n\nGeoServer Development Team. (2024). GeoServer: An open source server for sharing geospatial data. Retrieved from https://geoserver.org\n\n\nGoodchild, M. F. (2007). Citizens as sensors: The world of volunteered geography (Vol. 69, pp. 211–221). https://doi.org/10.1007/s10708-007-9111-y\n\n\nLi, S., Dragicevic, S., & Veenendaal, B. (2020). Advances in geospatial information science: Mapping the big data challenge. International Journal of Digital Earth, 13(2), 123–135. https://doi.org/10.1080/17538947.2019.1651042\n\n\nPostGIS Project Steering Committee. (2023). PostGIS: Spatial and geographic objects for PostgreSQL. Retrieved from https://postgis.net\n\n\nQGIS Development Team. (2024). QGIS geographic information system. Retrieved from https://qgis.org",
     "crumbs": [
       "Preface"
     ]
@@ -14,7 +14,7 @@
     "href": "acknowledgement.html",
     "title": "Acknowledgements",
     "section": "",
-    "text": "This work on Open Geoinformatics is still in progress, and at this stage I am sincerely acknowledging the encouragement and support I am receiving.\nI am especially grateful to Shri. Guddanti Varuna Kumar, Additional Surveyor General, NIGST, who is continuously encouraging me. I am also thankful to Shri. Mahesh R., Deputy Surveyor General, NIGST, Shri. Pankaj Mishra, Deputy Surveyor General, NIGST, and Shri. D.K. Singh, Deputy Surveyor General, NIGST, who are guiding and motivating me during the development of this work.\nA very special acknowledgement is due to Shri. Yoga Chandra P.A., Superintending Surveyor, NIGST, whose constant encouragement and belief in my potential are being a true driving force. His support is pushing me beyond my limits and giving me the confidence to keep progressing with dedication. I am grateful to Shri. Pankaj Singh Kalam, Superintending Surveyor, NIGST, for his encouragement.\nI am also sincerely appreciating the support of Shri. Anand Saga M., Officer Surveyor, NIGST, Shri. P. Mohan Krishna, Officer Surveyor, NIGST, Shri. Basava Raju, Surveyor, NIGST, and Shri. M.V. Subbarao, D/Man Div-I, NIGST, whose encouragement is continuing to help me shape this book.\nI am further acknowledging all others at NIGST who are supporting and encouraging me in this ongoing effort, as their involvement is proving invaluable while I continue working towards the completion of this work.\nFinally, I am expressing my deepest gratitude to my family members, whose patience, understanding, and unwavering support are being my true foundation and strength as I move forward in this journey.",
+    "text": "This work on Open Geoinformatics is still in progress, and at this stage I am sincerely acknowledging the encouragement and support I am receiving.\nI am especially grateful to Shri. Guddanti Varuna Kumar, Additional Surveyor General, NIGST, who is continuously encouraging me. I am also thankful to Shri. Mahesh R., Deputy Surveyor General, NIGST, Shri. Pankaj Mishra, Deputy Surveyor General, NIGST, and Shri. D.K. Singh, Deputy Surveyor General, NIGST, who are guiding and motivating me during the development of this work.\nA very special acknowledgement is due to Shri. Yoga Chandra P.A., Superintending Surveyor, NIGST, whose constant encouragement and belief in my potential are being a true driving force. His support is pushing me beyond my limits and giving me the confidence to keep progressing with dedication. I am grateful to Shri. Pankaj Singh Kalam, Superintending Surveyor, NIGST, for his encouragement.\nI am also sincerely appreciating the support of Shri. Anand Saga M., Officer Surveyor, NIGST, Shri. P. Mohan Krishna, Officer Surveyor, NIGST, Shri. Basava Raju, Surveyor, NIGST, and Shri. M.V. Subbarao, D/Man Div-I, NIGST to shape this book.\nI am further acknowledging all others at NIGST who are supporting and encouraging me in this ongoing effort, as their involvement is proving invaluable while I continue working towards the completion of this work.\nFinally, I am expressing my deepest gratitude to my family members, whose patience, understanding, and unwavering support are being my true foundation and strength as I move forward in this journey.",
     "crumbs": [
       "Acknowledgements"
     ]
@@ -24,9 +24,9 @@
     "href": "chapters/module_1/introduction.html",
     "title": "1  Introduction to Geoinformatics",
     "section": "",
-    "text": "1.1 What is Geoinformatics?\nHave you ever used Google Maps to find the quickest route, checked the weather forecast, or tracked a delivery package? These everyday conveniences are possible because of a field known as Geoinformatics.\nIn simple terms, Geoinformatics is the science and technology concerned with the collection, storage, processing, analysis, and visualization of spatial (location-based) data. It seeks to answer fundamental questions such as\nGeoinformatics is an interdisciplinary field that brings together geography, cartography, computer science, engineering, and information technology. Its key tools include Geographic Information Systems (GIS), Remote Sensing (RS), and Global Navigation Satellite Systems (GNSS), all of which are used to study the Earth and solve spatial problems.",
+    "text": "1.1 What is Geoinformatics?\nHave you ever used Google Maps to find the quickest route, checked the weather forecast, or tracked a delivery package? These everyday conveniences are possible because of a field known as Geoinformatics.\nIn simple terms, Geoinformatics is the science and technology concerned with the collection, storage, processing, analysis, and visualization of spatial (location-based) data. It seeks to answer fundamental questions such as\nGeoinformatics is an interdisciplinary field that integrates Geographic Information Systems (GIS), Remote Sensing (RS), Global Navigation Satellite Systems (GNSS), cartography, digital image processing, spatial databases, GeoAI and web mapping into a unified workflow. It supports the acquisition, management, analysis, visualization, and sharing of spatial information for decision-making.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Geoinformatics</span>"
     ]
   },
@@ -37,7 +37,7 @@
     "section": "",
     "text": "Where is something located?\nWhat is happening there? and\nHow does it relate to its surroundings?",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Geoinformatics</span>"
     ]
   },
@@ -46,9 +46,9 @@
     "href": "chapters/module_1/introduction.html#importance-of-geoinformatics",
     "title": "1  Introduction to Geoinformatics",
     "section": "1.2 Importance of Geoinformatics",
-    "text": "1.2 Importance of Geoinformatics\nThe world today is highly dynamic. Cities are expanding, natural resources are being depleted, and environmental challenges such as climate change and natural disasters are becoming more frequent. To manage these issues effectively, accurate spatial data and strong analytical capabilities are essential.\nGeoinformatics provides this ability and supports a wide range of activities such as:\n\nPlanning and decision-making for urban growth, infrastructure, and governance\n\nEnvironmental monitoring of forests, water bodies, and pollution\n\nDisaster management through early warning systems and risk assessments\n\nEfficient transport and navigation systems\n\nSustainable agriculture and food security through precision farming\n\nIn essence, Geoinformatics transforms spatial data into actionable knowledge for informed decision-making.",
+    "text": "1.2 Importance of Geoinformatics\nThe world today is highly dynamic. Cities are expanding, natural resources are being depleted, and environmental challenges such as climate change and natural disasters are becoming more frequent. To manage these issues effectively, accurate spatial data and strong analytical capabilities are essential.\nGeoinformatics provides this ability and supports a wide range of activities such as:\n\nPlanning and decision-making for urban growth, infrastructure, and governance\n\nEnvironmental monitoring of forests, water bodies, and pollution\n\nDisaster management through early warning systems and risk assessments\n\nEfficient transport and navigation systems\n\nSustainable agriculture and food security through precision farming\n\nIn essence, Geoinformatics transforms spatial data into actionable knowledge for informed decision-making.\n\n1.2.1 Key capabilities of Geoinformatics\n\nData acquisition: satellite/aerial remote sensing, GNSS positioning, ground surveys, and IoT sensors.\n\nData management: spatial databases, metadata, and spatial data infrastructures (SDIs).\n\nSpatial analysis and modeling: image processing, terrain analysis, network analysis, and environmental modeling.\n\nVisualization and communication: maps, dashboards, 3D/4D views, and web platforms.\n\n\n\n1.2.2 Workflow overview\n\n\n\n\n\nflowchart LR\n    A[\"Data Acquisition (Remote Sensing, GNSS, IoT, Surveys)\"]\n    --&gt; B[\"Data Management (Spatial DBs, SDI, Metadata, Catalogues)\"]\n    --&gt; C[\"Analysis & Modeling (GIS, DIP, Geostatistics, Simulation)\"]\n    --&gt; D[\"Visualization & Sharing (Maps, 3D/4D, Web GIS, Dashboards)\"]",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Geoinformatics</span>"
     ]
   },
@@ -57,9 +57,9 @@
     "href": "chapters/module_1/introduction.html#components-of-geoinformatics",
     "title": "1  Introduction to Geoinformatics",
     "section": "1.3 Components of Geoinformatics",
-    "text": "1.3 Components of Geoinformatics\nGeoinformatics is based on several interconnected technologies, including:\n\nRemote Sensing (RS): The collection of Earth data using satellites, drones, and aircraft\n\nGeographic Information Systems (GIS): Computer-based systems for storing, analyzing, and displaying spatial data\n\nGlobal Navigation Satellite Systems (GNSS): Technologies such as GPS that provide accurate positioning and navigation services\n\nCartography and Visualization: Methods for representing data through maps, 3D models, and interactive systems\n\nSpatial Data Infrastructure (SDI): Frameworks and institutions that support data sharing and accessibility",
+    "text": "1.3 Components of Geoinformatics\nGeoinformatics is based on several interconnected technologies, including:\n\nRemote Sensing (RS): The collection of Earth data using satellites, drones, and aircraft\n\nGeographic Information Systems (GIS): Computer-based systems for storing, analyzing, and displaying spatial data\n\nGlobal Navigation Satellite Systems (GNSS): Technologies such as GPS that provide accurate positioning and navigation services\n\nCartography and Visualization: Methods for representing data through maps, 3D models, and interactive systems\n\nSpatial Data Infrastructure (SDI): Frameworks and institutions that support data sharing and accessibility\n\nDigital Image Processing (DIP): Techniques for enhancing, classifying, and analyzing remotely sensed imagery and other raster data to extract meaningful information.\nWeb Mapping and Web GIS: Internet-based tools and services that deliver, analyze, and integrate spatial information through interactive web platforms and APIs.\nGeoAI (Geospatial Artificial Intelligence): Application of artificial intelligence, machine learning, and deep learning techniques to spatial data for tasks such as image classification, predictive modeling, feature extraction, and automated decision-making.\n\n\n\n\n\n\n\nFigure 1.1: Geoinformatics",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Geoinformatics</span>"
     ]
   },
@@ -70,7 +70,7 @@
     "section": "1.4 Evolution of Geoinformatics",
     "text": "1.4 Evolution of Geoinformatics\nThe development of Geoinformatics reflects humanity’s evolving relationship with spatial data. In the past, geographic information was measured and represented manually through surveys and cartographic techniques. With the introduction of aerial photography and later satellite imaging, data collection became faster and more accurate.\nThe digital revolution of the 20th century enabled computer-based mapping and Geographic Information Systems (GIS), which greatly expanded analytical possibilities. Today, cloud computing, artificial intelligence, and big data are transforming Geoinformatics into a real-time and dynamic discipline.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Geoinformatics</span>"
     ]
   },
@@ -81,7 +81,7 @@
     "section": "1.5 Applications of Geoinformatics",
     "text": "1.5 Applications of Geoinformatics\nGeoinformatics has diverse applications across sectors. Some key examples include:\n\nDisaster Management: Flood mapping, earthquake impact assessment, and forest fire monitoring\n\nEnvironmental Studies: Climate change monitoring, pollution tracking, and conservation planning\n\nUrban and Regional Planning: Smart city development, infrastructure planning, and land-use analysis\n\nAgriculture: Precision farming, soil health assessment, and crop yield prediction\n\nTransportation and Logistics: Route optimization, vehicle tracking, and supply chain management\n\nDefense and Security: Terrain analysis, border surveillance, and communication systems",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Geoinformatics</span>"
     ]
   },
@@ -92,7 +92,7 @@
     "section": "1.6 The Open Dimension",
     "text": "1.6 The Open Dimension\nAn essential characteristic of modern Geoinformatics is the increasing role of open-source software and open data. Unlike proprietary systems, which often involve high licensing costs and limited flexibility, open platforms are freely available, shaped by global communities, and can be tailored to diverse applications.\nWell-known tools such as QGIS, GRASS GIS, PostGIS, GeoServer, and SAGA GIS, along with community-driven projects like OpenStreetMap (OSM), offer robust and accessible options for spatial analysis, data handling, and online data sharing. Through these resources, Geoinformatics has become more democratic, inclusive, and participatory. More than just technological solutions, they embody a broader philosophy of openness, cooperation, and shared responsibility in using spatial knowledge to address global challenges.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Geoinformatics</span>"
     ]
   },
@@ -103,7 +103,7 @@
     "section": "1.7 Future of Geoinformatics",
     "text": "1.7 Future of Geoinformatics\nGeoinformatics is continuously evolving with emerging technologies. Future directions include:\n\nArtificial Intelligence and Machine Learning for automated analysis of satellite imagery\n\nInternet of Things (IoT) for integrating ground-based sensors with geospatial systems\n\nDigital Twins for creating dynamic, real-time models of cities and natural systems\n\nDrone-based mapping for high-resolution, flexible data collection\n\nCitizen science and open data initiatives that encourage public participation in data generation\n\nIn the future, Geoinformatics will not only describe what is happening but also predict future scenarios and guide decisions for sustainable development.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Geoinformatics</span>"
     ]
   },
@@ -114,7 +114,7 @@
     "section": "1.8 Conclusion",
     "text": "1.8 Conclusion\nGeoinformatics is more than the study of maps. It is a modern discipline that integrates technology with geography to provide solutions for real-world challenges. From disaster management to urban planning and environmental protection, its applications are vast and significant.\nWith the rise of open-source software and open data initiatives, Geoinformatics has become more accessible and collaborative than ever before. This inclusive approach is shaping the way we understand and manage our planet.\nThus, Open Geoinformatics represents not only the science of spatial data but also the philosophy of openness, collaboration, and shared knowledge for a sustainable future. The next chapter explores this openness further by introducing Free and Open-Source Software (FOSS), which forms the foundation of modern geospatial practice.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Geoinformatics</span>"
     ]
   },
@@ -125,7 +125,7 @@
     "section": "",
     "text": "2.1 FOSS\nFree and Open-Source Software (FOSS) refers to software released under a license that grants users essential freedoms to run it for any purpose, examine how it works, adapt it to their needs, and share it, whether in its original form or with modifications, without limitations or fees. The term FOSS blends two closely related ideas: free software, which focuses on user rights and collaborative ownership, and open-source software, which stresses transparency and community-driven development.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Free and Open-Source Software</span>"
     ]
   },
@@ -136,7 +136,7 @@
     "section": "",
     "text": "Figure 2.1: Free and Open-Source Software",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Free and Open-Source Software</span>"
     ]
   },
@@ -147,7 +147,7 @@
     "section": "2.2 Free Software ≠ Open Source",
     "text": "2.2 Free Software ≠ Open Source\nRichard Stallman, founder of the Free Software Movement, points out that while free software and open source often describe the same kind of programs, they are based on different ideas.\n\nFree software is about freedom making sure people control the software they use.\n\nOpen source is more about practical benefits like better quality and faster development, without focusing much on the moral side\n(gnu.org).",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Free and Open-Source Software</span>"
     ]
   },
@@ -158,7 +158,7 @@
     "section": "2.3 The Four Freedoms of Free Software",
     "text": "2.3 The Four Freedoms of Free Software\n“Free” here means freedom, not zero cost. Free software means you can:\n\n\n\n\n\n\nFigure 2.2: The Four Freedoms of Free Software\n\n\n\n\nFreedom 0 : Use the program however you want.\n\nFreedom 1 : Look at the code and change it to fit your needs.\n\nFreedom 2 : Give copies to anyone.\n\nFreedom 3 : Share your improved versions with others.\n\n(Source: Wikipedia)",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Free and Open-Source Software</span>"
     ]
   },
@@ -169,7 +169,7 @@
     "section": "2.4 A Short History",
     "text": "2.4 A Short History\n\n1983 : The Free Software Movement began with the GNU Project and a license (GPL) that made sure these freedoms were protected (Wikipedia).\n\n1998 : Some in the community started calling it “open source” to make the idea sound more appealing to businesses. This approach often skipped talking about the moral side of software freedom (gnu.org).",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Free and Open-Source Software</span>"
     ]
   },
@@ -180,7 +180,7 @@
     "section": "2.5 The Open Source Definition (OSD)",
     "text": "2.5 The Open Source Definition (OSD)\nThe Open Source Definition (OSD), managed by the Open Source Initiative (OSI), explains what counts as open-source software. Created in 2006 and last updated in February 2024, it lists ten rules that go beyond just sharing the code. Open Source software means you can:\n\nFree sharing : no fees or restrictions.\n\nSource code included : in a form you can read and edit.\n\nChanges allowed : you can make and share new versions.\n\nWorks on any tech : no limits based on platform or hardware.\n\nThese rules make sure open-source software stays free to use, change, and share, giving a clear and trusted meaning for developers, communities, and businesses.\n\n\n\n\n\n\nFigure 2.3: The ten rules of Open Source Software",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Free and Open-Source Software</span>"
     ]
   },
@@ -191,7 +191,7 @@
     "section": "2.6 Different Ways of Thinking",
     "text": "2.6 Different Ways of Thinking\nWhile both groups create similar kinds of software, they make choices differently:\n\nOpen source thinking: “Is this the best tool for the job?” may use closed, paid software if it’s more convenient.\n\nFree software thinking: “Does this respect my freedom?” avoids closed software even if it’s technically better.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Free and Open-Source Software</span>"
     ]
   },
@@ -202,7 +202,7 @@
     "section": "2.7 Comparison: Free Software vs Open Source",
     "text": "2.7 Comparison: Free Software vs Open Source\n\n\n\nTable 2.1: Free Software vs Open Source comparison\n\n\n\n\n\n\n\n\n\n\nAspect\nFree Software\nOpen Source Software\n\n\n\n\nEmphasis\nFocuses on freedom (user rights)\nFocuses on development model and practical benefits\n\n\nFounded by\nRichard Stallman (Free Software Foundation - FSF)\nEric Raymond & Bruce Perens (Open Source Initiative - OSI)\n\n\nCore Idea\nUsers should control the software they use\nOpen code leads to better, more reliable software\n\n\nTerminology\n“Free” means freedom, not price (“free as in freedom”)\n“Open Source” avoids the ambiguity of the word “free”\n\n\nEthical Standpoint\nA moral and social movement\nA development methodology\n\n\nLicensing\nRequires copyleft licenses (e.g., GPL) to protect freedom\nAccepts permissive licenses (e.g., MIT, BSD, Apache)\n\n\nGoal\nEmpower users with freedoms to use, study, modify, share\nPromote wider adoption of open development practices\n\n\nTone & Messaging\nOften ideological\nOften pragmatic and business-friendly",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Free and Open-Source Software</span>"
     ]
   },
@@ -213,7 +213,7 @@
     "section": "2.8 Conclusion",
     "text": "2.8 Conclusion\nFree and Open-Source Software represents more than just a different way to build and share code, it reflects two complementary philosophies that have shaped modern software culture. While the Free Software movement champions user freedoms as a moral imperative, the Open Source approach emphasizes collaboration, transparency, and practical benefits. Together, they have fostered a global ecosystem where knowledge is openly shared, innovation thrives, and communities,from hobbyists to governments can create, adapt, and distribute technology without restrictive barriers.\nThe next chapter explores the framework that makes this openness possible by introducing FOSS licenses, which define the rights and responsibilities that guide how software can be used, modified, and shared.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Free and Open-Source Software</span>"
     ]
   },
@@ -224,7 +224,7 @@
     "section": "",
     "text": "3.1 Introduction\nFree and Open-Source Software (FOSS) licenses are rules that explain how you can use, change, and share a piece of software. They make sure the promises of FOSS, like seeing the code, improving it, and sharing it; are protected by law.\nThink of them as:\nNot all FOSS licenses are the same. Some, called copyleft licenses, require any changed versions to stay open. Others, called permissive licenses, give you more freedom to reuse the code, even in closed-source projects.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Free and Open-Source Software (FOSS) licenses</span>"
     ]
   },
@@ -235,7 +235,7 @@
     "section": "",
     "text": "A shield protecting your rights as a user.\nA guide showing how people can work together and reuse code.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Free and Open-Source Software (FOSS) licenses</span>"
     ]
   },
@@ -246,7 +246,7 @@
     "section": "3.2 Copyleft Licenses (Restrictive / Strong Share-Alike)",
     "text": "3.2 Copyleft Licenses (Restrictive / Strong Share-Alike)\nThese licenses require that derivative works and redistributions also remain under the same license.\n\n\n\nTable 3.1: Common Copyleft Licenses\n\n\n\n\n\n\n\n\n\nLicense Name\nKey Features\n\n\n\n\nGNU General Public License (GPL)\nMust release modified code under same license; widely used in FSF projects\n\n\nGNU Lesser GPL (LGPL)\nAllows linking with proprietary code (for libraries); milder than GPL\n\n\nAGPL (Affero GPL)\nExtends GPL to network services must release source even when software is only accessed over a network\n\n\nEUPL\nEuropean Union Public License similar to GPL, legally compliant in EU jurisdictions\n\n\n\n\n\n\nThe Goal of Copyleft Licenses is to protect user freedoms by enforcing openness downstream (strong reciprocity).",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Free and Open-Source Software (FOSS) licenses</span>"
     ]
   },
@@ -257,7 +257,7 @@
     "section": "3.3 Permissive Licenses (Non-Restrictive / Minimal Requirements)",
     "text": "3.3 Permissive Licenses (Non-Restrictive / Minimal Requirements)\nThese licenses allow reuse in both open and proprietary projects, with minimal conditions.\n\n\n\nTable 3.2: Common Permissive Licenses\n\n\n\n\n\n\n\n\n\nLicense Name\nKey Features\n\n\n\n\nMIT License\nSimple, Very permissive; Just requires attribution\n\n\nApache License 2.0\nAllows patent use; More corporate-friendly than MIT\n\n\nBSD Licenses (2-clause, 3-clause)\nMinimal restrictions; Used in BSD OS family\n\n\nISC License\nEven simpler than MIT; No warranties, Attribution required\n\n\n\n\n\n\nThe Goal of Permissive Licenses is to maximize freedom to use and integrate, including in closed-source projects.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Free and Open-Source Software (FOSS) licenses</span>"
     ]
   },
@@ -268,7 +268,7 @@
     "section": "3.4 Copyleft vs Permissive licenses - Key Differences",
     "text": "3.4 Copyleft vs Permissive licenses - Key Differences\nIn general, Copyleft licenses protect the freedom of the code. Permissive licenses prioritize freedom for developers and businesses.\n\n\n\nTable 3.3: Copyleft vs Permissive licenses key Differences comparison\n\n\n\n\n\n\n\n\n\n\nFeature\nCopyleft (GPL)\nPermissive (MIT/Apache)\n\n\n\n\nRequires same license for derivatives\nYes\nNo\n\n\nAllows proprietary use\nNo\nYes\n\n\nPopular with\nFree Software movement\nBusinesses, startups",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Free and Open-Source Software (FOSS) licenses</span>"
     ]
   },
@@ -279,85 +279,74 @@
     "section": "3.5 Conclusion",
     "text": "3.5 Conclusion\nFOSS licenses form the legal backbone of the open-source ecosystem, ensuring that the freedoms to use, study, modify, and share software are upheld. While copyleft licenses safeguard these freedoms by requiring derivatives to remain open, permissive licenses focus on flexibility, enabling integration into both open and proprietary projects. Understanding these license types is essential for developers, organizations, and policymakers to choose the right balance between protecting openness and encouraging broader adoption. In essence, the right license not only defines how software is shared but also shapes the culture of collaboration and innovation in the FOSS community.\nBuilding on this foundation, the next chapter introduces FOSS GIS, where these licensing principles meet the world of geospatial technologies, enabling powerful, accessible, and collaborative tools for spatial analysis and decision-making.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Free and Open-Source Software (FOSS) licenses</span>"
     ]
   },
   {
-    "objectID": "chapters/module_1/foss_gis.html",
-    "href": "chapters/module_1/foss_gis.html",
-    "title": "4  Introduction to FOSS GIS",
+    "objectID": "chapters/module_1/foss_geoinformatics.html",
+    "href": "chapters/module_1/foss_geoinformatics.html",
+    "title": "4  Introduction to FOSS Geoinformatics",
     "section": "",
-    "text": "4.1 What is GIS?\nA Geographic Information System (GIS) is a computer-based framework that allows us to work with information that has a spatial or geographic component. In simple terms, GIS links “what” data is about with “where” it is located on Earth. This combination makes it possible to explore patterns, detect relationships, and make informed decisions.",
+    "text": "4.1 What is FOSS Geoinformatics?\nFree and Open Source Software (FOSS) Geoinformatics includes applications and libraries whose source code is openly available for use, study, modification, and redistribution under open licenses. FOSS spans the entire spatial workflow:",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS GIS</span>"
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS Geoinformatics</span>"
     ]
   },
   {
-    "objectID": "chapters/module_1/foss_gis.html#what-is-gis",
-    "href": "chapters/module_1/foss_gis.html#what-is-gis",
-    "title": "4  Introduction to FOSS GIS",
+    "objectID": "chapters/module_1/foss_geoinformatics.html#what-is-foss-geoinformatics",
+    "href": "chapters/module_1/foss_geoinformatics.html#what-is-foss-geoinformatics",
+    "title": "4  Introduction to FOSS Geoinformatics",
     "section": "",
-    "text": "4.1.1 Key capabilities of GIS\n\nData collection and input : incorporating maps, survey data, GPS readings, satellite images, and sensor outputs.\n\nData management : organizing spatial layers and related attribute information in structured databases.\n\nSpatial analysis : applying tools such as buffering, overlay, network modeling, and terrain analysis to answer location-based questions.\n\nVisualization and communication : producing digital or printed maps, interactive dashboards, and 3D models that convey results effectively.\n\n\n\n4.1.2 Applications of GIS\n\nUrban growth and land-use planning\nGIS helps city planners design sustainable urban spaces by analyzing existing land use, population growth, and infrastructure availability. It supports zoning decisions, urban renewal projects, and smart city initiatives.\nMonitoring of natural resources and environment\nGIS is widely used in forestry, water management, soil conservation, and biodiversity protection. It allows continuous monitoring of ecosystems and helps authorities detect environmental degradation early.\nEmergency response and disaster risk reduction\nHazard-prone areas can be mapped with GIS to prepare for disasters like floods, cyclones, or earthquakes. During emergencies, it supports real-time coordination of evacuation routes, shelters, and relief supplies.\nTransportation planning and navigation services\nFrom traffic analysis to public transport route optimization, GIS enables efficient mobility planning. It also powers everyday navigation apps that millions rely on for real-time directions.\nHealth studies such as disease mapping\nBy mapping the spread of diseases, GIS reveals spatial patterns of outbreaks and helps allocate medical resources. It also supports vaccination campaigns and long-term healthcare infrastructure planning.\nMarket research and business logistics\nBusinesses use GIS for site selection, customer profiling, competitor analysis, and logistics optimization. Delivery companies rely on GIS to design cost-efficient and timely distribution routes.\nAgriculture and precision farming\nFarmers and agricultural agencies apply GIS to monitor soil quality, rainfall, crop health, and pest outbreaks. Precision farming uses spatial data to apply fertilizers and water efficiently, improving productivity while reducing costs.\nClimate change studies\nResearchers use GIS to model rising sea levels, shifting vegetation zones, glacial retreat, and temperature variations. This helps governments plan mitigation and adaptation strategies at both local and global scales.\nArchaeology and cultural heritage management\nGIS assists archaeologists in locating excavation sites, mapping ancient landscapes, and preserving cultural heritage. Museums and heritage authorities also use GIS to manage monuments and visitor facilities.\nPublic utilities and infrastructure management\nUtility companies rely on GIS to manage water pipelines, electricity networks, and telecommunication lines. It helps detect faults, plan maintenance, and ensure efficient service delivery.\nCrime analysis and law enforcement\nPolice and security agencies use GIS to analyze crime hotspots, study spatial patterns of offenses, and optimize patrolling routes. This improves public safety and law enforcement efficiency.\nTourism and recreation planning\nTourism boards and park authorities employ GIS to map attractions, hiking trails, and facilities. It also supports eco-tourism by balancing visitor access with conservation.\n\nThrough these functions, GIS has become an essential tool for governments, researchers, and industries to support evidence-based planning and problem solving.",
+    "text": "GIS for mapping and spatial analysis.\n\nRemote sensing & digital image processing for Earth observation data.\n\nGNSS for precise positioning and navigation.\n\nWeb GIS & spatial databases for publishing and interoperability.\n\nVisualization for communication and decision support.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS GIS</span>"
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS Geoinformatics</span>"
     ]
   },
   {
-    "objectID": "chapters/module_1/foss_gis.html#what-is-foss-gis",
-    "href": "chapters/module_1/foss_gis.html#what-is-foss-gis",
-    "title": "4  Introduction to FOSS GIS",
-    "section": "4.2 What is FOSS GIS?",
-    "text": "4.2 What is FOSS GIS?\nFree and Open Source Software for Geographic Information Systems (FOSS GIS) refers to GIS applications distributed under open-source licenses. Their source code is publicly available, which means that anyone can study how the software works, adapt it to their own requirements, and share modified versions without restrictions from license fees. This openness fosters flexibility, collaboration, and wider access to spatial technologies.",
+    "objectID": "chapters/module_1/foss_geoinformatics.html#why-foss-geoinformatics-matters",
+    "href": "chapters/module_1/foss_geoinformatics.html#why-foss-geoinformatics-matters",
+    "title": "4  Introduction to FOSS Geoinformatics",
+    "section": "4.2 Why FOSS Geoinformatics Matters",
+    "text": "4.2 Why FOSS Geoinformatics Matters\n\nAffordable access: lowers entry barriers for education, community use, NGOs, and startups.\n\nCommunity-driven development: global collaboration supports continuous improvement.\n\nAdaptability: tools can be customized for local workflows and languages.\n\nTransparency: open code enables verification of methods and security.\n\nCapacity building: encourages learning and experimentation.\n\nInteroperability: open standards (e.g., OGC/ISO) enable integration across platforms.\n\nPlatform flexibility: commonly available for Linux, Windows, and macOS.\n\nIntegration across domains: unifies GIS, RS, GNSS, databases, and the web.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS GIS</span>"
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS Geoinformatics</span>"
     ]
   },
   {
-    "objectID": "chapters/module_1/foss_gis.html#why-foss-gis-matters",
-    "href": "chapters/module_1/foss_gis.html#why-foss-gis-matters",
-    "title": "4  Introduction to FOSS GIS",
-    "section": "4.3 Why FOSS GIS Matters",
-    "text": "4.3 Why FOSS GIS Matters\n\nAffordable access : removes the barrier of expensive licenses, enabling schools, community groups, and small organizations to use GIS.\n\nCommunity-driven innovation : improvements, bug fixes, and new features are contributed by a global network of users and developers.\n\nAdaptability : tools can be tailored to fit unique projects, workflows, or local needs.\n\nTrust and transparency : open code allows independent verification of security and reliability.\n\nLearning and capacity building : free availability encourages experimentation and skill development among students and professionals.\n\nInteroperability : support for open data standards promotes smooth exchange of information across different software platforms.\n\nFreedom of choice : users are not locked into one vendor’s ecosystem and can migrate between tools more easily.\n\nPlatform flexibility : many programs run on multiple operating systems, including Windows, Linux, macOS, and sometimes even mobile devices.",
+    "objectID": "chapters/module_1/foss_geoinformatics.html#examples-of-popular-foss-geoinformatics-tools",
+    "href": "chapters/module_1/foss_geoinformatics.html#examples-of-popular-foss-geoinformatics-tools",
+    "title": "4  Introduction to FOSS Geoinformatics",
+    "section": "4.3 Examples of Popular FOSS Geoinformatics Tools",
+    "text": "4.3 Examples of Popular FOSS Geoinformatics Tools\nThe FOSS geoinformatics ecosystem includes desktop analysis, satellite data processing, web mapping, database management, and GNSS processing.\n\n\n\nTable 4.1: Examples of Popular FOSS Geoinformatics Tools\n\n\n\n\n\n\n\n\n\n\n\nSoftware\nDomain\nDescription\nLicense Type\n\n\n\n\nQGIS\nGIS\nDesktop GIS with a rich plugin ecosystem for mapping and analysis.\nGNU GPL v2\n\n\nGRASS GIS\nGIS/RS/DIP\nAdvanced raster–vector processing, image classification, and modeling.\nGNU GPL v2\n\n\nSAGA GIS\nGIS/Environmental\nRaster analysis, geomorphometry, and terrain modeling.\nGNU GPL v2\n\n\nWhiteboxTools\nDIP/Modeling\nLiDAR tools, hydrology, and raster processing with Python/R bindings.\nMIT\n\n\nESA SNAP\nRemote Sensing\nProcessing of Sentinel and other EO missions.\nGNU GPL v3\n\n\nOrfeo Toolbox (OTB)\nRemote Sensing\nHigh-performance image analysis and change detection (C++/Python).\nApache 2.0\n\n\nPDAL\nPoint Clouds\nIngests, filters, and transforms LiDAR/point cloud data.\nBSD\n\n\nPostGIS\nSpatial DB\nSpatial extension for PostgreSQL; advanced spatial queries and indexing.\nGNU GPL v2\n\n\nSpatiaLite\nSpatial DB\nSQLite with spatial capabilities for lightweight deployments.\nMPL/GPL/LGPL\n\n\nGeoServer\nWeb GIS\nPublishes data via OGC services (WMS/WFS/WCS/WPS).\nGNU GPL v2\n\n\nMapServer\nWeb GIS\nHigh-performance map rendering server.\nMIT\n\n\nOpenLayers\nWeb GIS\nJavaScript library for interactive web maps.\nBSD\n\n\nLeaflet\nWeb GIS\nLightweight web-mapping JavaScript library.\nBSD\n\n\nOpenStreetMap\nOpen Data\nGlobal, community-curated basemap and POI dataset.\nODbL\n\n\nRTKLIB\nGNSS\nPrecise GNSS processing (PPP/RTK) for GPS, GLONASS, Galileo, etc.\nBSD\n\n\nGPSTk (GPS Toolkit)\nGNSS\nLibraries and apps for GNSS positioning and research (C++).\nGNU LGPL\n\n\ngoGPS\nGNSS\nGNSS processing and sensor fusion (MATLAB/Python variants).\nGPL\n\n\nGNSS-SDR\nGNSS\nSoftware-defined receiver framework; raw data to position.\nGPL v3",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS GIS</span>"
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS Geoinformatics</span>"
     ]
   },
   {
-    "objectID": "chapters/module_1/foss_gis.html#examples-of-popular-foss-gis-tools",
-    "href": "chapters/module_1/foss_gis.html#examples-of-popular-foss-gis-tools",
-    "title": "4  Introduction to FOSS GIS",
-    "section": "4.4 Examples of Popular FOSS GIS Tools",
-    "text": "4.4 Examples of Popular FOSS GIS Tools\nThe FOSS GIS ecosystem offers a wide range of tools catering to different geospatial needs from desktop applications for mapping and analysis to web mapping libraries and spatial databases. These tools are developed and maintained by vibrant global communities, ensuring continuous improvements, bug fixes, and new features. They also operate under various open-source licenses, which define how the software can be used, modified, and redistributed. The table below provides a curated list of notable FOSS GIS software, highlighting their main functions and license types.\n\n\n\nTable 4.1: Examples of Popular FOSS GIS Tools\n\n\n\n\n\n\n\n\n\n\nSoftware\nDescription\nLicense Type\n\n\n\n\nQGIS (Quantum GIS)\nWidely used desktop GIS with an intuitive interface and extensive plugin support for both basic and advanced tasks.\nGNU GPL v2\n\n\nGRASS GIS\nComprehensive suite for spatial data analysis, modeling, and management, known for advanced raster/vector processing.\nGNU GPL v2\n\n\nSAGA GIS\nPowerful toolset for raster-based spatial analysis, terrain modeling, and environmental applications.\nGNU GPL v2\n\n\nESA SNAP\nSpecialized in processing and analyzing Earth observation data from Sentinel and other satellites.\nGNU GPL v3\n\n\nOpenStreetMap\nGlobal, community-driven mapping project offering free and editable map data.\nOpen Database License (ODbL)\n\n\nGeoServer\nWeb-based platform for publishing and editing geospatial data using open standards.\nGNU GPL v2\n\n\nMapServer\nHigh-performance web mapping server supporting a variety of data formats and OGC standards.\nMIT License\n\n\nPostGIS\nPostgreSQL extension enabling advanced spatial database functionality.\nGNU GPL v2\n\n\ngvSIG\nDesktop GIS for robust spatial analysis and cartographic visualization.\nGNU GPL v2\n\n\nWhitebox GAT\nSpecializes in terrain analysis, hydrological modeling, and LiDAR processing.\nGNU GPL v3\n\n\nOpenJump\nHandles large datasets efficiently and supports multiple plugins.\nGNU GPL v2\n\n\nGeoDa\nDesigned for statistical and spatial data analysis.\nGNU GPL v3\n\n\nOpenLayers\nJavaScript library for building dynamic, interactive web maps using open data and standards.\nBSD 2-Clause",
+    "objectID": "chapters/module_1/foss_geoinformatics.html#importance-of-open-source-data-software-in-ngp-2022",
+    "href": "chapters/module_1/foss_geoinformatics.html#importance-of-open-source-data-software-in-ngp-2022",
+    "title": "4  Introduction to FOSS Geoinformatics",
+    "section": "4.4 Importance of Open-Source Data & Software in NGP 2022",
+    "text": "4.4 Importance of Open-Source Data & Software in NGP 2022\nThe National Geospatial Policy (NGP) 2022 encourages open standards, open data, and open-source platforms. This direction promotes accessibility, interoperability, and reuse across agencies, academia, industry, and communities.\nBy promoting FOSS Geoinformatics:\n\nCommunities can use spatial data for local planning and risk reduction.\n\nEducational institutions can train students without licensing restrictions.\n\nStartups and NGOs can develop cost-effective geospatial services.\n\nThis approach supports a self-reliant, transparent, and future-ready geospatial ecosystem, reduces vendor dependence, and strengthens collaboration.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS GIS</span>"
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS Geoinformatics</span>"
     ]
   },
   {
-    "objectID": "chapters/module_1/foss_gis.html#importance-of-open-source-data-software-in-ngp-2022",
-    "href": "chapters/module_1/foss_gis.html#importance-of-open-source-data-software-in-ngp-2022",
-    "title": "4  Introduction to FOSS GIS",
-    "section": "4.5 Importance of Open-Source Data & Software in NGP 2022",
-    "text": "4.5 Importance of Open-Source Data & Software in NGP 2022\nThe National Geospatial Policy (NGP) 2022 places strong emphasis on adopting open standards, open data, and open-source software platforms as outlined in Section 3.6: Strategy and Approach. This policy direction aims to make geospatial resources more accessible, interoperable, and reusable across different sectors and user groups. By ensuring that datasets are available in open formats and that software platforms are based on open-source technologies, the NGP removes dependency on proprietary systems, reducing costs and avoiding vendor lock-in. Such openness encourages collaboration between government agencies, academia, industry, and the community, leading to faster innovation, more reliable solutions, and inclusive participation.\nOpen-source GIS tools and freely available datasets empower:\n\nLocal communities to access and use spatial data for decision-making.\n\nEducational institutions to train students without licensing barriers.\n\nStartups and NGOs to develop cost-effective geospatial applications.\n\nUltimately, this open approach aligns with the vision of building a self-reliant, transparent, and future-ready geospatial ecosystem for India.",
+    "objectID": "chapters/module_1/foss_geoinformatics.html#conclusion",
+    "href": "chapters/module_1/foss_geoinformatics.html#conclusion",
+    "title": "4  Introduction to FOSS Geoinformatics",
+    "section": "4.5 Conclusion",
+    "text": "4.5 Conclusion\nFOSS Geoinformatics is reshaping how spatial data are collected, processed, analyzed, and communicated. Open tools such as QGIS, GRASS GIS, OTB, SNAP, PostGIS, GeoServer, and open GNSS stacks like RTKLIB, GPSTk, goGPS, and GNSS-SDR enable integrated and interoperable workflows. Communities worldwide can now contribute to and benefit from shared spatial knowledge, empowering students, researchers, governments, and industries to solve real-world problems.\nHowever, true collaboration requires more than just open tools and data. Different systems must follow common rules to share and understand information effectively. This is where open standards become essential, providing the universal language that makes geospatial technologies interoperable. The next chapter introduces these open standards.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS GIS</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/module_1/foss_gis.html#conclusion",
-    "href": "chapters/module_1/foss_gis.html#conclusion",
-    "title": "4  Introduction to FOSS GIS",
-    "section": "4.6 Conclusion",
-    "text": "4.6 Conclusion\nFOSS GIS is transforming the way spatial data is managed, analyzed, and shared. With tools like QGIS, GRASS GIS, PostGIS, GeoServer, SAGA GIS, and global projects such as OpenStreetMap, it makes geospatial technology more affordable, transparent, and collaborative. Communities worldwide can now contribute to and benefit from shared spatial knowledge, empowering students, researchers, governments, and industries to solve real-world problems.\nHowever, true collaboration requires more than just open tools and data. Different systems must follow common rules to share and understand information effectively. This is where open standards become essential, providing the universal language that makes geospatial technologies interoperable. The next chapter introduces these open standards.",
-    "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS GIS</span>"
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction to FOSS Geoinformatics</span>"
     ]
   },
   {
@@ -367,7 +356,7 @@
     "section": "",
     "text": "5.1 Introduction\nGeospatial data today powers everything from navigation apps to climate research. For this information to be useful, it must be interoperable; that is, capable of moving between different platforms, software, and organizations without compatibility issues. The Open Geospatial Consortium (OGC) develops open standards that make this possible, ensuring a common “language” for geospatial data exchange and processing (OGC, 2025).",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Open Standards</span>"
     ]
   },
@@ -378,7 +367,7 @@
     "section": "5.2 What are Open Standards?",
     "text": "5.2 What are Open Standards?\nOpen Standards are publicly available specifications that define how software systems should exchange data and communicate.\nThey allow interoperability, prevent vendor lock-in, and encourage innovation by ensuring that multiple tools can share and process the same data.\nExample: A flood map generated in ArcGIS can be visualized in QGIS or Google Earth if shared using an OGC standard such as WMS or KML.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Open Standards</span>"
     ]
   },
@@ -389,7 +378,7 @@
     "section": "5.3 Key Characteristics of Open Standards",
     "text": "5.3 Key Characteristics of Open Standards\n\nPublicly available: Anyone can access and implement them.\n\nInteroperable: Allow different systems to work together seamlessly.\n\nNon-proprietary: Not controlled by a single vendor.\n\nConsensus-driven: Developed collaboratively by communities of experts.\n\nWidely adopted: Used across industries, governments, and academia.\n\nFuture-oriented: Designed to evolve with new technological trends.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Open Standards</span>"
     ]
   },
@@ -400,7 +389,7 @@
     "section": "5.4 OGC Standards Landscape",
     "text": "5.4 OGC Standards Landscape\nOGC standards can be broadly grouped into three categories (OGC, 2025):\n\n5.4.1 Modern OGC APIs (REST/JSON)\nDeveloped for the modern web, these standards use REST principles and lightweight formats like JSON (JavaScript Object Notation). They are developer-friendly and cloud-ready.\n\nOGC API – Features: Access vector features.\n\nOGC API – Maps: Retrieve maps dynamically.\n\nOGC API – Tiles: Fetch tiled map layers.\n\nOGC SensorThings API: Manage Internet of Things (IoT) sensor data.\n\n\n\n5.4.2 Legacy Web Services (XML-based)\nEarlier standards relied on XML (eXtensible Markup Language) and remote procedure calls. They remain widely used in geospatial applications.\n\nWMS (Web Map Service): Provides map images.\n\nWFS (Web Feature Service): Provides vector features with attributes.\n\nWCS (Web Coverage Service): Provides raster or coverage data.\n\nWPS (Web Processing Service): Runs geospatial processing tasks online.\n\n\n\n5.4.3 Data Models and Encodings\nThese specify how geospatial data is structured and exchanged.\n\nGML (Geography Markup Language): XML-based representation of features.\n\nKML (Keyhole Markup Language): XML-based, widely used for map visualization.\n\nGeoJSON: Lightweight JSON format, popular in web mapping.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Open Standards</span>"
     ]
   },
@@ -411,7 +400,7 @@
     "section": "5.5 TL;DR Summary Table",
     "text": "5.5 TL;DR Summary Table\nThe OGC standards ecosystem is broad and sometimes overwhelming. To make things easier, the following table provides a “Too Long; Didn’t Read (TL;DR) overview”, summarizing the major categories of standards, their examples, and their key use cases at a glance.\n\n\n\nTable 5.1: Summary Table of Major Categories of Standards\n\n\n\n\n\n\n\n\n\n\nCategory\nExamples\nNotes\n\n\n\n\nModern APIs\nOGC API – Features, Maps, Tiles, SensorThings\nREST/JSON, lightweight, cloud-friendly\n\n\nLegacy Web Services\nWMS, WFS, WCS, WPS\nXML-based, still widely used in many systems\n\n\nData Encodings\nGML, KML, GeoJSON\nDefine how data is structured and exchanged",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Open Standards</span>"
     ]
   },
@@ -422,7 +411,7 @@
     "section": "5.6 Deep Dive into Key Standards",
     "text": "5.6 Deep Dive into Key Standards\nUnderstanding the standards at a deeper level is useful for practitioners and students who want to see how they are applied in practice.\nWhile the landscape provides categories, each standard has a specific purpose and set of strengths. Below are some of the most widely recognized OGC standards.\n\nAPI – Features: A modern RESTful replacement for WFS.\n\nWMS: Suited for sharing static map images.\n\nWFS: Useful when raw vector data is needed for analysis.\n\nWCS: Designed for raster data like satellite imagery and DEMs.\n\nKML: Popular for sharing points, routes, and polygons in Google Earth.\n\nGML: A more complex but powerful format for rich geospatial datasets.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Open Standards</span>"
     ]
   },
@@ -433,7 +422,7 @@
     "section": "5.7 Standards Lifecycle",
     "text": "5.7 Standards Lifecycle\nOGC follows a community-driven process for developing new standards (OGC, 2025):\n\nProblem Identification → Recognize a gap or need.\n\nDraft Specification → Experts write a proposed solution.\n\nTesting & Pilots → Validate the draft in real-world projects.\n\nConsensus & Voting → Members review and approve.\n\nPublication → The standard becomes publicly available.\n\nMaintenance → Continuous updates for new requirements.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Open Standards</span>"
     ]
   },
@@ -444,7 +433,7 @@
     "section": "5.8 Real-World Impact",
     "text": "5.8 Real-World Impact\nGeospatial data only becomes truly powerful when it can be shared and understood across organizations, sectors, and borders. This is where OGC standards show their real value.\nThey transform abstract specifications into practical tools that enable disaster response, scientific research, urban planning, and even daily navigation apps.\nThe following mini case studies illustrate how OGC standards make a tangible difference in solving real-world problems and improving decision-making at both national and global levels.\n\n5.8.1 Disaster Management and Emergency Response\n\nChallenge: During floods, wildfires, or earthquakes, response agencies need fast, accurate geospatial data from multiple sources.\n\nOGC Solution: Standards like Web Map Service (WMS) and Web Feature Service (WFS) allow data from satellites, drones, and ground sensors to be instantly shared across platforms.\n\nImpact: Agencies in different countries can visualize the same map layers, monitor real-time conditions, and coordinate rescue operations more effectively.\n\n\n\n5.8.2 Urban Planning and Smart Cities\n\nChallenge: Modern cities deal with issues like traffic congestion, zoning, and infrastructure development. Multiple agencies often use different software systems, making collaboration difficult.\n\nOGC Solution: CityGML and IndoorGML enable the creation of interoperable 3D city models and building layouts.\n\nImpact: Urban planners can integrate building, transport, and environmental data into a common model, leading to better planning decisions, optimized public transport, and improved disaster preparedness.\n\n\n\n5.8.3 Environmental Monitoring and Climate Change\n\nChallenge: Monitoring deforestation, air pollution, or climate change requires combining datasets from satellites, sensors, and models.\n\nOGC Solution: Web Coverage Service (WCS) and Sensor Observation Service (SOS) enable sharing of raster datasets and real-time sensor feeds.\n\nImpact: Scientists and policymakers gain access to consistent, comparable data across nations, improving environmental research and enabling international agreements on climate action.\n\n\n\n5.8.4 Agriculture and Food Security\n\nChallenge: Farmers and governments require timely geospatial data on soil, rainfall, and crop health to improve yields and food security.\n\nOGC Solution: OGC APIs and Geography Markup Language (GML) allow integration of satellite imagery, IoT sensors, and predictive models.\n\nImpact: Farmers can receive precision agriculture advisories, and governments can manage food supply chains more efficiently, reducing hunger risks.\n\n\n\n5.8.5 Everyday Applications – Navigation and Location Services\n\nChallenge: Billions of users rely on maps for navigation, ride-sharing, and logistics, often without realizing the complexity of data integration behind the scenes.\n\nOGC Solution: Standards like KML (Keyhole Markup Language) power Google Earth and other map-based applications.\n\nImpact: Users benefit from accurate, up-to-date geospatial information, while companies can build interoperable services that work seamlessly worldwide.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Open Standards</span>"
     ]
   },
@@ -455,7 +444,7 @@
     "section": "5.9 Future Directions",
     "text": "5.9 Future Directions\nThe geospatial standards landscape continues to evolve as new technologies, data formats, and user needs emerge. OGC is actively shaping this evolution to ensure that standards remain relevant, lightweight, and capable of supporting modern geospatial applications.\nThe future of OGC standards can be described through several key trends and priority areas, a few of which are listed below.\n\n5.9.1 Transition from XML to JSON/RESTful APIs\n\nPast Approach: Early OGC standards such as WMS, WFS, and WCS were primarily built on XML-based protocols (e.g., GML). While powerful, they can be verbose and complex, making them less developer-friendly.\n\nEmerging Approach: Modern OGC APIs (like API – Features, API – Tiles, API – Processes) are based on REST principles and JSON encoding.\n\nBenefits:\n\nEasier integration with modern web and mobile applications\n\nLightweight data exchange\n\nBetter compatibility with cloud-native architectures\n\nLower barriers for developers outside traditional GIS domains\n\n\n\n\n5.9.2 Cloud-Native and Big Data Integration\n\nAs datasets grow in size (e.g., petabytes of satellite imagery), OGC is working on standards that support cloud-native data storage (e.g., Cloud Optimized GeoTIFFs, SpatioTemporal Asset Catalog – STAC).\n\nThese enable on-demand access to only the portion of data needed, improving performance and reducing costs for analytics at scale.\n\n\n\n5.9.3 Real-Time and IoT-Enabled Geospatial Data\n\nThe growth of Internet of Things (IoT) devices (e.g., sensors, smart vehicles, drones) requires standards that can handle continuous, real-time data streams.\n\nOGC standards like the SensorThings API are designed for this, supporting smart cities, environmental monitoring, and disaster response.\n\n\n\n5.9.4 AI/ML and Analytics Integration\n\nFuture standards will increasingly need to accommodate machine learning and AI pipelines.\n\nInteroperability is being extended beyond raw data sharing to include standardized access to geospatial analytics services, helping to integrate AI models directly into workflows.\n\n\n\n5.9.5 Cross-Domain Interoperability\n\nGeospatial data is no longer isolated. It connects with domains like healthcare, climate science, agriculture, defense, and transportation.\n\nOGC’s Domain Working Groups (DWGs) are focusing on ensuring geospatial standards integrate seamlessly with other international standards (ISO, W3C, IEEE).\n\n\n\n5.9.6 The Role of the OGC Reference Model (ORM)\n\nThe OGC Reference Model (ORM) continues to provide a conceptual framework for understanding how all standards fit together.\n\nIt helps guide the transition from legacy services to modern APIs, ensuring that innovation does not break existing systems while providing a roadmap for future adoption.\n\nIn summary, the future of OGC standards is moving toward lighter, faster, cloud-friendly, and developer-oriented solutions while maintaining the core principle of global interoperability. Together, these emerging directions ensure that OGC standards remain a cornerstone for achieving interoperability, enabling seamless data sharing, and supporting innovative applications across diverse domains. This evolution guarantees that geospatial information will continue to be a critical enabler of innovation in the digital era.",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Open Standards</span>"
     ]
   },
@@ -464,10 +453,120 @@
     "href": "chapters/module_1/ogc_standards.html#conclusion",
     "title": "5  Introduction to Open Standards",
     "section": "5.10 Conclusion",
-    "text": "5.10 Conclusion\nOGC standards serve as the universal language of geospatial information, enabling seamless data sharing across platforms and fostering collaboration between governments, industry, and academia. They have evolved from early XML-based services such as WMS and WFS to modern, lightweight RESTful APIs that better align with today’s web and cloud ecosystems. Through this evolution, OGC standards have consistently made geospatial data more accessible, interoperable, and impactful—helping societies address global challenges such as disaster management, climate monitoring, sustainable development, and smart city planning.\n\n\n\n\n\nOGC. (2025). OGC standards and resources. Retrieved from https://www.ogc.org/standards/",
+    "text": "5.10 Conclusion\nOGC standards serve as the universal language of geospatial information, enabling seamless data sharing across platforms and fostering collaboration between governments, industry, and academia. They have evolved from early XML-based services such as WMS and WFS to modern, lightweight RESTful APIs that better align with today’s web and cloud ecosystems. Through this evolution, OGC standards have consistently made geospatial data more accessible, interoperable, and impactful; helping societies address global challenges such as disaster management, climate monitoring, sustainable development, and smart city planning.\n\n\n\n\n\nOGC. (2025). OGC standards and resources. Retrieved from https://www.ogc.org/standards/",
     "crumbs": [
-      "Module 1: Free and Open-Source Software (FOSS) GIS",
+      "Module 1: Free and Open-Source Software (FOSS) Geoinformatics",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Open Standards</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/module_2/gis-intro.html",
+    "href": "chapters/module_2/gis-intro.html",
+    "title": "6  Introduction to GIS",
+    "section": "",
+    "text": "6.1 What is GIS?\nA Geographic Information System (GIS) is a computer-based framework that allows us to work with information that has a spatial or geographic component. In simple terms, GIS links “what” data is about with “where” it is located on Earth. This combination makes it possible to explore patterns, detect relationships, and make informed decisions.",
+    "crumbs": [
+      "Module 2: GIS",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Introduction to GIS</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/module_2/gis-intro.html#what-is-gis",
+    "href": "chapters/module_2/gis-intro.html#what-is-gis",
+    "title": "6  Introduction to GIS",
+    "section": "",
+    "text": "6.1.1 Definition of GIS\nA Geographic Information System (GIS) is a framework that supports the collection, management, analysis, and visualization of spatial and non-spatial data. It integrates hardware, software, data, people, and methods to efficiently handle geographically referenced information [Albrecht (2007); Wilson & Fotheringham (2008)]. By linking data to locations on Earth, GIS allows users to capture, store, manipulate, and display information that supports decision-making in fields such as urban planning, environmental management, agriculture, transportation, and disaster response [Yang, Wong, Miao, & Yang (2011)].",
+    "crumbs": [
+      "Module 2: GIS",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Introduction to GIS</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/module_2/gis-intro.html#components-of-gis",
+    "href": "chapters/module_2/gis-intro.html#components-of-gis",
+    "title": "6  Introduction to GIS",
+    "section": "6.2 Components of GIS",
+    "text": "6.2 Components of GIS\nA GIS is composed of several interconnected components that work together:\n\nHardware: Computing systems with adequate processing power, memory, storage, and input/output devices.\nSoftware: GIS applications and operating systems that provide tools for data analysis, management, and visualization.\nData: Spatial data (geographic features), attribute data (descriptive information), and metadata (documentation about quality and origin).\nPeople: Users and professionals who design, implement, and apply GIS solutions.\nMethods: Procedures and workflows that ensure data acquisition, analysis, validation, and presentation follow consistent standards [Brimicombe (2010)].\n\nThese components interact continuously. Without reliable data, advanced software, or skilled users, the system would not function effectively.",
+    "crumbs": [
+      "Module 2: GIS",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Introduction to GIS</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/module_2/gis-intro.html#why-gis-is-important",
+    "href": "chapters/module_2/gis-intro.html#why-gis-is-important",
+    "title": "6  Introduction to GIS",
+    "section": "6.3 Why GIS is Important?",
+    "text": "6.3 Why GIS is Important?\nGIS has become essential because it improves efficiency and accuracy in working with geographic information. Its benefits include:\n\nHandling large datasets more effectively than manual methods.\nSupporting complex spatial queries and analyses.\nAllowing integration of diverse datasets from multiple sources.\nReducing redundancy by linking spatial and attribute information.\nProviding powerful visualization and communication tools [Yang et al. (2011)].",
+    "crumbs": [
+      "Module 2: GIS",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Introduction to GIS</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/module_2/gis-intro.html#functions-of-gis",
+    "href": "chapters/module_2/gis-intro.html#functions-of-gis",
+    "title": "6  Introduction to GIS",
+    "section": "6.4 Functions of GIS",
+    "text": "6.4 Functions of GIS\nThe main functions of GIS are closely connected, with each step supporting the next:\n\nData capture: Collecting information through digitization, scanning, remote sensing, and GNSS.\nData storage and management: Organizing vector and raster models, with indexing and metadata to support retrieval and integration.\n\nVector: Represents discrete objects such as roads and parcels.\nRaster: Represents continuous surfaces such as elevation and temperature.\n\nQuerying: Retrieving data by spatial location or attribute values.\nAnalysis: Using tools such as buffering, overlay, interpolation, and terrain modeling.\nVisualization: Producing maps, graphs, dashboards, and 3D visualizations.\nOutput and communication: Delivering results in reports, web maps, or decision-support systems [Campbell & Wynne (2011)].",
+    "crumbs": [
+      "Module 2: GIS",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Introduction to GIS</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/module_2/gis-intro.html#gis-workflow",
+    "href": "chapters/module_2/gis-intro.html#gis-workflow",
+    "title": "6  Introduction to GIS",
+    "section": "6.5 GIS Workflow",
+    "text": "6.5 GIS Workflow\nA typical GIS workflow progresses through several connected stages:\n\n6.5.1 Data Acquisition\nThis stage involves collecting raw spatial and attribute data. Sources include ground surveys, GPS, aerial photography, satellite imagery, and existing databases. Reliable data acquisition ensures that subsequent steps are based on accurate representations of real-world phenomena.\n\n\n6.5.2 Data Validation\nValidation checks the accuracy and consistency of the acquired data. Errors such as missing values, spatial mismatches, and attribute inconsistencies are identified and corrected. This step improves the quality of data and builds confidence for further analysis.\n\n\n6.5.3 Data Management\nValidated data is organized into databases or spatial infrastructures. Processes such as georeferencing, projection transformations, and indexing make the data usable. Effective management ensures the data can be retrieved and updated when needed.\n\n\n6.5.4 Data Analysis and Modeling\nAt this stage, GIS tools are applied to derive insights. Analyses may include overlays, spatial statistics, change detection, and predictive modeling. This step transforms raw data into meaningful information that supports planning and decision-making.\n\n\n6.5.5 Visualization and Output\nFinally, results are communicated through clear visual formats. These include thematic maps, 3D views, dashboards, or printed reports. Effective visualization ensures that technical results are accessible to both specialists and non-specialists.\nWorkflow Diagram:\n\n\n\n\n\n\nflowchart LR\n  A[Data Acquisition] --&gt; B[Data Validation]\n  B --&gt; C[Data Management]\n  C --&gt; D[Analysis & Modeling]\n  D --&gt; E[Visualization & Output]\n\n  I1[Field Survey / GNSS] --&gt; A\n  I2[Remote Sensing] --&gt; A\n  I3[Existing Databases] --&gt; A\n\n  E --&gt; O1[Maps & Reports]\n  E --&gt; O2[Interactive Web Maps]\n  E --&gt; O3[Dashboards]\n\n\n\n\nFigure 6.1: Typical GIS workflow",
+    "crumbs": [
+      "Module 2: GIS",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Introduction to GIS</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/module_2/gis-intro.html#some-standard-gis-softwares",
+    "href": "chapters/module_2/gis-intro.html#some-standard-gis-softwares",
+    "title": "6  Introduction to GIS",
+    "section": "6.6 Some Standard GIS Softwares",
+    "text": "6.6 Some Standard GIS Softwares\n\n\n\n\n\n\n\n\nSoftware\nLicense Type\nAuthor/Company\n\n\n\n\nArcGIS\nProprietary\nEsri (Environmental Systems Research Institute)\n\n\nQGIS\nOpen-source (GPL)\nQGIS Development Team (community-driven)\n\n\nGRASS GIS\nOpen-source (GPL)\nGRASS Development Team (originally US Army CERL)\n\n\nMapInfo Professional\nProprietary\nPitney Bowes Software (originally MapInfo Corporation)\n\n\nGoogle Earth Pro\nFreeware (Proprietary)\nGoogle LLC\n\n\nERDAS IMAGINE\nProprietary\nHexagon Geospatial (Intergraph/Leica Geosystems)\n\n\nENVI\nProprietary\nHarris Geospatial Solutions (L3Harris Technologies)\n\n\nIDRISI/TerrSet\nProprietary (Academic License options)\nClark Labs, Clark University\n\n\nPostGIS\nOpen-source (GPL)\nRefractions Research, now community-maintained\n\n\n\n\n6.6.1 Open-source vs Proprietary GIS\nOpen-source platforms such as QGIS, GRASS, and PostGIS are cost-effective, adaptable, and community-supported. They provide transparency of source code and strong plugin ecosystems, although they may lack formal support and advanced commercial features.\nProprietary platforms such as ArcGIS, ENVI, and ERDAS IMAGINE are robust, well-documented, and supported by dedicated companies. However, they are expensive and less flexible for customization.",
+    "crumbs": [
+      "Module 2: GIS",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Introduction to GIS</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/module_2/gis-intro.html#future-trends-in-gis",
+    "href": "chapters/module_2/gis-intro.html#future-trends-in-gis",
+    "title": "6  Introduction to GIS",
+    "section": "6.7 Future Trends in GIS",
+    "text": "6.7 Future Trends in GIS\nThe future of GIS is shaped by new technologies:\n\nWeb GIS and cloud computing are making GIS more scalable and accessible.\nArtificial Intelligence and Machine Learning support predictive analytics and pattern recognition.\nMobile GIS allows real-time data collection in the field.\nBig data integration strengthens spatial analysis of complex and large-scale phenomena [Wilson & Fotheringham (2008); Yang et al. (2011)].",
+    "crumbs": [
+      "Module 2: GIS",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Introduction to GIS</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/module_2/gis-intro.html#applications-of-gis",
+    "href": "chapters/module_2/gis-intro.html#applications-of-gis",
+    "title": "6  Introduction to GIS",
+    "section": "6.8 Applications of GIS",
+    "text": "6.8 Applications of GIS\n\nUrban growth and land-use planning\nGIS helps city planners design sustainable urban spaces by analyzing existing land use, population growth, and infrastructure availability. It supports zoning decisions, urban renewal projects, and smart city initiatives.\nMonitoring of natural resources and environment\nGIS is widely used in forestry, water management, soil conservation, and biodiversity protection. It allows continuous monitoring of ecosystems and helps authorities detect environmental degradation early.\nEmergency response and disaster risk reduction\nHazard-prone areas can be mapped with GIS to prepare for disasters like floods, cyclones, or earthquakes. During emergencies, it supports real-time coordination of evacuation routes, shelters, and relief supplies.\nTransportation planning and navigation services\nFrom traffic analysis to public transport route optimization, GIS enables efficient mobility planning. It also powers everyday navigation apps that millions rely on for real-time directions.\nHealth studies such as disease mapping\nBy mapping the spread of diseases, GIS reveals spatial patterns of outbreaks and helps allocate medical resources. It also supports vaccination campaigns and long-term healthcare infrastructure planning.\nMarket research and business logistics\nBusinesses use GIS for site selection, customer profiling, competitor analysis, and logistics optimization. Delivery companies rely on GIS to design cost-efficient and timely distribution routes.\nAgriculture and precision farming\nFarmers and agricultural agencies apply GIS to monitor soil quality, rainfall, crop health, and pest outbreaks. Precision farming uses spatial data to apply fertilizers and water efficiently, improving productivity while reducing costs.\nClimate change studies\nResearchers use GIS to model rising sea levels, shifting vegetation zones, glacial retreat, and temperature variations. This helps governments plan mitigation and adaptation strategies at both local and global scales.\nArchaeology and cultural heritage management\nGIS assists archaeologists in locating excavation sites, mapping ancient landscapes, and preserving cultural heritage. Museums and heritage authorities also use GIS to manage monuments and visitor facilities.\nPublic utilities and infrastructure management\nUtility companies rely on GIS to manage water pipelines, electricity networks, and telecommunication lines. It helps detect faults, plan maintenance, and ensure efficient service delivery.\nCrime analysis and law enforcement\nPolice and security agencies use GIS to analyze crime hotspots, study spatial patterns of offenses, and optimize patrolling routes. This improves public safety and law enforcement efficiency.\nTourism and recreation planning\nTourism boards and park authorities employ GIS to map attractions, hiking trails, and facilities. It also supports eco-tourism by balancing visitor access with conservation.",
+    "crumbs": [
+      "Module 2: GIS",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Introduction to GIS</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/module_2/gis-intro.html#conclusion",
+    "href": "chapters/module_2/gis-intro.html#conclusion",
+    "title": "6  Introduction to GIS",
+    "section": "6.9 Conclusion",
+    "text": "6.9 Conclusion\nGIS integrates spatial and non-spatial data to support informed decision-making in diverse fields such as urban planning, environmental monitoring, agriculture, and disaster management. Its workflow from acquisition to visualization ensures that data becomes useful information. As technology advances, GIS is becoming more accessible, intelligent, and integrated with other systems.\nThe next chapter will focus on GIS Data, introducing the different types of data used in GIS, including vector, raster, and attribute data, along with their characteristics and applications.\n\n\n\n\nAlbrecht, J. (2007). Key concepts and techniques in GIS. London: SAGE Publications.\n\n\nBrimicombe, A. (2010). GIS, environmental modeling and engineering (2nd ed.). Boca Raton: CRC Press.\n\n\nCampbell, J. B., & Wynne, R. H. (2011). Introduction to remote sensing (5th ed.). New York: Guilford Press.\n\n\nWilson, J. P., & Fotheringham, A. S. (Eds.). (2008). The handbook of geographic information science. Oxford: Blackwell Publishing.\n\n\nYang, C., Wong, D., Miao, Q., & Yang, R. (Eds.). (2011). Advanced geoinformation science. Boca Raton: CRC Press.",
+    "crumbs": [
+      "Module 2: GIS",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Introduction to GIS</span>"
     ]
   }
 ]

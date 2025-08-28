@@ -1,0 +1,72 @@
+# Introduction to FOSS Geoinformatics
+
+## What is FOSS Geoinformatics?
+
+*Free and Open Source Software (FOSS) Geoinformatics* includes applications and libraries whose **source code is openly available** for use, 
+study, modification, and redistribution under open licenses. FOSS spans the entire spatial workflow:
+
+- **GIS** for mapping and spatial analysis.  
+- **Remote sensing & digital image processing** for Earth observation data.  
+- **GNSS** for precise positioning and navigation.  
+- **Web GIS & spatial databases** for publishing and interoperability.  
+- **Visualization** for communication and decision support.
+
+## Why FOSS Geoinformatics Matters
+
+- **Affordable access**: lowers entry barriers for education, community use, NGOs, and startups.  
+- **Community-driven development**: global collaboration supports continuous improvement.  
+- **Adaptability**: tools can be customized for local workflows and languages.  
+- **Transparency**: open code enables verification of methods and security.  
+- **Capacity building**: encourages learning and experimentation.  
+- **Interoperability**: open standards (e.g., OGC/ISO) enable integration across platforms.  
+- **Platform flexibility**: commonly available for Linux, Windows, and macOS.  
+- **Integration across domains**: unifies GIS, RS, GNSS, databases, and the web.
+
+## Examples of Popular FOSS Geoinformatics Tools
+
+The FOSS geoinformatics ecosystem includes desktop analysis, satellite data processing, web mapping, database management, and GNSS processing.
+
+| **Software** | **Domain** | **Description** | **License Type** |
+|---|---|---|---|
+| **QGIS** | GIS | Desktop GIS with a rich plugin ecosystem for mapping and analysis. | GNU GPL v2 |
+| **GRASS GIS** | GIS/RS/DIP | Advanced raster–vector processing, image classification, and modeling. | GNU GPL v2 |
+| **SAGA GIS** | GIS/Environmental | Raster analysis, geomorphometry, and terrain modeling. | GNU GPL v2 |
+| **WhiteboxTools** | DIP/Modeling | LiDAR tools, hydrology, and raster processing with Python/R bindings. | MIT |
+| **ESA SNAP** | Remote Sensing | Processing of Sentinel and other EO missions. | GNU GPL v3 |
+| **Orfeo Toolbox (OTB)** | Remote Sensing | High-performance image analysis and change detection (C++/Python). | Apache 2.0 |
+| **PDAL** | Point Clouds | Ingests, filters, and transforms LiDAR/point cloud data. | BSD |
+| **PostGIS** | Spatial DB | Spatial extension for PostgreSQL; advanced spatial queries and indexing. | GNU GPL v2 |
+| **SpatiaLite** | Spatial DB | SQLite with spatial capabilities for lightweight deployments. | MPL/GPL/LGPL |
+| **GeoServer** | Web GIS | Publishes data via OGC services (WMS/WFS/WCS/WPS). | GNU GPL v2 |
+| **MapServer** | Web GIS | High-performance map rendering server. | MIT |
+| **OpenLayers** | Web GIS | JavaScript library for interactive web maps. | BSD |
+| **Leaflet** | Web GIS | Lightweight web-mapping JavaScript library. | BSD |
+| **OpenStreetMap** | Open Data | Global, community-curated basemap and POI dataset. | ODbL |
+| **RTKLIB** | GNSS | Precise GNSS processing (PPP/RTK) for GPS, GLONASS, Galileo, etc. | BSD |
+| **GPSTk (GPS Toolkit)** | GNSS | Libraries and apps for GNSS positioning and research (C++). | GNU LGPL |
+| **goGPS** | GNSS | GNSS processing and sensor fusion (MATLAB/Python variants). | GPL |
+| **GNSS-SDR** | GNSS | Software-defined receiver framework; raw data to position. | GPL v3 |
+
+Table: Examples of Popular FOSS Geoinformatics Tools {#tbl-fossgeo}
+
+## Importance of Open-Source Data & Software in NGP 2022
+
+The **National Geospatial Policy (NGP) 2022** encourages **open standards, open data, and open-source platforms**. This direction promotes accessibility, interoperability, and reuse across agencies, academia, industry, and communities.
+
+By promoting FOSS Geoinformatics:
+
+- **Communities** can use spatial data for local planning and risk reduction.  
+- **Educational institutions** can train students without licensing restrictions.  
+- **Startups and NGOs** can develop cost-effective geospatial services.  
+
+This approach supports a **self-reliant, transparent, and future-ready geospatial ecosystem**, reduces vendor dependence, and strengthens collaboration.
+
+## Conclusion
+
+FOSS Geoinformatics is reshaping how spatial data are **collected, processed, analyzed, and communicated**. Open tools such as **QGIS, GRASS GIS, OTB, 
+SNAP, PostGIS, GeoServer**, and open GNSS stacks like **RTKLIB, GPSTk, goGPS, and GNSS-SDR** enable integrated and interoperable workflows. Communities worldwide can now 
+contribute to and benefit from shared spatial knowledge, empowering students, researchers, governments, and industries to solve real-world problems.
+
+However, true collaboration requires more than just open tools and data. Different systems must follow common rules to share and understand information effectively. 
+This is where **open standards** become essential, providing the universal language that makes geospatial technologies interoperable. 
+The next chapter introduces these open standards.

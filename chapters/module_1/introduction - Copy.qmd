@@ -11,9 +11,9 @@ It seeks to answer fundamental questions such as
 - *What is happening there?* and 
 - *How does it relate to its surroundings?*  
 
-Geoinformatics is an interdisciplinary field that integrates **Geographic Information Systems (GIS), Remote Sensing (RS), 
-Global Navigation Satellite Systems (GNSS), cartography, digital image processing, spatial databases, GeoAI and web mapping** into a unified workflow. 
-It supports the **acquisition, management, analysis, visualization, and sharing** of spatial information for decision-making.
+Geoinformatics is an interdisciplinary field that brings together geography, cartography, computer science, engineering, and information technology. 
+Its key tools include **Geographic Information Systems (GIS)**, **Remote Sensing (RS)**, and **Global Navigation Satellite Systems (GNSS)**, all of which are used to study the 
+Earth and solve spatial problems.  
 
 ## Importance of Geoinformatics  
 The world today is highly dynamic. Cities are expanding, natural resources are being depleted, and environmental challenges such as climate change and natural 
@@ -27,25 +27,7 @@ Geoinformatics provides this ability and supports a wide range of activities suc
 - Efficient transport and navigation systems  
 - Sustainable agriculture and food security through precision farming  
 
-In essence, Geoinformatics transforms spatial data into actionable knowledge for informed decision-making.
-
-### Key capabilities of Geoinformatics
-
-- **Data acquisition**: satellite/aerial remote sensing, GNSS positioning, ground surveys, and IoT sensors.  
-- **Data management**: spatial databases, metadata, and spatial data infrastructures (SDIs).  
-- **Spatial analysis and modeling**: image processing, terrain analysis, network analysis, and environmental modeling.  
-- **Visualization and communication**: maps, dashboards, 3D/4D views, and web platforms.
-
-### Workflow overview
-
-```{mermaid}
-flowchart LR
-    A["Data Acquisition (Remote Sensing, GNSS, IoT, Surveys)"]
-    --> B["Data Management (Spatial DBs, SDI, Metadata, Catalogues)"]
-    --> C["Analysis & Modeling (GIS, DIP, Geostatistics, Simulation)"]
-    --> D["Visualization & Sharing (Maps, 3D/4D, Web GIS, Dashboards)"]
-```
-
+In essence, Geoinformatics transforms spatial data into actionable knowledge for informed decision-making.  
 
 ## Components of Geoinformatics  
 Geoinformatics is based on several interconnected technologies, including:  
@@ -55,11 +37,6 @@ Geoinformatics is based on several interconnected technologies, including:
 - **Global Navigation Satellite Systems (GNSS):** Technologies such as GPS that provide accurate positioning and navigation services  
 - **Cartography and Visualization:** Methods for representing data through maps, 3D models, and interactive systems  
 - **Spatial Data Infrastructure (SDI):** Frameworks and institutions that support data sharing and accessibility  
-- **Digital Image Processing (DIP):** Techniques for enhancing, classifying, and analyzing remotely sensed imagery and other raster data to extract meaningful information.
-- **Web Mapping and Web GIS:** Internet-based tools and services that deliver, analyze, and integrate spatial information through interactive web platforms and APIs.
-- **GeoAI (Geospatial Artificial Intelligence):** Application of artificial intelligence, machine learning, and deep learning techniques to spatial data for tasks such as image classification, predictive modeling, feature extraction, and automated decision-making.
-
-![*Geoinformatics*](figures/geoinformatics.png){#fig-geoinformatics fig-align="center" width=70%}
 
 ## Evolution of Geoinformatics  
 The development of Geoinformatics reflects humanity’s evolving relationship with spatial data. In the past, geographic information was measured and 

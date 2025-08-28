@@ -52,5 +52,11 @@
   },
   "chapters/module_1/foss.qmd": {
     "foss.html": "ae4a8630"
+  },
+  "chapters/module_2/gis-intro.qmd": {
+    "gis-intro.html": "76b28a32"
+  },
+  "chapters/module_1/foss_geoinformatics.qmd": {
+    "foss_geoinformatics.html": "1f893dea"
   }
 }

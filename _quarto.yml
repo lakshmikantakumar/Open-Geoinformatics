@@ -22,17 +22,17 @@ book:
     - index.qmd
     - acknowledgement.qmd
     
-    - part: "Module 1: Free and Open-Source Software (FOSS) GIS"
+    - part: "Module 1: Free and Open-Source Software (FOSS) Geoinformatics"
       chapters:
         - chapters/module_1/introduction.qmd
         - chapters/module_1/foss.qmd
         - chapters/module_1/foss_licenses.qmd
-        - chapters/module_1/foss_gis.qmd
+        - chapters/module_1/foss_geoinformatics.qmd
         - chapters/module_1/ogc_standards.qmd
    
-#    - part: "Module 2: Practical Workflows"
-#      chapters:
-#        - chapters/georeferencing.qmd
+    - part: "Module 2: GIS"
+      chapters:
+        - chapters/module_2/gis-intro.qmd
 #        - chapters/digitization.ipynb
 
 #    - part: "Module 3: Raster Analysis"
