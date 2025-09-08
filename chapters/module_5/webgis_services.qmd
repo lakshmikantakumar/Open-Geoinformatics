@@ -1,0 +1,123 @@
+# Geospatial Web Services
+
+## Introduction
+
+Geospatial Web Services are the backbone of WebGIS. They provide a standardized way for servers to share spatial data and functionalities with clients across the internet. 
+These services follow open standards, mainly from the Open Geospatial Consortium (OGC), ensuring interoperability between different software systems. This chapter introduces the concepts of web 
+services, their types, and their applications in WebGIS.
+
+## From Websites to Web Services
+
+Traditional websites deliver content for human interaction, whereas web services are designed for communication between machines. Geospatial web services expose functionalities such as map 
+visualization, feature querying, or spatial analysis through standard protocols [@jones2008webgis].
+
+### Characteristics of Web Services
+
+- Machine-to-machine interaction  
+- Platform independent  
+- Accessible using standard protocols (HTTP, HTTPS)  
+- Responses formatted in XML, JSON, or other open standards  
+
+```{mermaid}
+%%| label: fig-webservice-flow
+%%| fig-cap: "General flow of a geospatial web service request"
+sequenceDiagram
+    participant Client
+    participant WebService
+    participant Database
+    Client->>WebService: Request (e.g., WMS GetMap)
+    WebService->>Database: Query spatial data
+    Database-->>WebService: Return geospatial data
+    WebService-->>Client: Response (Map/Image/JSON)
+```
+
+
+## Types of Geospatial Web Services
+The Open Geospatial Consortium (OGC) defines several service standards. Traditionally, WebGIS relied on services such as WMS,WFS, WCS and WPS. 
+However, these are now considered **legacy standards**, with the **OGC API family** being the modern alternative.
+
+### Legacy standards
+
+- **Web Map Service (WMS):** Provides map images rendered from geospatial data.  
+- **Web Feature Service (WFS):** Shares vector features with attributes in formats like GML or GeoJSON.  
+- **Web Coverage Service (WCS):** Provides raster data (e.g., satellite imagery, elevation models).  
+- **Catalog Service for the Web (CSW):** Supports search and discovery of geospatial metadata.  
+- **Web Processing Service (WPS):** Exposes geospatial processing operations as web services, allowing distributed computation.
+
+
+```{mermaid}
+%%| label: fig-ogc-services
+%%| fig-cap: "Core OGC geospatial web service types"
+graph TD
+    A[WMS] --> B[Map Visualization]
+    C[WFS] --> D[Vector Features]
+    E[WCS] --> F[Raster Data]
+    G[CSW] --> H[Metadata Catalog]
+```
+
+### Modern alternative  
+- **OGC API - Features:** Successor to WFS, uses REST and JSON/GeoJSON for lightweight feature access.  
+- **OGC API - Maps:** Successor to WMS, uses REST and JSON/GeoJSON for lightweight feature access.  
+- **OGC API - Tiles :** Provides tiles of vector and raster data, successor to WMTS.  
+- **OGC API - Processes :** Successor to WPS, enables remote execution of geoprocessing tasks through REST APIs.
+
+
+## Data Formats in Web Services
+
+Web services rely on structured data formats for communication:  
+
+- **XML/GML:** Used in WFS and CSW for structured geospatial information.  
+- **JSON/GeoJSON:** Lightweight and widely used for web-based vector data.  
+- **PNG/JPEG:** Common image formats for WMS map rendering.  
+
+These formats allow integration between diverse systems and client applications [@mitchell2005webmapping].
+
+## Example Software for Web Services
+
+- **Server-side:** GeoServer, MapServer, deegree  
+- **Client-side:** OpenLayers, Leaflet, Cesium  
+
+GeoServer and MapServer can publish data as WMS, WFS, and WCS, while OpenLayers and Leaflet can consume and visualize this data in web browsers.
+
+
+### Practical Example: Accessing OGC Services
+
+Below is an example showing how to use **Leaflet** to access both a legacy WMS and a modern OGC API - Features service.
+
+#### Legacy WMS Example
+
+```javascript
+var map = L.map('map').setView([25.0, 84.0], 6);
+
+// Public ISRO Bhuvan WMS (Land Use Land Cover thematic layer)
+L.tileLayer.wms("https://bhuvan-vec2.nrsc.gov.in/bhuvan/wms", {
+  layers: 'lulc:BR_LULC50K_1112',
+  format: 'image/png',
+  transparent: true,
+  attribution: "Map data © ISRO Bhuvan"
+}).addTo(map);
+```
+
+#### Modern OGC API - Features Example
+
+```javascript
+fetch("https://demo.pygeoapi.io/master/collections/lakes/items")
+  .then(response => response.json())
+  .then(data => {
+      L.geoJSON(data, {
+          onEachFeature: function (feature, layer) {
+              layer.bindPopup("Lake: " + feature.properties.name);
+          }
+      }).addTo(map);
+  });
+```
+
+In this example, the OGC API - Features endpoint delivers **GeoJSON directly**, which is easily integrated into Leaflet without complex parsing, making it more lightweight compared to WMS/WFS.
+
+
+## Conclusion
+Geospatial Web Services provide the essential link between clients and geospatial databases, enabling data visualization, feature access, and analysis over the internet. 
+By adopting OGC standards such as WMS, WFS, WCS, and CSW, WebGIS ensures interoperability across diverse systems. The next chapter will focus on **Open Source Web Mapping Tools**, 
+where these services are implemented and visualized using free and open-source software.
+
+

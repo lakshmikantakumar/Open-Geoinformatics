@@ -33,11 +33,15 @@ book:
     - part: "Module 2: GIS"
       chapters:
         - chapters/module_2/gis-intro.qmd
-#        - chapters/digitization.ipynb
 
-#    - part: "Module 3: Raster Analysis"
-#      chapters:
-#        - chapters/raster_analysis.qmd
+
+    - part: "Module 5: WebGIS"
+      chapters:
+        - chapters/module_5/intro_webgis.qmd
+        - chapters/module_5/webgis_principles.qmd
+        - chapters/module_5/webgis_services.qmd
+        - chapters/module_5/webgis_tools_and_app.qmd
+        - chapters/module_5/webgis_trends.qmd
       
     #- part: "Contributions"
     #  chapters:
@@ -70,6 +74,3 @@ format:
     fig-cap-location: bottom
     fig-num: true 
 
-
-execute:
-  kernel: geo_env

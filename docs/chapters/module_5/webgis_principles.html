@@ -8,7 +8,7 @@
 
 <meta name="description" content="Lecture Notes Using Free and Open-Source Software">
 
-<title>1&nbsp; Introduction to Geoinformatics – Open Geoinformatics</title>
+<title>8&nbsp; Web Principles for GIS – Open Geoinformatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,8 +51,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/module_1/foss.html" rel="next">
-<link href="../../acknowledgement.html" rel="prev">
+<link href="../../chapters/module_5/webgis_services.html" rel="next">
+<link href="../../chapters/module_5/intro_webgis.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -87,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) Geoinformatics</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/webgis_principles.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -138,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/module_1/introduction.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/module_1/introduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></span></a>
   </div>
 </li>
@@ -202,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/module_5/webgis_principles.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/module_5/webgis_principles.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></span></a>
   </div>
 </li>
@@ -236,27 +256,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-geoinformatics" id="toc-what-is-geoinformatics" class="nav-link active" data-scroll-target="#what-is-geoinformatics"><span class="header-section-number">1.1</span> What is Geoinformatics?</a></li>
-  <li><a href="#importance-of-geoinformatics" id="toc-importance-of-geoinformatics" class="nav-link" data-scroll-target="#importance-of-geoinformatics"><span class="header-section-number">1.2</span> Importance of Geoinformatics</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">8.1</span> Introduction</a></li>
+  <li><a href="#the-internet-and-the-world-wide-web" id="toc-the-internet-and-the-world-wide-web" class="nav-link" data-scroll-target="#the-internet-and-the-world-wide-web"><span class="header-section-number">8.2</span> The Internet and the World Wide Web</a></li>
+  <li><a href="#client-server-architecture" id="toc-client-server-architecture" class="nav-link" data-scroll-target="#client-server-architecture"><span class="header-section-number">8.3</span> Client-Server Architecture</a>
   <ul class="collapse">
-  <li><a href="#key-capabilities-of-geoinformatics" id="toc-key-capabilities-of-geoinformatics" class="nav-link" data-scroll-target="#key-capabilities-of-geoinformatics"><span class="header-section-number">1.2.1</span> Key capabilities of Geoinformatics</a></li>
-  <li><a href="#workflow-overview" id="toc-workflow-overview" class="nav-link" data-scroll-target="#workflow-overview"><span class="header-section-number">1.2.2</span> Workflow overview</a></li>
+  <li><a href="#types-of-clients" id="toc-types-of-clients" class="nav-link" data-scroll-target="#types-of-clients"><span class="header-section-number">8.3.1</span> Types of Clients</a></li>
   </ul></li>
-  <li><a href="#components-of-geoinformatics" id="toc-components-of-geoinformatics" class="nav-link" data-scroll-target="#components-of-geoinformatics"><span class="header-section-number">1.3</span> Components of Geoinformatics</a></li>
-  <li><a href="#evolution-of-geoinformatics" id="toc-evolution-of-geoinformatics" class="nav-link" data-scroll-target="#evolution-of-geoinformatics"><span class="header-section-number">1.4</span> Evolution of Geoinformatics</a></li>
-  <li><a href="#applications-of-geoinformatics" id="toc-applications-of-geoinformatics" class="nav-link" data-scroll-target="#applications-of-geoinformatics"><span class="header-section-number">1.5</span> Applications of Geoinformatics</a></li>
-  <li><a href="#the-open-dimension" id="toc-the-open-dimension" class="nav-link" data-scroll-target="#the-open-dimension"><span class="header-section-number">1.6</span> The Open Dimension</a></li>
-  <li><a href="#future-of-geoinformatics" id="toc-future-of-geoinformatics" class="nav-link" data-scroll-target="#future-of-geoinformatics"><span class="header-section-number">1.7</span> Future of Geoinformatics</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.8</span> Conclusion</a></li>
+  <li><a href="#http-protocol" id="toc-http-protocol" class="nav-link" data-scroll-target="#http-protocol"><span class="header-section-number">8.4</span> HTTP Protocol</a></li>
+  <li><a href="#three-tier-web-architecture" id="toc-three-tier-web-architecture" class="nav-link" data-scroll-target="#three-tier-web-architecture"><span class="header-section-number">8.5</span> Three-Tier Web Architecture</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">8.6</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html">Module 1: Free and Open-Source Software (FOSS) Geoinformatics</a></li><li class="breadcrumb-item"><a href="../../chapters/module_1/introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/webgis_principles.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Geoinformatics</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></h1>
 </div>
 
 
@@ -273,144 +290,156 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-is-geoinformatics" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="what-is-geoinformatics"><span class="header-section-number">1.1</span> What is Geoinformatics?</h2>
-<p>Have you ever used Google Maps to find the quickest route, checked the weather forecast, or tracked a delivery package? These everyday conveniences are possible because of a field known as <strong>Geoinformatics</strong>.</p>
-<p>In simple terms, Geoinformatics is the science and technology concerned with the collection, storage, processing, analysis, and visualization of spatial (location-based) data. It seeks to answer fundamental questions such as</p>
-<ul>
-<li><em>Where is something located?</em></li>
-<li><em>What is happening there?</em> and</li>
-<li><em>How does it relate to its surroundings?</em></li>
-</ul>
-<p>Geoinformatics is an interdisciplinary field that integrates <strong>Geographic Information Systems (GIS), Remote Sensing (RS), Global Navigation Satellite Systems (GNSS), cartography, digital image processing, spatial databases, GeoAI and web mapping</strong> into a unified workflow. It supports the <strong>acquisition, management, analysis, visualization, and sharing</strong> of spatial information for decision-making.</p>
+<section id="introduction" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">8.1</span> Introduction</h2>
+<p>To understand WebGIS, it is essential to first explore the fundamental principles of how the web functions. WebGIS applications rely on internet protocols, client-server communication, and structured architectures that enable efficient sharing and visualization of spatial data. This chapter introduces these underlying web principles and explains their role in enabling WebGIS.</p>
 </section>
-<section id="importance-of-geoinformatics" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="importance-of-geoinformatics"><span class="header-section-number">1.2</span> Importance of Geoinformatics</h2>
-<p>The world today is highly dynamic. Cities are expanding, natural resources are being depleted, and environmental challenges such as climate change and natural disasters are becoming more frequent. To manage these issues effectively, accurate spatial data and strong analytical capabilities are essential.</p>
-<p>Geoinformatics provides this ability and supports a wide range of activities such as:</p>
+<section id="the-internet-and-the-world-wide-web" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="the-internet-and-the-world-wide-web"><span class="header-section-number">8.2</span> The Internet and the World Wide Web</h2>
+<p>The internet is a global network of interconnected computers, while the World Wide Web (WWW) is a system of interlinked documents accessed via the internet. The web acts as the primary platform for delivering GIS data and applications.</p>
+<p>Important distinctions include:</p>
 <ul>
-<li>Planning and decision-making for urban growth, infrastructure, and governance<br>
+<li><strong>Internet:</strong> Infrastructure that connects networks worldwide.<br>
 </li>
-<li>Environmental monitoring of forests, water bodies, and pollution<br>
-</li>
-<li>Disaster management through early warning systems and risk assessments<br>
-</li>
-<li>Efficient transport and navigation systems<br>
-</li>
-<li>Sustainable agriculture and food security through precision farming</li>
+<li><strong>World Wide Web:</strong> Collection of linked resources accessible through HTTP.</li>
 </ul>
-<p>In essence, Geoinformatics transforms spatial data into actionable knowledge for informed decision-making.</p>
-<section id="key-capabilities-of-geoinformatics" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="key-capabilities-of-geoinformatics"><span class="header-section-number">1.2.1</span> Key capabilities of Geoinformatics</h3>
-<ul>
-<li><strong>Data acquisition</strong>: satellite/aerial remote sensing, GNSS positioning, ground surveys, and IoT sensors.<br>
-</li>
-<li><strong>Data management</strong>: spatial databases, metadata, and spatial data infrastructures (SDIs).<br>
-</li>
-<li><strong>Spatial analysis and modeling</strong>: image processing, terrain analysis, network analysis, and environmental modeling.<br>
-</li>
-<li><strong>Visualization and communication</strong>: maps, dashboards, 3D/4D views, and web platforms.</li>
-</ul>
+<p>The emergence of the WWW in the early 1990s revolutionized GIS by enabling online access to spatial data and maps <span class="citation" data-cites="jones2008webgis">(<a href="#ref-jones2008webgis" role="doc-biblioref">Jones &amp; Purves, 2008</a>)</span>.</p>
 </section>
-<section id="workflow-overview" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="workflow-overview"><span class="header-section-number">1.2.2</span> Workflow overview</h3>
+<section id="client-server-architecture" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="client-server-architecture"><span class="header-section-number">8.3</span> Client-Server Architecture</h2>
+<p>Web applications, including WebGIS, are based on client-server architecture. In this model:<br>
+- <strong>Client:</strong> The user’s browser or application that requests resources (e.g., Google Chrome, Mozilla Firefox, QGIS with web plugins).<br>
+- <strong>Server:</strong> A machine that stores, processes, and serves requested data (e.g., Apache HTTP Server, GeoServer, MapServer).</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
+<div id="fig-client-server" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-client-server-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-    A["Data Acquisition (Remote Sensing, GNSS, IoT, Surveys)"]
-    --&gt; B["Data Management (Spatial DBs, SDI, Metadata, Catalogues)"]
-    --&gt; C["Analysis &amp; Modeling (GIS, DIP, Geostatistics, Simulation)"]
-    --&gt; D["Visualization &amp; Sharing (Maps, 3D/4D, Web GIS, Dashboards)"]
+<pre class="mermaid mermaid-js" data-label="fig-client-server">sequenceDiagram
+    participant Client
+    participant Server
+    participant Database
+    Client-&gt;&gt;Server: Request map (HTTP GET)
+    Server-&gt;&gt;Database: Fetch spatial data
+    Database--&gt;&gt;Server: Return data
+    Server--&gt;&gt;Client: Send map in JSON/XML/HTML
 </pre>
 </div>
-<p></p></figure><p></p>
 </div>
-</div>
-</div>
-</section>
-</section>
-<section id="components-of-geoinformatics" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="components-of-geoinformatics"><span class="header-section-number">1.3</span> Components of Geoinformatics</h2>
-<p>Geoinformatics is based on several interconnected technologies, including:</p>
-<ul>
-<li><strong>Remote Sensing (RS):</strong> The collection of Earth data using satellites, drones, and aircraft<br>
-</li>
-<li><strong>Geographic Information Systems (GIS):</strong> Computer-based systems for storing, analyzing, and displaying spatial data<br>
-</li>
-<li><strong>Global Navigation Satellite Systems (GNSS):</strong> Technologies such as GPS that provide accurate positioning and navigation services<br>
-</li>
-<li><strong>Cartography and Visualization:</strong> Methods for representing data through maps, 3D models, and interactive systems<br>
-</li>
-<li><strong>Spatial Data Infrastructure (SDI):</strong> Frameworks and institutions that support data sharing and accessibility<br>
-</li>
-<li><strong>Digital Image Processing (DIP):</strong> Techniques for enhancing, classifying, and analyzing remotely sensed imagery and other raster data to extract meaningful information.</li>
-<li><strong>Web Mapping and Web GIS:</strong> Internet-based tools and services that deliver, analyze, and integrate spatial information through interactive web platforms and APIs.</li>
-<li><strong>GeoAI (Geospatial Artificial Intelligence):</strong> Application of artificial intelligence, machine learning, and deep learning techniques to spatial data for tasks such as image classification, predictive modeling, feature extraction, and automated decision-making.</li>
-</ul>
-<div id="fig-geoinformatics" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-geoinformatics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/geoinformatics.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-geoinformatics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.1: <em>Geoinformatics</em>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-client-server-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: Client-server interaction in WebGIS
 </figcaption>
 </figure>
 </div>
-</section>
-<section id="evolution-of-geoinformatics" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="evolution-of-geoinformatics"><span class="header-section-number">1.4</span> Evolution of Geoinformatics</h2>
-<p>The development of Geoinformatics reflects humanity’s evolving relationship with spatial data. In the past, geographic information was measured and represented manually through surveys and cartographic techniques. With the introduction of aerial photography and later satellite imaging, data collection became faster and more accurate.</p>
-<p>The digital revolution of the 20th century enabled computer-based mapping and Geographic Information Systems (GIS), which greatly expanded analytical possibilities. Today, cloud computing, artificial intelligence, and big data are transforming Geoinformatics into a real-time and dynamic discipline.</p>
-</section>
-<section id="applications-of-geoinformatics" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="applications-of-geoinformatics"><span class="header-section-number">1.5</span> Applications of Geoinformatics</h2>
-<p>Geoinformatics has diverse applications across sectors. Some key examples include:</p>
+</div>
+</div>
+<section id="types-of-clients" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="types-of-clients"><span class="header-section-number">8.3.1</span> Types of Clients</h3>
 <ul>
-<li><strong>Disaster Management:</strong> Flood mapping, earthquake impact assessment, and forest fire monitoring<br>
+<li><strong>Thin Clients:</strong> Depend on the server for most processing tasks (e.g., browsers running Leaflet, OpenLayers).<br>
 </li>
-<li><strong>Environmental Studies:</strong> Climate change monitoring, pollution tracking, and conservation planning<br>
-</li>
-<li><strong>Urban and Regional Planning:</strong> Smart city development, infrastructure planning, and land-use analysis<br>
-</li>
-<li><strong>Agriculture:</strong> Precision farming, soil health assessment, and crop yield prediction<br>
-</li>
-<li><strong>Transportation and Logistics:</strong> Route optimization, vehicle tracking, and supply chain management<br>
-</li>
-<li><strong>Defense and Security:</strong> Terrain analysis, border surveillance, and communication systems</li>
+<li><strong>Thick Clients:</strong> Perform processing locally while interacting with the server (e.g., QGIS with WMS/WFS, ArcGIS Pro).</li>
 </ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-thin-thick" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-thin-thick-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-thin-thick">graph TD
+    A[Server] --&gt;|Map Data| B[Thin Client: Browser]
+    A[Server] --&gt;|Map Data + Processing| C[Thick Client: QGIS]
+    B --&gt;|Display only| D[User]
+    C --&gt;|Display + Local Processing| D[User]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-thin-thick-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: Thin versus thick clients in WebGIS
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="the-open-dimension" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="the-open-dimension"><span class="header-section-number">1.6</span> The Open Dimension</h2>
-<p>An essential characteristic of modern Geoinformatics is the increasing role of <strong>open-source software and open data</strong>. Unlike proprietary systems, which often involve high licensing costs and limited flexibility, open platforms are freely available, shaped by global communities, and can be tailored to diverse applications.</p>
-<p>Well-known tools such as <strong>QGIS</strong>, <strong>GRASS GIS</strong>, <strong>PostGIS</strong>, <strong>GeoServer</strong>, and <strong>SAGA GIS</strong>, along with community-driven projects like <strong>OpenStreetMap (OSM)</strong>, offer robust and accessible options for spatial analysis, data handling, and online data sharing. Through these resources, Geoinformatics has become more <strong>democratic, inclusive, and participatory</strong>. More than just technological solutions, they embody a broader philosophy of openness, cooperation, and shared responsibility in using spatial knowledge to address global challenges.</p>
 </section>
-<section id="future-of-geoinformatics" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="future-of-geoinformatics"><span class="header-section-number">1.7</span> Future of Geoinformatics</h2>
-<p>Geoinformatics is continuously evolving with emerging technologies. Future directions include:</p>
+<section id="http-protocol" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="http-protocol"><span class="header-section-number">8.4</span> HTTP Protocol</h2>
+<p>The Hypertext Transfer Protocol (HTTP) is the standard for communication between clients and servers.</p>
+<p>Common methods include:</p>
 <ul>
-<li>Artificial Intelligence and Machine Learning for automated analysis of satellite imagery<br>
+<li><strong>GET:</strong> Request information (e.g., fetch a map layer).<br>
 </li>
-<li>Internet of Things (IoT) for integrating ground-based sensors with geospatial systems<br>
+<li><strong>POST:</strong> Submit data to the server (e.g., upload spatial data).<br>
 </li>
-<li>Digital Twins for creating dynamic, real-time models of cities and natural systems<br>
+<li><strong>PUT:</strong> Update or replace an existing resource.<br>
 </li>
-<li>Drone-based mapping for high-resolution, flexible data collection<br>
-</li>
-<li>Citizen science and open data initiatives that encourage public participation in data generation</li>
+<li><strong>DELETE:</strong> Remove a resource from the server.</li>
 </ul>
-<p>In the future, Geoinformatics will not only describe what is happening but also predict future scenarios and guide decisions for sustainable development.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-http-flow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-http-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-http-flow">sequenceDiagram
+    participant Client
+    participant Server
+    Client-&gt;&gt;Server: HTTP Request (GET /map)
+    Server--&gt;&gt;Client: HTTP Response (200 OK + Map Data)
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-http-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.3: HTTP request and response flow in WebGIS
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="conclusion" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.8</span> Conclusion</h2>
-<p>Geoinformatics is more than the study of maps. It is a modern discipline that integrates technology with geography to provide solutions for real-world challenges. From disaster management to urban planning and environmental protection, its applications are vast and significant.</p>
-<p>With the rise of open-source software and open data initiatives, Geoinformatics has become more accessible and collaborative than ever before. This inclusive approach is shaping the way we understand and manage our planet.</p>
-<p>Thus, <strong>Open Geoinformatics</strong> represents not only the science of spatial data but also the philosophy of openness, collaboration, and shared knowledge for a sustainable future. The next chapter explores this openness further by introducing <strong>Free and Open-Source Software (FOSS)</strong>, which forms the foundation of modern geospatial practice.</p>
+<section id="three-tier-web-architecture" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="three-tier-web-architecture"><span class="header-section-number">8.5</span> Three-Tier Web Architecture</h2>
+<p>Most WebGIS applications adopt a three-tier architecture:</p>
+<ol type="1">
+<li><strong>Presentation Layer:</strong> User interface (browser, mobile app).<br>
+</li>
+<li><strong>Logic Layer:</strong> Server-side scripts (e.g., Python Flask, PHP, Node.js).<br>
+</li>
+<li><strong>Data Layer:</strong> Database storing spatial data (e.g., PostGIS, MongoDB with geospatial extensions).</li>
+</ol>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-three-tier" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-three-tier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-three-tier">graph TD
+    A[Presentation Layer: Browser/UI] --&gt; B[Logic Layer: Server Scripts]
+    B --&gt; C[Data Layer: Spatial Database]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-three-tier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.4: Three-tier architecture of WebGIS
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="conclusion" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">8.6</span> Conclusion</h2>
+<p>This chapter explained the basic web principles that form the foundation of WebGIS. By understanding the internet, client-server communication, HTTP protocols, and three-tier architecture, it becomes clear how WebGIS applications function effectively. The distinction between thin and thick clients further illustrates how processing responsibilities are distributed in different setups. Data formats such as XML, JSON, and GML ensure interoperability across platforms.</p>
+<p>In the next chapter, we will explore <strong>Geospatial Web Services</strong>, which build upon these principles to provide spatial data and functionality over the internet.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-jones2008webgis" class="csl-entry" role="listitem">
+Jones, C. B., &amp; Purves, R. S. (2008). Web-based geographic information systems. In J. P. Wilson &amp; A. S. Fotheringham (Eds.), <em>Handbook of geographic information science</em> (pp. 559–580). Oxford, UK: Blackwell Publishing.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -815,13 +844,13 @@ Figure&nbsp;1.1: <em>Geoinformatics</em>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../acknowledgement.html" class="pagination-link" aria-label="Acknowledgements">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Acknowledgements</span>
+      <a href="../../chapters/module_5/intro_webgis.html" class="pagination-link" aria-label="Introduction to WebGIS">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/module_1/foss.html" class="pagination-link" aria-label="Free and Open-Source Software">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Free and Open-Source Software</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/module_5/webgis_services.html" class="pagination-link" aria-label="Geospatial Web Services">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geospatial Web Services</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

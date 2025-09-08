@@ -1,0 +1,96 @@
+# Web Principles for GIS
+
+## Introduction
+
+To understand WebGIS, it is essential to first explore the fundamental principles of how the web functions. WebGIS applications rely on internet protocols, client-server communication, 
+and structured architectures that enable efficient sharing and visualization of spatial data. This chapter introduces these underlying web principles and explains their role in enabling WebGIS.
+
+## The Internet and the World Wide Web
+
+The internet is a global network of interconnected computers, while the World Wide Web (WWW) is a system of interlinked documents accessed via the internet. 
+The web acts as the primary platform for delivering GIS data and applications.
+
+Important distinctions include:  
+
+- **Internet:** Infrastructure that connects networks worldwide.  
+- **World Wide Web:** Collection of linked resources accessible through HTTP.  
+
+The emergence of the WWW in the early 1990s revolutionized GIS by enabling online access to spatial data and maps [@jones2008webgis].
+
+## Client-Server Architecture
+
+Web applications, including WebGIS, are based on client-server architecture. In this model:  
+- **Client:** The user’s browser or application that requests resources (e.g., Google Chrome, Mozilla Firefox, QGIS with web plugins).  
+- **Server:** A machine that stores, processes, and serves requested data (e.g., Apache HTTP Server, GeoServer, MapServer).  
+
+```{mermaid}
+%%| label: fig-client-server
+%%| fig-cap: "Client-server interaction in WebGIS"
+sequenceDiagram
+    participant Client
+    participant Server
+    participant Database
+    Client->>Server: Request map (HTTP GET)
+    Server->>Database: Fetch spatial data
+    Database-->>Server: Return data
+    Server-->>Client: Send map in JSON/XML/HTML
+```
+
+### Types of Clients
+
+- **Thin Clients:** Depend on the server for most processing tasks (e.g., browsers running Leaflet, OpenLayers).  
+- **Thick Clients:** Perform processing locally while interacting with the server (e.g., QGIS with WMS/WFS, ArcGIS Pro).  
+
+```{mermaid}
+%%| label: fig-thin-thick
+%%| fig-cap: "Thin versus thick clients in WebGIS"
+graph TD
+    A[Server] -->|Map Data| B[Thin Client: Browser]
+    A[Server] -->|Map Data + Processing| C[Thick Client: QGIS]
+    B -->|Display only| D[User]
+    C -->|Display + Local Processing| D[User]
+```
+
+## HTTP Protocol
+The Hypertext Transfer Protocol (HTTP) is the standard for communication between clients and servers.  
+
+Common methods include:  
+
+- **GET:** Request information (e.g., fetch a map layer).  
+- **POST:** Submit data to the server (e.g., upload spatial data).  
+- **PUT:** Update or replace an existing resource.  
+- **DELETE:** Remove a resource from the server.  
+
+```{mermaid}
+%%| label: fig-http-flow
+%%| fig-cap: "HTTP request and response flow in WebGIS"
+sequenceDiagram
+    participant Client
+    participant Server
+    Client->>Server: HTTP Request (GET /map)
+    Server-->>Client: HTTP Response (200 OK + Map Data)
+```
+
+## Three-Tier Web Architecture
+
+Most WebGIS applications adopt a three-tier architecture:
+  
+1. **Presentation Layer:** User interface (browser, mobile app).  
+2. **Logic Layer:** Server-side scripts (e.g., Python Flask, PHP, Node.js).  
+3. **Data Layer:** Database storing spatial data (e.g., PostGIS, MongoDB with geospatial extensions).  
+
+```{mermaid}
+%%| label: fig-three-tier
+%%| fig-cap: "Three-tier architecture of WebGIS"
+graph TD
+    A[Presentation Layer: Browser/UI] --> B[Logic Layer: Server Scripts]
+    B --> C[Data Layer: Spatial Database]
+```
+
+## Conclusion
+
+This chapter explained the basic web principles that form the foundation of WebGIS. By understanding the internet, client-server communication, HTTP protocols, and three-tier architecture, 
+it becomes clear how WebGIS applications function effectively. The distinction between thin and thick clients further illustrates how processing responsibilities are distributed in different 
+setups. Data formats such as XML, JSON, and GML ensure interoperability across platforms. 
+
+In the next chapter, we will explore **Geospatial Web Services**, which build upon these principles to provide spatial data and functionality over the internet.

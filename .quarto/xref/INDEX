@@ -58,5 +58,20 @@
   },
   "chapters/module_1/foss_geoinformatics.qmd": {
     "foss_geoinformatics.html": "1f893dea"
+  },
+  "chapters/module_5/intro_webgis.qmd": {
+    "intro_webgis.html": "5de2b055"
+  },
+  "chapters/module_5/webgis_principles.qmd": {
+    "webgis_principles.html": "48df9537"
+  },
+  "chapters/module_5/webgis_services.qmd": {
+    "webgis_services.html": "916a1e8d"
+  },
+  "chapters/module_5/webgis_tools_and_app.qmd": {
+    "webgis_tools_and_app.html": "5de97eaa"
+  },
+  "chapters/module_5/webgis_trends.qmd": {
+    "webgis_trends.html": "6a612a08"
   }
 }

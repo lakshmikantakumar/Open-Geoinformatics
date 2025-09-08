@@ -1,0 +1,97 @@
+# Introduction to WebGIS
+
+## What is WebGIS?
+
+WebGIS is a Geographic Information System that operates through the internet. Unlike traditional desktop GIS, WebGIS enables users to access, visualize, analyze, and share geospatial data directly 
+from a web browser without requiring specialized software. The primary goal of WebGIS is the democratization of geospatial information by making it widely accessible.
+
+Key characteristics of WebGIS include the following: 
+ 
+- Accessible via the internet using standard web browsers  
+- Requires minimal installation at the client side  
+- Supports real-time data sharing and collaboration  
+- Often built on open standards and free and open-source software (FOSS) [@mitchell2005webmapping]  
+
+```{mermaid}
+%%| label: fig-webgis-characteristics
+%%| fig-cap: "Key characteristics of WebGIS"
+
+flowchart TB
+  A[WebGIS] --> B[Accessible via browsers]
+  A --> C[Minimal client installation]
+  A --> D[Real-time data sharing]
+  A --> E[Built on open standards & FOSS]
+```
+
+## Evolution of GIS to WebGIS
+
+The development of GIS began in the 1960s with desktop-based systems. With the rise of the internet in the 1990s, GIS started moving online. The availability of faster networks, open standards,
+ and lightweight web programming languages enabled the shift from standalone GIS to WebGIS.
+
+Some important milestones in this evolution include:
+  
+- 1960s–1980s: Desktop GIS focused on specialized users [@jones2008webgis]  
+- 1990s: Internet-enabled GIS applications emerged  
+- 2000s: Open Source GIS tools like MapServer and PostGIS supported online mapping [@mitchell2005webmapping]  
+- 2010s onwards: Cloud GIS and real-time WebGIS applications became mainstream  
+
+## WebGIS vs. Traditional Desktop GIS
+
+Table: **Comparison of Desktop GIS and WebGIS**
+
+| Feature              | Desktop GIS              | WebGIS                        |
+|----------------------|--------------------------|-------------------------------|
+| Accessibility        | Installed on local machines | Accessible via web browsers   |
+| User Base            | Specialists and experts   | General public and specialists |
+| Data Sharing         | Manual file exchange      | Real-time data sharing online  |
+| Cost                 | Often commercial licenses | Many FOSS options available    |
+
+## Components of a WebGIS
+
+A WebGIS is composed of three main elements, each playing a critical role in delivering geospatial services over the web: 
+ 
+- **Client-side (Frontend):** The user interface, often built with HTML, CSS, and JavaScript libraries such as Leaflet and OpenLayers  
+- **Server-side (Backend):** Manages requests, processes data, and delivers maps using tools like GeoServer and MapServer  
+- **Database:** Stores and manages spatial data, with common FOSS options including PostGIS and Spatialite [@mitchell2005webmapping]  
+
+
+```{mermaid}
+%%| label: fig-components-webgis
+%%| fig-cap: "Basic components of a WebGIS system"
+
+flowchart TD
+  A[Client-side: Browser/UI]
+  B[Server-side: GeoServer/MapServer]
+  C[Database: PostGIS/Spatialite]
+  A --> B
+  B --> C
+```
+
+## Importance of WebGIS
+
+The importance of WebGIS lies in its ability to extend geospatial capabilities beyond specialists. It plays a crucial role in governance, research, and community participation.
+
+Key benefits of WebGIS include:  
+
+- Enhances accessibility of geospatial data [@jones2008webgis]  
+- Facilitates collaboration across disciplines and locations  
+- Supports decision-making in urban planning, disaster management, and environmental monitoring  
+- Promotes open data initiatives and citizen science  
+
+
+## Examples of WebGIS Applications
+
+Many well-known platforms demonstrate the capabilities of WebGIS. Some examples are:  
+
+- **[Google Maps](https://maps.google.com):** A popular navigation and mapping platform for general use  
+- **[OpenStreetMap](https://www.openstreetmap.org):** A collaborative, open-source mapping initiative  
+- **Geoportals (e.g., [USGS EarthExplorer](https://earthexplorer.usgs.gov/), [European Copernicus Open Access Hub](https://scihub.copernicus.eu/)):**  
+- **[Humanitarian OpenStreetMap Team (HOT)](https://www.hotosm.org/):** Community-driven mapping for disaster response.  
+- **[World Bank GeoNode](https://geonode.worldbank.org/):** Open platform for global development and spatial data sharing. Platforms from governments and universities offering public geospatial data [@jones2008webgis]  
+
+## Conclusion
+This introductory chapter has outlined the meaning, evolution, and importance of WebGIS. It explained how WebGIS differs from traditional GIS and described the components that make it operational.
+ The importance of WebGIS lies in enhancing accessibility, supporting collaborative research, and encouraging participatory mapping through FOSS and open data initiatives.  
+
+As the internet continues to influence data accessibility, WebGIS is becoming central to modern geospatial practices. The next chapter will introduce the **fundamental web principles** 
+that underpin WebGIS. Understanding how the web functions, including client-server communication and the role of protocols, provides the foundation for grasping how geospatial data is shared and visualized online.
