@@ -33,6 +33,7 @@ book:
     - part: "Module 2: GIS"
       chapters:
         - chapters/module_2/gis-intro.qmd
+        - chapters/module_2/gis-geo.qmd
 
 
     - part: "Module 5: WebGIS"

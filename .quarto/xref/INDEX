@@ -73,5 +73,8 @@
   },
   "chapters/module_5/webgis_trends.qmd": {
     "webgis_trends.html": "6a612a08"
+  },
+  "chapters/module_2/gis-geo.qmd": {
+    "gis-geo.html": "90eb7844"
   }
 }

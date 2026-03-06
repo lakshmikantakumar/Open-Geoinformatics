@@ -58,3 +58,5 @@ $RECYCLE.BIN/
 *.pdf
 
 /.quarto/
+
+**/*.quarto_ipynb

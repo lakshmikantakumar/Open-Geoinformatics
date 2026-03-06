@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Lecture Notes Using Free and Open-Source Software">
 
-<title>7&nbsp; Introduction to WebGIS – Open Geoinformatics</title>
+<title>8&nbsp; Introduction to WebGIS – Open Geoinformatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -52,17 +52,18 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../chapters/module_5/webgis_principles.html" rel="next">
-<link href="../../chapters/module_2/gis-intro.html" rel="prev">
+<link href="../../chapters/module_2/gis-geo.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-70a47bd5681a7291082a5b9f83d58762.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -107,7 +108,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -120,7 +121,9 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Open Geoinformatics</a> 
         <div class="sidebar-tools-main">
@@ -203,6 +206,12 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introduction to GIS</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/module_2/gis-geo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Georeferencing</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -217,31 +226,31 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_5/intro_webgis.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_5/webgis_principles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_5/webgis_services.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geospatial Web Services</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Geospatial Web Services</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_5/webgis_tools_and_app.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WebGIS Tools and Application Design</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WebGIS Tools and Application Design</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_5/webgis_trends.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Advanced WebGIS and Future Directions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Advanced WebGIS and Future Directions</span></span></a>
   </div>
 </li>
       </ul>
@@ -256,22 +265,22 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-webgis" id="toc-what-is-webgis" class="nav-link active" data-scroll-target="#what-is-webgis"><span class="header-section-number">7.1</span> What is WebGIS?</a></li>
-  <li><a href="#evolution-of-gis-to-webgis" id="toc-evolution-of-gis-to-webgis" class="nav-link" data-scroll-target="#evolution-of-gis-to-webgis"><span class="header-section-number">7.2</span> Evolution of GIS to WebGIS</a></li>
-  <li><a href="#webgis-vs.-traditional-desktop-gis" id="toc-webgis-vs.-traditional-desktop-gis" class="nav-link" data-scroll-target="#webgis-vs.-traditional-desktop-gis"><span class="header-section-number">7.3</span> WebGIS vs.&nbsp;Traditional Desktop GIS</a></li>
-  <li><a href="#components-of-a-webgis" id="toc-components-of-a-webgis" class="nav-link" data-scroll-target="#components-of-a-webgis"><span class="header-section-number">7.4</span> Components of a WebGIS</a></li>
-  <li><a href="#importance-of-webgis" id="toc-importance-of-webgis" class="nav-link" data-scroll-target="#importance-of-webgis"><span class="header-section-number">7.5</span> Importance of WebGIS</a></li>
-  <li><a href="#examples-of-webgis-applications" id="toc-examples-of-webgis-applications" class="nav-link" data-scroll-target="#examples-of-webgis-applications"><span class="header-section-number">7.6</span> Examples of WebGIS Applications</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">7.7</span> Conclusion</a></li>
+  <li><a href="#what-is-webgis" id="toc-what-is-webgis" class="nav-link active" data-scroll-target="#what-is-webgis"><span class="header-section-number">8.1</span> What is WebGIS?</a></li>
+  <li><a href="#evolution-of-gis-to-webgis" id="toc-evolution-of-gis-to-webgis" class="nav-link" data-scroll-target="#evolution-of-gis-to-webgis"><span class="header-section-number">8.2</span> Evolution of GIS to WebGIS</a></li>
+  <li><a href="#webgis-vs.-traditional-desktop-gis" id="toc-webgis-vs.-traditional-desktop-gis" class="nav-link" data-scroll-target="#webgis-vs.-traditional-desktop-gis"><span class="header-section-number">8.3</span> WebGIS vs.&nbsp;Traditional Desktop GIS</a></li>
+  <li><a href="#components-of-a-webgis" id="toc-components-of-a-webgis" class="nav-link" data-scroll-target="#components-of-a-webgis"><span class="header-section-number">8.4</span> Components of a WebGIS</a></li>
+  <li><a href="#importance-of-webgis" id="toc-importance-of-webgis" class="nav-link" data-scroll-target="#importance-of-webgis"><span class="header-section-number">8.5</span> Importance of WebGIS</a></li>
+  <li><a href="#examples-of-webgis-applications" id="toc-examples-of-webgis-applications" class="nav-link" data-scroll-target="#examples-of-webgis-applications"><span class="header-section-number">8.6</span> Examples of WebGIS Applications</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">8.7</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></h1>
 </div>
 
 
@@ -288,8 +297,8 @@ div.csl-indent {
 </header>
 
 
-<section id="what-is-webgis" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="what-is-webgis"><span class="header-section-number">7.1</span> What is WebGIS?</h2>
+<section id="what-is-webgis" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="what-is-webgis"><span class="header-section-number">8.1</span> What is WebGIS?</h2>
 <p>WebGIS is a Geographic Information System that operates through the internet. Unlike traditional desktop GIS, WebGIS enables users to access, visualize, analyze, and share geospatial data directly from a web browser without requiring specialized software. The primary goal of WebGIS is the democratization of geospatial information by making it widely accessible.</p>
 <p>Key characteristics of WebGIS include the following:</p>
 <ul>
@@ -316,15 +325,15 @@ div.csl-indent {
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-webgis-characteristics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.1: Key characteristics of WebGIS
+Figure&nbsp;8.1: Key characteristics of WebGIS
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="evolution-of-gis-to-webgis" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="evolution-of-gis-to-webgis"><span class="header-section-number">7.2</span> Evolution of GIS to WebGIS</h2>
+<section id="evolution-of-gis-to-webgis" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="evolution-of-gis-to-webgis"><span class="header-section-number">8.2</span> Evolution of GIS to WebGIS</h2>
 <p>The development of GIS began in the 1960s with desktop-based systems. With the rise of the internet in the 1990s, GIS started moving online. The availability of faster networks, open standards, and lightweight web programming languages enabled the shift from standalone GIS to WebGIS.</p>
 <p>Some important milestones in this evolution include:</p>
 <ul>
@@ -337,8 +346,8 @@ Figure&nbsp;7.1: Key characteristics of WebGIS
 <li>2010s onwards: Cloud GIS and real-time WebGIS applications became mainstream</li>
 </ul>
 </section>
-<section id="webgis-vs.-traditional-desktop-gis" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="webgis-vs.-traditional-desktop-gis"><span class="header-section-number">7.3</span> WebGIS vs.&nbsp;Traditional Desktop GIS</h2>
+<section id="webgis-vs.-traditional-desktop-gis" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="webgis-vs.-traditional-desktop-gis"><span class="header-section-number">8.3</span> WebGIS vs.&nbsp;Traditional Desktop GIS</h2>
 <table class="caption-top table">
 <caption><strong>Comparison of Desktop GIS and WebGIS</strong></caption>
 <colgroup>
@@ -377,8 +386,8 @@ Figure&nbsp;7.1: Key characteristics of WebGIS
 </tbody>
 </table>
 </section>
-<section id="components-of-a-webgis" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="components-of-a-webgis"><span class="header-section-number">7.4</span> Components of a WebGIS</h2>
+<section id="components-of-a-webgis" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="components-of-a-webgis"><span class="header-section-number">8.4</span> Components of a WebGIS</h2>
 <p>A WebGIS is composed of three main elements, each playing a critical role in delivering geospatial services over the web:</p>
 <ul>
 <li><strong>Client-side (Frontend):</strong> The user interface, often built with HTML, CSS, and JavaScript libraries such as Leaflet and OpenLayers<br>
@@ -403,15 +412,15 @@ Figure&nbsp;7.1: Key characteristics of WebGIS
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-components-webgis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.2: Basic components of a WebGIS system
+Figure&nbsp;8.2: Basic components of a WebGIS system
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="importance-of-webgis" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="importance-of-webgis"><span class="header-section-number">7.5</span> Importance of WebGIS</h2>
+<section id="importance-of-webgis" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="importance-of-webgis"><span class="header-section-number">8.5</span> Importance of WebGIS</h2>
 <p>The importance of WebGIS lies in its ability to extend geospatial capabilities beyond specialists. It plays a crucial role in governance, research, and community participation.</p>
 <p>Key benefits of WebGIS include:</p>
 <ul>
@@ -424,8 +433,8 @@ Figure&nbsp;7.2: Basic components of a WebGIS system
 <li>Promotes open data initiatives and citizen science</li>
 </ul>
 </section>
-<section id="examples-of-webgis-applications" class="level2" data-number="7.6">
-<h2 data-number="7.6" class="anchored" data-anchor-id="examples-of-webgis-applications"><span class="header-section-number">7.6</span> Examples of WebGIS Applications</h2>
+<section id="examples-of-webgis-applications" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="examples-of-webgis-applications"><span class="header-section-number">8.6</span> Examples of WebGIS Applications</h2>
 <p>Many well-known platforms demonstrate the capabilities of WebGIS. Some examples are:</p>
 <ul>
 <li><strong><a href="https://maps.google.com">Google Maps</a>:</strong> A popular navigation and mapping platform for general use<br>
@@ -439,8 +448,8 @@ Figure&nbsp;7.2: Basic components of a WebGIS system
 <li><strong><a href="https://geonode.worldbank.org/">World Bank GeoNode</a>:</strong> Open platform for global development and spatial data sharing. Platforms from governments and universities offering public geospatial data <span class="citation" data-cites="jones2008webgis">(<a href="#ref-jones2008webgis" role="doc-biblioref">Jones &amp; Purves, 2008</a>)</span></li>
 </ul>
 </section>
-<section id="conclusion" class="level2" data-number="7.7">
-<h2 data-number="7.7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">7.7</span> Conclusion</h2>
+<section id="conclusion" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">8.7</span> Conclusion</h2>
 <p>This introductory chapter has outlined the meaning, evolution, and importance of WebGIS. It explained how WebGIS differs from traditional GIS and described the components that make it operational. The importance of WebGIS lies in enhancing accessibility, supporting collaborative research, and encouraging participatory mapping through FOSS and open data initiatives.</p>
 <p>As the internet continues to influence data accessibility, WebGIS is becoming central to modern geospatial practices. The next chapter will introduce the <strong>fundamental web principles</strong> that underpin WebGIS. Understanding how the web functions, including client-server communication and the role of protocols, provides the foundation for grasping how geospatial data is shared and visualized online.</p>
 
@@ -507,13 +516,14 @@ Mitchell, T. (2005). <em>Web mapping illustrated: Using open source GIS toolkits
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -857,13 +867,13 @@ Mitchell, T. (2005). <em>Web mapping illustrated: Using open source GIS toolkits
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/module_2/gis-intro.html" class="pagination-link" aria-label="Introduction to GIS">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introduction to GIS</span></span>
+      <a href="../../chapters/module_2/gis-geo.html" class="pagination-link" aria-label="Georeferencing">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Georeferencing</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../chapters/module_5/webgis_principles.html" class="pagination-link" aria-label="Web Principles for GIS">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

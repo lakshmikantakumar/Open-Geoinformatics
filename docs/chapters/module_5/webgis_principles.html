@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Lecture Notes Using Free and Open-Source Software">
 
-<title>8&nbsp; Web Principles for GIS – Open Geoinformatics</title>
+<title>9&nbsp; Web Principles for GIS – Open Geoinformatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -55,14 +55,15 @@ div.csl-indent {
 <link href="../../chapters/module_5/intro_webgis.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-70a47bd5681a7291082a5b9f83d58762.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -107,7 +108,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/webgis_principles.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/webgis_principles.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -120,7 +121,9 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Open Geoinformatics</a> 
         <div class="sidebar-tools-main">
@@ -203,6 +206,12 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introduction to GIS</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/module_2/gis-geo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Georeferencing</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -217,31 +226,31 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_5/intro_webgis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_5/webgis_principles.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_5/webgis_services.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geospatial Web Services</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Geospatial Web Services</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_5/webgis_tools_and_app.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WebGIS Tools and Application Design</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WebGIS Tools and Application Design</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/module_5/webgis_trends.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Advanced WebGIS and Future Directions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Advanced WebGIS and Future Directions</span></span></a>
   </div>
 </li>
       </ul>
@@ -256,24 +265,24 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">8.1</span> Introduction</a></li>
-  <li><a href="#the-internet-and-the-world-wide-web" id="toc-the-internet-and-the-world-wide-web" class="nav-link" data-scroll-target="#the-internet-and-the-world-wide-web"><span class="header-section-number">8.2</span> The Internet and the World Wide Web</a></li>
-  <li><a href="#client-server-architecture" id="toc-client-server-architecture" class="nav-link" data-scroll-target="#client-server-architecture"><span class="header-section-number">8.3</span> Client-Server Architecture</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">9.1</span> Introduction</a></li>
+  <li><a href="#the-internet-and-the-world-wide-web" id="toc-the-internet-and-the-world-wide-web" class="nav-link" data-scroll-target="#the-internet-and-the-world-wide-web"><span class="header-section-number">9.2</span> The Internet and the World Wide Web</a></li>
+  <li><a href="#client-server-architecture" id="toc-client-server-architecture" class="nav-link" data-scroll-target="#client-server-architecture"><span class="header-section-number">9.3</span> Client-Server Architecture</a>
   <ul class="collapse">
-  <li><a href="#types-of-clients" id="toc-types-of-clients" class="nav-link" data-scroll-target="#types-of-clients"><span class="header-section-number">8.3.1</span> Types of Clients</a></li>
+  <li><a href="#types-of-clients" id="toc-types-of-clients" class="nav-link" data-scroll-target="#types-of-clients"><span class="header-section-number">9.3.1</span> Types of Clients</a></li>
   </ul></li>
-  <li><a href="#http-protocol" id="toc-http-protocol" class="nav-link" data-scroll-target="#http-protocol"><span class="header-section-number">8.4</span> HTTP Protocol</a></li>
-  <li><a href="#three-tier-web-architecture" id="toc-three-tier-web-architecture" class="nav-link" data-scroll-target="#three-tier-web-architecture"><span class="header-section-number">8.5</span> Three-Tier Web Architecture</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">8.6</span> Conclusion</a></li>
+  <li><a href="#http-protocol" id="toc-http-protocol" class="nav-link" data-scroll-target="#http-protocol"><span class="header-section-number">9.4</span> HTTP Protocol</a></li>
+  <li><a href="#three-tier-web-architecture" id="toc-three-tier-web-architecture" class="nav-link" data-scroll-target="#three-tier-web-architecture"><span class="header-section-number">9.5</span> Three-Tier Web Architecture</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">9.6</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/webgis_principles.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/webgis_principles.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Web Principles for GIS</span></h1>
 </div>
 
 
@@ -290,12 +299,12 @@ div.csl-indent {
 </header>
 
 
-<section id="introduction" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">8.1</span> Introduction</h2>
+<section id="introduction" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">9.1</span> Introduction</h2>
 <p>To understand WebGIS, it is essential to first explore the fundamental principles of how the web functions. WebGIS applications rely on internet protocols, client-server communication, and structured architectures that enable efficient sharing and visualization of spatial data. This chapter introduces these underlying web principles and explains their role in enabling WebGIS.</p>
 </section>
-<section id="the-internet-and-the-world-wide-web" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="the-internet-and-the-world-wide-web"><span class="header-section-number">8.2</span> The Internet and the World Wide Web</h2>
+<section id="the-internet-and-the-world-wide-web" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="the-internet-and-the-world-wide-web"><span class="header-section-number">9.2</span> The Internet and the World Wide Web</h2>
 <p>The internet is a global network of interconnected computers, while the World Wide Web (WWW) is a system of interlinked documents accessed via the internet. The web acts as the primary platform for delivering GIS data and applications.</p>
 <p>Important distinctions include:</p>
 <ul>
@@ -305,8 +314,8 @@ div.csl-indent {
 </ul>
 <p>The emergence of the WWW in the early 1990s revolutionized GIS by enabling online access to spatial data and maps <span class="citation" data-cites="jones2008webgis">(<a href="#ref-jones2008webgis" role="doc-biblioref">Jones &amp; Purves, 2008</a>)</span>.</p>
 </section>
-<section id="client-server-architecture" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="client-server-architecture"><span class="header-section-number">8.3</span> Client-Server Architecture</h2>
+<section id="client-server-architecture" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="client-server-architecture"><span class="header-section-number">9.3</span> Client-Server Architecture</h2>
 <p>Web applications, including WebGIS, are based on client-server architecture. In this model:<br>
 - <strong>Client:</strong> The user’s browser or application that requests resources (e.g., Google Chrome, Mozilla Firefox, QGIS with web plugins).<br>
 - <strong>Server:</strong> A machine that stores, processes, and serves requested data (e.g., Apache HTTP Server, GeoServer, MapServer).</p>
@@ -328,14 +337,14 @@ div.csl-indent {
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-client-server-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.1: Client-server interaction in WebGIS
+Figure&nbsp;9.1: Client-server interaction in WebGIS
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<section id="types-of-clients" class="level3" data-number="8.3.1">
-<h3 data-number="8.3.1" class="anchored" data-anchor-id="types-of-clients"><span class="header-section-number">8.3.1</span> Types of Clients</h3>
+<section id="types-of-clients" class="level3" data-number="9.3.1">
+<h3 data-number="9.3.1" class="anchored" data-anchor-id="types-of-clients"><span class="header-section-number">9.3.1</span> Types of Clients</h3>
 <ul>
 <li><strong>Thin Clients:</strong> Depend on the server for most processing tasks (e.g., browsers running Leaflet, OpenLayers).<br>
 </li>
@@ -356,7 +365,7 @@ Figure&nbsp;8.1: Client-server interaction in WebGIS
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-thin-thick-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.2: Thin versus thick clients in WebGIS
+Figure&nbsp;9.2: Thin versus thick clients in WebGIS
 </figcaption>
 </figure>
 </div>
@@ -364,8 +373,8 @@ Figure&nbsp;8.2: Thin versus thick clients in WebGIS
 </div>
 </section>
 </section>
-<section id="http-protocol" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="http-protocol"><span class="header-section-number">8.4</span> HTTP Protocol</h2>
+<section id="http-protocol" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="http-protocol"><span class="header-section-number">9.4</span> HTTP Protocol</h2>
 <p>The Hypertext Transfer Protocol (HTTP) is the standard for communication between clients and servers.</p>
 <p>Common methods include:</p>
 <ul>
@@ -392,15 +401,15 @@ Figure&nbsp;8.2: Thin versus thick clients in WebGIS
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-http-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.3: HTTP request and response flow in WebGIS
+Figure&nbsp;9.3: HTTP request and response flow in WebGIS
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="three-tier-web-architecture" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="three-tier-web-architecture"><span class="header-section-number">8.5</span> Three-Tier Web Architecture</h2>
+<section id="three-tier-web-architecture" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="three-tier-web-architecture"><span class="header-section-number">9.5</span> Three-Tier Web Architecture</h2>
 <p>Most WebGIS applications adopt a three-tier architecture:</p>
 <ol type="1">
 <li><strong>Presentation Layer:</strong> User interface (browser, mobile app).<br>
@@ -422,15 +431,15 @@ Figure&nbsp;8.3: HTTP request and response flow in WebGIS
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-three-tier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.4: Three-tier architecture of WebGIS
+Figure&nbsp;9.4: Three-tier architecture of WebGIS
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="conclusion" class="level2" data-number="8.6">
-<h2 data-number="8.6" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">8.6</span> Conclusion</h2>
+<section id="conclusion" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">9.6</span> Conclusion</h2>
 <p>This chapter explained the basic web principles that form the foundation of WebGIS. By understanding the internet, client-server communication, HTTP protocols, and three-tier architecture, it becomes clear how WebGIS applications function effectively. The distinction between thin and thick clients further illustrates how processing responsibilities are distributed in different setups. Data formats such as XML, JSON, and GML ensure interoperability across platforms.</p>
 <p>In the next chapter, we will explore <strong>Geospatial Web Services</strong>, which build upon these principles to provide spatial data and functionality over the internet.</p>
 
@@ -494,13 +503,14 @@ Jones, C. B., &amp; Purves, R. S. (2008). Web-based geographic information syste
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -845,12 +855,12 @@ Jones, C. B., &amp; Purves, R. S. (2008). Web-based geographic information syste
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../chapters/module_5/intro_webgis.html" class="pagination-link" aria-label="Introduction to WebGIS">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../chapters/module_5/webgis_services.html" class="pagination-link" aria-label="Geospatial Web Services">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geospatial Web Services</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Geospatial Web Services</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

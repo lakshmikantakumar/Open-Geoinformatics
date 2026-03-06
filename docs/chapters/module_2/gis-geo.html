@@ -8,7 +8,7 @@
 
 <meta name="description" content="Lecture Notes Using Free and Open-Source Software">
 
-<title>11&nbsp; WebGIS Tools and Application Design – Open Geoinformatics</title>
+<title>7&nbsp; Georeferencing – Open Geoinformatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,42 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -66,8 +51,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/module_5/webgis_trends.html" rel="next">
-<link href="../../chapters/module_5/webgis_services.html" rel="prev">
+<link href="../../chapters/module_5/intro_webgis.html" rel="next">
+<link href="../../chapters/module_2/gis-intro.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -106,10 +91,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/styles.css">
 </head>
@@ -123,7 +134,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/webgis_tools_and_app.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WebGIS Tools and Application Design</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_2/gis-intro.html">Module 2: GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_2/gis-geo.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Georeferencing</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -223,7 +234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/module_2/gis-geo.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/module_2/gis-geo.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Georeferencing</span></span></a>
   </div>
 </li>
@@ -258,7 +269,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/module_5/webgis_tools_and_app.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/module_5/webgis_tools_and_app.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WebGIS Tools and Application Design</span></span></a>
   </div>
 </li>
@@ -280,38 +291,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">11.1</span> Introduction</a></li>
-  <li><a href="#the-role-of-foss-in-webgis" id="toc-the-role-of-foss-in-webgis" class="nav-link" data-scroll-target="#the-role-of-foss-in-webgis"><span class="header-section-number">11.2</span> The Role of FOSS in WebGIS</a>
+  <li><a href="#concept-and-definition-of-georeferencing" id="toc-concept-and-definition-of-georeferencing" class="nav-link active" data-scroll-target="#concept-and-definition-of-georeferencing"><span class="header-section-number">7.1</span> Concept and Definition of Georeferencing</a></li>
+  <li><a href="#the-need-and-importance-of-georeferencing" id="toc-the-need-and-importance-of-georeferencing" class="nav-link" data-scroll-target="#the-need-and-importance-of-georeferencing"><span class="header-section-number">7.2</span> The Need and Importance of Georeferencing</a></li>
+  <li><a href="#coordinate-systems-and-map-projections" id="toc-coordinate-systems-and-map-projections" class="nav-link" data-scroll-target="#coordinate-systems-and-map-projections"><span class="header-section-number">7.3</span> Coordinate Systems and Map Projections</a>
   <ul class="collapse">
-  <li><a href="#web-apis-in-the-foss-ecosystem" id="toc-web-apis-in-the-foss-ecosystem" class="nav-link" data-scroll-target="#web-apis-in-the-foss-ecosystem"><span class="header-section-number">11.2.1</span> Web APIs in the FOSS Ecosystem</a></li>
-  <li><a href="#why-foss" id="toc-why-foss" class="nav-link" data-scroll-target="#why-foss"><span class="header-section-number">11.2.2</span> Why FOSS?</a></li>
+  <li><a href="#geographic-coordinate-system" id="toc-geographic-coordinate-system" class="nav-link" data-scroll-target="#geographic-coordinate-system"><span class="header-section-number">7.3.1</span> Geographic Coordinate System</a></li>
+  <li><a href="#projected-coordinate-system" id="toc-projected-coordinate-system" class="nav-link" data-scroll-target="#projected-coordinate-system"><span class="header-section-number">7.3.2</span> Projected Coordinate System</a></li>
+  <li><a href="#relationship-between-datum-projection-and-coordinate-system" id="toc-relationship-between-datum-projection-and-coordinate-system" class="nav-link" data-scroll-target="#relationship-between-datum-projection-and-coordinate-system"><span class="header-section-number">7.3.3</span> Relationship between Datum, Projection, and Coordinate System</a></li>
   </ul></li>
-  <li><a href="#map-servers" id="toc-map-servers" class="nav-link" data-scroll-target="#map-servers"><span class="header-section-number">11.3</span> Map Servers</a></li>
-  <li><a href="#client-libraries" id="toc-client-libraries" class="nav-link" data-scroll-target="#client-libraries"><span class="header-section-number">11.4</span> Client Libraries</a></li>
-  <li><a href="#databases-for-webgis" id="toc-databases-for-webgis" class="nav-link" data-scroll-target="#databases-for-webgis"><span class="header-section-number">11.5</span> Databases for WebGIS</a>
+  <li><a href="#ground-control-points-gcps-role-and-selection" id="toc-ground-control-points-gcps-role-and-selection" class="nav-link" data-scroll-target="#ground-control-points-gcps-role-and-selection"><span class="header-section-number">7.4</span> Ground Control Points (GCPs): Role and Selection</a>
   <ul class="collapse">
-  <li><a href="#example-postgis-query" id="toc-example-postgis-query" class="nav-link" data-scroll-target="#example-postgis-query"><span class="header-section-number">11.5.1</span> Example PostGIS Query</a></li>
+  <li><a href="#characteristics-of-good-gcps" id="toc-characteristics-of-good-gcps" class="nav-link" data-scroll-target="#characteristics-of-good-gcps"><span class="header-section-number">7.4.1</span> Characteristics of Good GCPs</a></li>
+  <li><a href="#sources-of-gcps" id="toc-sources-of-gcps" class="nav-link" data-scroll-target="#sources-of-gcps"><span class="header-section-number">7.4.2</span> Sources of GCPs</a></li>
   </ul></li>
-  <li><a href="#designing-webgis-applications" id="toc-designing-webgis-applications" class="nav-link" data-scroll-target="#designing-webgis-applications"><span class="header-section-number">11.6</span> Designing WebGIS Applications</a>
+  <li><a href="#transformation-models-in-georeferencing" id="toc-transformation-models-in-georeferencing" class="nav-link" data-scroll-target="#transformation-models-in-georeferencing"><span class="header-section-number">7.5</span> Transformation Models in Georeferencing</a>
   <ul class="collapse">
-  <li><a href="#key-considerations" id="toc-key-considerations" class="nav-link" data-scroll-target="#key-considerations"><span class="header-section-number">11.6.1</span> Key Considerations</a></li>
-  <li><a href="#layers-in-webgis" id="toc-layers-in-webgis" class="nav-link" data-scroll-target="#layers-in-webgis"><span class="header-section-number">11.6.2</span> Layers in WebGIS</a></li>
+  <li><a href="#similarity-conformal-transformation" id="toc-similarity-conformal-transformation" class="nav-link" data-scroll-target="#similarity-conformal-transformation"><span class="header-section-number">7.5.1</span> Similarity (Conformal) Transformation</a></li>
   </ul></li>
-  <li><a href="#mashups-in-webgis" id="toc-mashups-in-webgis" class="nav-link" data-scroll-target="#mashups-in-webgis"><span class="header-section-number">11.7</span> Mashups in WebGIS</a>
+  <li><a href="#affine-transformation" id="toc-affine-transformation" class="nav-link" data-scroll-target="#affine-transformation"><span class="header-section-number">7.6</span> Affine Transformation</a>
   <ul class="collapse">
-  <li><a href="#case-studies" id="toc-case-studies" class="nav-link" data-scroll-target="#case-studies"><span class="header-section-number">11.7.1</span> Case Studies</a></li>
+  <li><a href="#explanation-of-the-components" id="toc-explanation-of-the-components" class="nav-link" data-scroll-target="#explanation-of-the-components"><span class="header-section-number">7.6.1</span> Explanation of the Components</a></li>
   </ul></li>
-  <li><a href="#example-workflow" id="toc-example-workflow" class="nav-link" data-scroll-target="#example-workflow"><span class="header-section-number">11.8</span> Example Workflow</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">11.9</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_5/intro_webgis.html">Module 5: WebGIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_5/webgis_tools_and_app.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WebGIS Tools and Application Design</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/module_2/gis-intro.html">Module 2: GIS</a></li><li class="breadcrumb-item"><a href="../../chapters/module_2/gis-geo.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Georeferencing</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WebGIS Tools and Application Design</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Georeferencing</span></h1>
 </div>
 
 
@@ -328,271 +337,211 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="introduction" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">11.1</span> Introduction</h2>
-<p>Developing a WebGIS system requires robust tools, thoughtful design practices, and the ability to integrate heterogeneous data sources. This chapter presents the open-source ecosystem, methods for designing scalable applications, and mashup strategies that combine multiple services into integrated geospatial platforms. It emphasizes the role of Free and Open Source Software (FOSS) as the foundation for accessible and collaborative WebGIS.</p>
-<hr>
-</section>
-<section id="the-role-of-foss-in-webgis" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="the-role-of-foss-in-webgis"><span class="header-section-number">11.2</span> The Role of FOSS in WebGIS</h2>
-<section id="web-apis-in-the-foss-ecosystem" class="level3" data-number="11.2.1">
-<h3 data-number="11.2.1" class="anchored" data-anchor-id="web-apis-in-the-foss-ecosystem"><span class="header-section-number">11.2.1</span> Web APIs in the FOSS Ecosystem</h3>
-<p>An important contribution of FOSS to WebGIS is the development of <strong>Web APIs</strong> that expose geospatial functionality over the internet.<br>
-- <strong>Leaflet API:</strong> Offers simple functions to add layers, markers, and controls in a few lines of code.<br>
-- <strong>OpenLayers API:</strong> Provides more advanced methods to handle OGC standards and tiled data.<br>
-- <strong>GeoServer REST API:</strong> Allows publishing, styling, and managing geospatial layers programmatically.<br>
-- <strong>OGC API standards:</strong> Designed as modern RESTful APIs using JSON and GeoJSON, making them lightweight alternatives to legacy WMS and WFS.</p>
-<p>These APIs allow developers to build applications that are modular, interoperable, and cloud-ready.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div id="fig-webapi-ecosystem" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="concept-and-definition-of-georeferencing" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="concept-and-definition-of-georeferencing"><span class="header-section-number">7.1</span> Concept and Definition of Georeferencing</h2>
+<p>Georeferencing is the process of assigning real-world geographic coordinates to spatial data such as scanned maps, aerial photographs, satellite images, or drone-acquired imagery. It helps create a spatial relationship between the image’s pixels and the geographic location of the Earth’s surface, thus enabling the integration of diverse datasets with a single reference system <span class="citation" data-cites="Huisman2009">(<a href="#ref-Huisman2009" role="doc-biblioref">Huisman O., 2009</a>)</span>. This technique helps ensure that spatial data is correctly related to its location on the Earth’s surface, thus being useful for decision-making and spatial analysis.</p>
+<p>Georeferencing is the backbone of a GIS, as all other processes and functions, such as distance calculation, overlay, or change detection, depend on it. Without georeferencing, the data will exist independently in the coordinate space, and it will be impossible to compare and combine them. For instance, a scanned map of the topographic surface will be impossible to compare with satellite images or cadastral boundaries if it is not georeferenced.</p>
+<div id="fig-geo" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-webapi-ecosystem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-webapi-ecosystem">flowchart LR
-  A[Spatial Database: PostGIS/Spatialite] --&gt; B[GeoServer / MapServer]
-  B --&gt; C[GeoServer REST API / OGC APIs]
-  C --&gt; D[Client: Leaflet / OpenLayers / CesiumJS]
-  D --&gt; E[WebGIS Applications for Users]
-</pre>
+<div aria-describedby="fig-geo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/geo_intro.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
 </div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-webapi-ecosystem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11.1: Role of Web APIs in connecting databases, servers, and client applications
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-geo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: <em>Diagram showing the relationship between image coordinates (pixels) and geographic coordinates on Earth (Credit: <a href="https://www.esri.com/about/newsroom/arcuser/understanding-raster-georeferencing">ESRI</a>)</em>
 </figcaption>
 </figure>
 </div>
-</div>
-</div>
-<p>FOSS solutions dominate WebGIS development due to their cost-effectiveness, flexibility, and support for open standards. Unlike proprietary platforms, FOSS encourages community-driven innovation and interoperability through the Open Geospatial Consortium (OGC) standards such as WMS, WFS, and WCS.</p>
+<p>In practical terms, georeferencing can be viewed as a transformation between image coordinate systems (row and column indices) and Earth-based coordinates (latitude, longitude, or projected coordinates such as UTM Easting and Northing). The transformation process often involves identifying a set of known control points, which are used to compute mathematical relationships between the image and real-world coordinate systems <span class="citation" data-cites="campbell2011">(<a href="#ref-campbell2011" role="doc-biblioref">Campbell &amp; Wynne, 2011</a>)</span>.</p>
 </section>
-<section id="why-foss" class="level3" data-number="11.2.2">
-<h3 data-number="11.2.2" class="anchored" data-anchor-id="why-foss"><span class="header-section-number">11.2.2</span> Why FOSS?</h3>
-<ul>
-<li><strong>Cost efficiency:</strong> Free licensing removes financial barriers.<br>
-</li>
-<li><strong>Transparency:</strong> Open code allows customization and auditing.<br>
-</li>
-<li><strong>Community support:</strong> Large global communities maintain and extend functionality.<br>
-</li>
-<li><strong>Interoperability:</strong> Adherence to OGC standards ensures cross-platform compatibility.</li>
-</ul>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div id="fig-foss-ecosystem" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="the-need-and-importance-of-georeferencing" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="the-need-and-importance-of-georeferencing"><span class="header-section-number">7.2</span> The Need and Importance of Georeferencing</h2>
+<p>The accuracy and reliability of the results obtained using a GIS depend on the quality of the geospatial data alignment with the real world. Georeferencing is the process of ensuring that the data has a common spatial reference system, which is essential in integrating different types of data, such as satellite images, GPS field data, and existing geospatial data <span class="citation" data-cites="wilson2008">(<a href="#ref-wilson2008" role="doc-biblioref">Wilson &amp; Fotheringham, 2008</a>)</span>. Without georeferencing, it is possible that results can be inaccurate due to improper data alignment.</p>
+<div id="fig-geo" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-foss-ecosystem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-foss-ecosystem">flowchart LR
-  A[Spatial Data] --&gt; B[GeoServer / MapServer]
-  B --&gt; C[OpenLayers / Leaflet]
-  C --&gt; D[WebGIS Application]
-  B --&gt; E[PostGIS / Spatialite]
-</pre>
+<div aria-describedby="fig-geo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/geo_flow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
 </div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-foss-ecosystem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11.2: The FOSS ecosystem in WebGIS
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-geo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.2: <em>Process of Georeferencing</em>
 </figcaption>
 </figure>
 </div>
-</div>
-</div>
-<hr>
+<p>Georeferencing is particularly important since the source data is, in many instances, based on analog maps developed before the era of digital cartographic tools. In fact, these maps, which are normally in paper or soft copy formats, have to be georeferenced in order to conform to the current standard systems, for example the Universal Transverse Mercator system based on the World Geodetic System 1984. The technique is not only vital in the context of national mapping and spatial planning but also in the integration of historical archives with new data obtained from satellite and aerial sources. For example, it is possible to study changes in land cover and urban growth by georeferencing the 1970s topographic maps with Sentinel-2 satellite images. Without georeferencing, it would not be possible.</p>
+</section>
+<section id="coordinate-systems-and-map-projections" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="coordinate-systems-and-map-projections"><span class="header-section-number">7.3</span> Coordinate Systems and Map Projections</h2>
+<p>A coordinate system is used as a guide for locating the position of geographic features on the surface of the Earth. Georeferencing involves the allocation of coordinates to each pixel or feature. Coordinate systems can be categorized into geographic coordinate systems and projected coordinate systems <span class="citation" data-cites="albrecht2007">(<a href="#ref-albrecht2007" role="doc-biblioref">Albrecht, 2007</a>)</span>).</p>
+<section id="geographic-coordinate-system" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="geographic-coordinate-system"><span class="header-section-number">7.3.1</span> Geographic Coordinate System</h3>
+<p>The geographic coordinate system (GCS) is defined as the system of coordinates that uses angular measurements of latitude and longitude to define positions on the surface of the Earth, modeled as a spheroid or ellipsoid. The most common geographic datum used worldwide is the World Geodetic System of 1984 (WGS84). Nevertheless, various nations, including India, used their own geographic systems, such as the Everest Datum, based on Everest ellipsoid.</p>
+</section>
+<section id="projected-coordinate-system" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="projected-coordinate-system"><span class="header-section-number">7.3.2</span> Projected Coordinate System</h3>
+<p>The projected coordinate system (PCS) is defined as the system that transforms the curved surface of the Earth to a plane using mathematical formulas. The most common PCS is the Universal Transverse Mercator (UTM) projection, where the world is divided into 60 zones, each 6° wide in longitude. India is located within UTM Zones 42N to 47N. The PCS is mostly used for calculating distances and areas, which cannot be accurately done using angular measurements used in Geographic Coordinate System.</p>
+</section>
+<section id="relationship-between-datum-projection-and-coordinate-system" class="level3" data-number="7.3.3">
+<h3 data-number="7.3.3" class="anchored" data-anchor-id="relationship-between-datum-projection-and-coordinate-system"><span class="header-section-number">7.3.3</span> Relationship between Datum, Projection, and Coordinate System</h3>
+<p>It is important to note that a coordinate system is considered complete when both datum and projection parameters have been considered. Inconsistency in datum, such as when data is in National Geodeatic Reference Frame (NGRF) Datum on WGS84 Elliposid is overlaid on Everest datum, can cause positional inaccuracies of up to hundreds of meters. Therefore, it is important to take note of all coordinate references when georeferencing data.</p>
 </section>
 </section>
-<section id="map-servers" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="map-servers"><span class="header-section-number">11.3</span> Map Servers</h2>
-<p>Map servers handle the publication and delivery of geospatial data as standardized services.</p>
-<ul>
-<li><strong>GeoServer:</strong> Known for ease of use, strong OGC compliance, and support for PostGIS.<br>
-</li>
-<li><strong>MapServer:</strong> High-performance rendering engine with flexibility for advanced cartography.<br>
-</li>
-<li><strong>deegree:</strong> Enterprise-level server with strong metadata management.</li>
-</ul>
-<hr>
-</section>
-<section id="client-libraries" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="client-libraries"><span class="header-section-number">11.4</span> Client Libraries</h2>
-<p>Client-side libraries handle visualization and interactivity.</p>
-<ul>
-<li><strong>OpenLayers:</strong> Comprehensive support for OGC standards, powerful for enterprise-grade projects.<br>
-</li>
-<li><strong>Leaflet:</strong> Lightweight and beginner-friendly, widely used for rapid application development.<br>
-</li>
-<li><strong>CesiumJS:</strong> Specialized for 3D mapping and virtual globes.</li>
-</ul>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div id="fig-client-libraries" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="ground-control-points-gcps-role-and-selection" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="ground-control-points-gcps-role-and-selection"><span class="header-section-number">7.4</span> Ground Control Points (GCPs): Role and Selection</h2>
+<p>Ground Control Points, or GCPs, refer to precise locations that can easily be identified on the image as well as the actual scene. GCPs play an important role in the georeferencing process, as they form the basis for the computation of the transformation parameters that connect the two coordinate systems, the image coordinates, and the actual scene coordinates (Richards, 2013). GCPs have an important bearing on the quality of the georeferencing process.</p>
+<div id="fig-geo" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-client-libraries-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-client-libraries">graph TD
-  A[Browser] --&gt; B[Leaflet: Lightweight]
-  A --&gt; C[OpenLayers: Full-featured]
-  A --&gt; D[CesiumJS: 3D/Globe]
-</pre>
+<div aria-describedby="fig-geo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/geo_geo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
 </div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-client-libraries-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11.3: Client-side libraries for visualization in WebGIS
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-geo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.3: <em>The role of GCP</em>
 </figcaption>
 </figure>
 </div>
-</div>
-</div>
-<hr>
-</section>
-<section id="databases-for-webgis" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="databases-for-webgis"><span class="header-section-number">11.5</span> Databases for WebGIS</h2>
-<p>Spatial databases store and query geospatial data efficiently.</p>
+<section id="characteristics-of-good-gcps" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="characteristics-of-good-gcps"><span class="header-section-number">7.4.1</span> Characteristics of Good GCPs</h3>
 <ul>
-<li><strong>PostGIS:</strong> An extension of PostgreSQL offering spatial indexing (GiST, R-Tree) and functions (ST_Buffer, ST_Intersection).<br>
-</li>
-<li><strong>Spatialite:</strong> SQLite-based lightweight alternative for portable projects.</li>
+<li>Permanence: The features used as GCP should remain unchanging over time, e.g., intersections of roads, corners of buildings, or monuments.</li>
+<li>Clarity: The features used as GCP should be easily identifiable both on the image and the corresponding map.</li>
+<li>Distribution: The GCPs should be evenly distributed over the image to reduce distortion effects.</li>
+<li>Accuracy: The coordinates should be derived from reliable sources, e.g., GNSS measurements in the field or official topographic project databases.</li>
 </ul>
-<section id="example-postgis-query" class="level3" data-number="11.5.1">
-<h3 data-number="11.5.1" class="anchored" data-anchor-id="example-postgis-query"><span class="header-section-number">11.5.1</span> Example PostGIS Query</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> name, ST_Area(geom) </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> landuse </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> <span class="kw">type</span> <span class="op">=</span> <span class="st">'forest'</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<hr>
+</section>
+<section id="sources-of-gcps" class="level3" data-number="7.4.2">
+<h3 data-number="7.4.2" class="anchored" data-anchor-id="sources-of-gcps"><span class="header-section-number">7.4.2</span> Sources of GCPs</h3>
+<p>GCPs can be collected from the following sources: - GPS measurements in the field using GNSS survey techniques for high accuracy. - Existing datasets that have been previously georeferenced, e.g., existing topographic maps or orthophotos. - Publicly available online portals offering geospatial information, e.g., satellite base maps.</p>
 </section>
 </section>
-<section id="designing-webgis-applications" class="level2" data-number="11.6">
-<h2 data-number="11.6" class="anchored" data-anchor-id="designing-webgis-applications"><span class="header-section-number">11.6</span> Designing WebGIS Applications</h2>
-<p>A WebGIS architecture involves three main layers: client, server, and database. Scalability, security, and usability are critical design principles.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div id="fig-webgis-architecture" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="transformation-models-in-georeferencing" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="transformation-models-in-georeferencing"><span class="header-section-number">7.5</span> Transformation Models in Georeferencing</h2>
+<p>Transformation models specify the mathematical relationship between the image coordinates (row, column) and the real-world coordinates (X, Y). These equations compensate for the distortions and ensure that the raster image is properly registered with the known positions on the ground <span class="citation" data-cites="Huisman2009">(<a href="#ref-Huisman2009" role="doc-biblioref">Huisman O., 2009</a>)</span>. The type of transformation model depends on the amount of distortion, the quality of the control points, and the spatial attributes of the source data.</p>
+<p>The general form of the transformation model is:</p>
+<p><span class="math display">\[
+X' = f(x, y)
+\]</span></p>
+<p><span class="math display">\[
+Y' = g(x, y)
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li>(x, y) = coordinates in the image (pixel or line coordinates)<br>
+</li>
+<li>(X’, Y’) = corresponding real-world coordinates (map projection coordinates)<br>
+</li>
+<li>(f, g) = transformation functions, which vary depending on the chosen model</li>
+</ul>
+<p>The selection of transformation function determines how the image is scaled, skewed, shifted and rotated. These transformation models differ in their complexity and suitability depending on the type of distortion present in the original data.</p>
+<div id="fig-geo" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-webgis-architecture-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-webgis-architecture">flowchart TD
-  A[Client: Browser/Mobile] --&gt; B[Web Server]
-  B --&gt; C[Application Logic]
-  C --&gt; D[Database: PostGIS/Spatial DB]
-</pre>
+<div aria-describedby="fig-geo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/geo_shapes.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
 </div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-webgis-architecture-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11.4: Architecture of a WebGIS application
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-geo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.4: <em>Graphical representation of scale, skew, shift and rotate</em>
 </figcaption>
 </figure>
 </div>
-</div>
-</div>
-<section id="key-considerations" class="level3" data-number="11.6.1">
-<h3 data-number="11.6.1" class="anchored" data-anchor-id="key-considerations"><span class="header-section-number">11.6.1</span> Key Considerations</h3>
+<section id="similarity-conformal-transformation" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="similarity-conformal-transformation"><span class="header-section-number">7.5.1</span> Similarity (Conformal) Transformation</h3>
+<p>The Similarity Transformation, often referred to as the Helmert or Conformal Transformation, is a specific form of the affine model that applies translation, uniform scaling, and rotation, while preserving the shape and angles of the original features <span class="citation" data-cites="richards2013">Albrecht (<a href="#ref-albrecht2007" role="doc-biblioref">2007</a>)</span>. Unlike the general affine transformation, which allows independent scaling and shearing along the x and y axes, the similarity transformation constrains the scale to be the same in both directions.</p>
+<p>This model is particularly useful when: - The dataset requires alignment but not distortion. - The original geometry must be preserved (for example, engineering drawings, cadastral data, or orthophotos). - Only uniform scale and rotation differences exist between the image and the map coordinate system.</p>
+<p>It is therefore ideal for survey mapping and local map registration where shape fidelity is critical.</p>
+<p>The general equations for a two-dimensional similarity transformation are:</p>
+<p><span class="math display">\[
+X' = a + s(x\cos\theta - y\sin\theta)
+\]</span></p>
+<p><span class="math display">\[
+Y' = b + s(x\sin\theta + y\cos\theta)
+\]</span></p>
+<p>where:</p>
 <ul>
-<li><strong>System requirements:</strong> Ensure bandwidth and server capacity.<br>
+<li>(a, b) — translation parameters (shift of origin)<br>
 </li>
-<li><strong>Security:</strong> HTTPS, authentication, and role-based access control.<br>
+<li>(s) — uniform scale factor<br>
 </li>
-<li><strong>Scalability:</strong> Caching with GeoWebCache, load balancing in cloud environments.</li>
+<li>() — rotation angle (in radians)</li>
 </ul>
+<p>A minimum of two Ground Control Points (GCPs) is required to compute these parameters, although more are typically used for redundancy and error minimization via least-squares adjustment</p>
 </section>
-<section id="layers-in-webgis" class="level3" data-number="11.6.2">
-<h3 data-number="11.6.2" class="anchored" data-anchor-id="layers-in-webgis"><span class="header-section-number">11.6.2</span> Layers in WebGIS</h3>
+</section>
+<section id="affine-transformation" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="affine-transformation"><span class="header-section-number">7.6</span> Affine Transformation</h2>
+<p>Affine transformation is the simplest and most widely used georeferencing model. It preserves straight lines and parallelism but not necessarily distances or angles. This model is suitable for most scanned maps, orthophotos, and satellite imagery where geometric distortions are minimal and primarily linear. Affine transformation can model translation, rotation, scaling, and shearing of the image. The mathematical form of an affine transformation is linear and defined by two equations:</p>
+<p><span class="math display">\[
+Y' = b_0 + b_1x + b_2y
+\]</span></p>
+<p>where:</p>
 <ul>
-<li><strong>Basemap Layers:</strong> Provide context (e.g., OpenStreetMap).<br>
+<li>(a_0, b_0) = translation parameters (shifts in (x) and (y) directions)<br>
 </li>
-<li><strong>Operational Layers:</strong> Application-specific overlays (e.g., disaster hotspots, utilities).</li>
+<li>(a_1, b_2) = scaling and rotation parameters<br>
+</li>
+<li>(a_2, b_1) = shearing parameters</li>
 </ul>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div id="fig-layer-structure" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-layer-structure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-layer-structure">graph TD
-  A[Basemap] --&gt; B[Operational Layers]
-  B --&gt; C[Infrastructure]
-  B --&gt; D[Environment]
-  B --&gt; E[User Data]
-</pre>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-layer-structure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11.5: Basemap and operational layers in WebGIS
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<hr>
+<p>A total of six parameters ((a_0, a_1, a_2, b_0, b_1, b_2)) are required, which can be solved using <strong>at least three Ground Control Points (GCPs)</strong>.</p>
+<section id="explanation-of-the-components" class="level3" data-number="7.6.1">
+<h3 data-number="7.6.1" class="anchored" data-anchor-id="explanation-of-the-components"><span class="header-section-number">7.6.1</span> Explanation of the Components</h3>
+<section id="translation" class="level4" data-number="7.6.1.1">
+<h4 data-number="7.6.1.1" class="anchored" data-anchor-id="translation"><span class="header-section-number">7.6.1.1</span> Translation</h4>
+<p>Moves the image origin to a new location without changing its shape.</p>
+<p><span class="math display">\[
+X' = x + \Delta X
+\]</span></p>
+<p><span class="math display">\[
+Y' = y + \Delta Y
+\]</span></p>
 </section>
+<section id="scaling" class="level4" data-number="7.6.1.2">
+<h4 data-number="7.6.1.2" class="anchored" data-anchor-id="scaling"><span class="header-section-number">7.6.1.2</span> Scaling</h4>
+<p>Changes the size of the image in the (x) or (y) direction.</p>
+<p><span class="math display">\[
+X' = s_x x
+\]</span></p>
+<p><span class="math display">\[
+Y' = s_y y
+\]</span></p>
 </section>
-<section id="mashups-in-webgis" class="level2" data-number="11.7">
-<h2 data-number="11.7" class="anchored" data-anchor-id="mashups-in-webgis"><span class="header-section-number">11.7</span> Mashups in WebGIS</h2>
-<p>Mashups combine data from multiple APIs and services, enriching WebGIS functionality. They became popular with the introduction of the Google Maps API (2005) and now integrate real-time and open data.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div id="fig-geomashup" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-geomashup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-geomashup">flowchart TD
-  A1[Housing API] --&gt; M[Mashup Application]
-  A2[Weather API] --&gt; M
-  A3[Open Data Portal] --&gt; M
-  A4[Basemap: OSM] --&gt; M
-  M --&gt; V[User Visualization]
-</pre>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-geomashup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11.6: Integration of multiple data sources in a geospatial mashup
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<section id="case-studies" class="level3" data-number="11.7.1">
-<h3 data-number="11.7.1" class="anchored" data-anchor-id="case-studies"><span class="header-section-number">11.7.1</span> Case Studies</h3>
-<ul>
-<li><strong>Housing Maps:</strong> Merged 99acres, MagicBricks and Google Maps.<br>
-</li>
-<li><strong>HealthMap:</strong> Aggregates disease alerts for global monitoring.<br>
-</li>
-<li><strong>COVID-19 Dashboards:</strong> Real-time pandemic data (e.g., Johns Hopkins).</li>
-</ul>
-<hr>
+<section id="rotation" class="level4" data-number="7.6.1.3">
+<h4 data-number="7.6.1.3" class="anchored" data-anchor-id="rotation"><span class="header-section-number">7.6.1.3</span> Rotation</h4>
+<p>Rotates the image by an angle () around the origin.</p>
+<p><span class="math display">\[
+X' = x\cos\theta - y\sin\theta
+\]</span></p>
+<p><span class="math display">\[
+Y' = x\sin\theta + y\cos\theta
+\]</span></p>
 </section>
-</section>
-<section id="example-workflow" class="level2" data-number="11.8">
-<h2 data-number="11.8" class="anchored" data-anchor-id="example-workflow"><span class="header-section-number">11.8</span> Example Workflow</h2>
-<p>A typical workflow integrates FOSS components seamlessly:</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div id="fig-foss-workflow" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-foss-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-foss-workflow">flowchart LR
-  A[Raw Data] --&gt; B[Database: PostGIS]
-  B --&gt; C[Server: GeoServer/MapServer]
-  C --&gt; D[Client: Leaflet/OpenLayers]
-  D --&gt; E[End User Interaction]
-</pre>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-foss-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11.7: End-to-end workflow of a WebGIS system with FOSS tools
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<hr>
-</section>
-<section id="conclusion" class="level2" data-number="11.9">
-<h2 data-number="11.9" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">11.9</span> Conclusion</h2>
-<p>This chapter demonstrated how FOSS provides the foundation for WebGIS development. By integrating server, client, and database tools, developers can create interoperable systems. Designing applications requires consideration of scalability, usability, and security. Mashups illustrate the creativity possible when multiple data sources are combined. Together, these principles form the foundation of modern WebGIS applications. The next chapter extends this discussion by examining Advanced WebGIS and Future Directions. It explores how WebGIS is evolving beyond 2D maps into domains such as 3D visualization, real-time streaming, cloud-based systems, and artificial intelligence, highlighting the trends that will define the next generation of geospatial technologies.</p>
+<section id="shearing" class="level4" data-number="7.6.1.4">
+<h4 data-number="7.6.1.4" class="anchored" data-anchor-id="shearing"><span class="header-section-number">7.6.1.4</span> Shearing</h4>
+<p>Distorts the image such that axes remain parallel but not perpendicular.</p>
+<p><span class="math display">\[
+X' = x + k_x y
+\]</span></p>
+<p><span class="math display">\[
+Y' = y + k_y x
+\]</span></p>
+<p>where (k_x) and (k_y) are shear coefficients.</p>
+<p>Combining all these transformations yields the <strong>affine transformation equations</strong> shown above.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-albrecht2007" class="csl-entry" role="listitem">
+Albrecht, J. (2007). <em>Key concepts and techniques in GIS</em>. London: SAGE Publications.
+</div>
+<div id="ref-campbell2011" class="csl-entry" role="listitem">
+Campbell, J. B., &amp; Wynne, R. H. (2011). <em>Introduction to remote sensing</em> (5th ed.). New York: Guilford Press.
+</div>
+<div id="ref-Huisman2009" class="csl-entry" role="listitem">
+Huisman O., de B. R. A. (2009). <em>Principles of geographic information systems</em>. Enschede: ITC.
+</div>
+<div id="ref-richards2013" class="csl-entry" role="listitem">
+Richards, J. A. (2013). <em>Remote sensing digital image analysis: An introduction</em> (5th ed.). Berlin: Springer. <a href="https://doi.org/10.1007/978-3-642-30062-2">https://doi.org/10.1007/978-3-642-30062-2</a>
+</div>
+<div id="ref-wilson2008" class="csl-entry" role="listitem">
+Wilson, J. P., &amp; Fotheringham, A. S. (Eds.). (2008). <em>The handbook of geographic information science</em>. Oxford: Blackwell Publishing.
+</div>
+</div>
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -998,13 +947,13 @@ Figure&nbsp;11.7: End-to-end workflow of a WebGIS system with FOSS tools
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/module_5/webgis_services.html" class="pagination-link" aria-label="Geospatial Web Services">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Geospatial Web Services</span></span>
+      <a href="../../chapters/module_2/gis-intro.html" class="pagination-link" aria-label="Introduction to GIS">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introduction to GIS</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/module_5/webgis_trends.html" class="pagination-link" aria-label="Advanced WebGIS and Future Directions">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Advanced WebGIS and Future Directions</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/module_5/intro_webgis.html" class="pagination-link" aria-label="Introduction to WebGIS">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introduction to WebGIS</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
